@@ -106,7 +106,7 @@
 // |     |     |      |CA(T) |      |                                          | LC(Y) | CS(N) |  =    |      | CS(I) |  
 // |     |     |      | C(C) | C(V) |                                          |       |       |  ,    |  .   |   /   | 
 //       |     |      |                                                                        |       |      |
-//                    |      |      |                                          |       |       |
+//                    |      |      |                                          |  RET  |       |
 //                                  |     |       |                |      |    |
 //                                  |     |       |                |      |    |
 			bindings = <
@@ -114,7 +114,7 @@
 	&trans &trans &trans    &kp LC(LA(T)) &trans                                          &kp LC(Y)      &kp LC(LS(N))  &kp EQUAL &trans     &kp LC(LS(I))
   &trans &trans &trans    &kp LC(C)     &kp LC(V)                                       &trans         &trans         &trans    &trans     &trans       
          &trans &trans                                                                                                &trans    &trans
-                          &trans        &trans                                          &trans         &trans
+                          &trans        &trans                                          &kp RET         &trans
                                                   &trans &trans       &trans   &trans 
                                                   &trans &trans       &trans   &trans
 			>;
