@@ -49,8 +49,8 @@
 	&kp Z &kp X      &kp M     &kp C      &kp V                                                 &kp K     &kp L    &kp COMMA &kp DOT &kp FSLH 
         &kp C_MUTE &tog LMOD                                                                                     &tog RMOD &kp RALT
                              &mo LSIDE  &kp LSHFT                                          &kp SPACE &mo RSIDE
-                                                  &kp BSPC  &kp BSPC    &mo RMOD  &kp RET
-                                                  &kp LALT  &tog ACC    &kp RCTRL &kp LS(SQT)
+                                                  &kp BSPC  &kp BSPC    &kp TILDE &kp RET
+                                                  &kp LALT  &tog ACC    &kp RCTRL &mo RMOD
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -106,7 +106,7 @@
 // |     |     |      |CA(T) |      |                                          | LC(Y) | CS(N) |  =    |      | CS(I) |  
 // |     |     |      | C(C) | C(V) |                                          |       |       |  ,    |  .   |   /   | 
 //       |     |      |                                                                        |       |      |
-//                    |      |      |                                          |       |  SQT  |
+//                    |      |      |                                          |  SQT  |LS(SQT)|
 //                                  |     |       |                |      |    |
 //                                  |     |       |                |      |    |
 			bindings = <
@@ -114,7 +114,7 @@
 	&trans &trans &trans    &kp LC(LA(T)) &trans                                          &kp LC(Y)      &kp LC(LS(N))  &kp EQUAL &trans     &kp LC(LS(I))
   &trans &trans &trans    &kp LC(C)     &kp LC(V)                                       &trans         &trans         &trans    &trans     &trans       
          &trans &trans                                                                                                &trans    &trans
-                          &trans        &trans                                          &trans         &kp SQT
+                          &trans        &trans                                          &kp SQT        &kp LS(SQT)
                                                   &trans &trans       &trans   &trans 
                                                   &trans &trans       &trans   &trans
 			>;
