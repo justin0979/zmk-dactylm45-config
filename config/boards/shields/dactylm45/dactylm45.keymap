@@ -50,7 +50,7 @@
         &kp C_MUTE &tog LMOD                                                                                     &tog RMOD &kp RALT
                              &mo LSIDE  &kp LSHFT                                          &kp SPACE &mo RSIDE
                                                   &kp BSPC  &kp BSPC    &kp TILDE &kp SQT
-                                                  &kp LALT &tog ACC    &kp RCTRL &kp RET
+                                                  &kp LALT  &tog ACC    &kp RCTRL &mo RMOD
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
