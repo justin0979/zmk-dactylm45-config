@@ -55,7 +55,7 @@
         &kp C_MUTE &tog LMOD                                                                                     &tog RMOD &kp RALT
                              &mo LSIDE  &kp LSHFT                                          &kp SPACE &mo RSIDE
                                                   &kp BSPC  &kp BSPC    &kp RET   &kp SQT
-                                                  &kp N1    &tog ACC    &tog RMOD &kp RET
+                                                  &tog LMOD &tog ACC    &tog RMOD &kp RET
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -142,8 +142,8 @@
   &to DEF   &kp LGUI  &trans   &trans  &trans                                         &kp PIPE       &kp UNDER  &kp COMMA &kp DOT         &kp FSLH
 	          &trans    &trans                                                                                    &trans    &trans
                                &trans  &trans                                         &trans         &trans
-                                               &kp HOME  &kp END       &trans  &trans 
-                                               &trans    &to DEF      &trans  &trans
+                                               &kp HOME  &kp END      &trans  &trans 
+                                               &to DEF    &trans      &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp PG_UP PG_DN>;
@@ -164,8 +164,8 @@
 	&kp F11 &kp F12 &trans &trans &trans                                     &trans    &kp KP_N1  &kp KP_N2 &kp KP_N3 &trans       
           &trans  &trans                                                                        &trans    &trans
                          &trans &trans                                     &kp KP_N0 &kp KP_DOT
-                                       &trans &trans      &trans   &trans
-                                       &trans &trans      &trans   &trans
+                                       &trans  &trans      &trans   &trans
+                                       &to DEF &trans      &trans   &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp PG_UP PG_DN>;
@@ -186,8 +186,8 @@
 	&to DEF      &trans       &trans       &trans       &trans                                      &trans &trans &trans &trans &trans 
                &trans       &trans                                                                              &trans &trans
                                          &trans       &trans                                      &trans &trans
-                                                                &trans &trans     &trans  &trans
-                                                                &trans &trans     &trans  &trans
+                                                                &trans  &trans     &trans  &trans
+                                                                &to DEF &trans     &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -207,9 +207,9 @@
 	&kp Q  &kp A   &kp W  &kp D  &kp E                                              &trans &trans &trans &trans &trans
   &to DEF &trans &kp S  &kp F  &trans                                             &trans &trans &trans &trans &trans
 	        &trans &trans                                                                         &trans &trans
-                        &trans &kp SPACE                                          &trans &trans 
-                                          &kp LSHFT &kp ESC       &trans  &trans
-                                          &kp LCTRL &kp F5        &trans  &trans
+                        &kp SPACE &kp LSHFT                                       &trans &trans 
+                                          &kp LCTRL &kp ESC       &trans  &trans
+                                          &to DEF   &kp F5        &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -231,7 +231,7 @@
 	         &none &none                                                                                 &none  &none
                          &none &none                                                     &none  &none
                                      &ext_power EP_ON &ext_power EP_OFF     &none  &none
-                                     &none            &trans                &none  &none
+                                     &to DEF          &trans                &none  &none
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
