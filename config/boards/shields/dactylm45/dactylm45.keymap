@@ -21,6 +21,7 @@
 #define MCR     7
 #define ACC     8 // add all tog_layers access here
 #define RGB     9
+#define GIMP    10
 
 / {
 // ----------------------------------------------------------------------------------------------------------------------------------
@@ -250,6 +251,28 @@
                          &rgb_ug RGB_BRD &rgb_ug RGB_BRI                               &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
                                      &rgb_ug RGB_TOG &rgb_ug RGB_TOG     &rgb_ug RGB_TOG  &rgb_ug RGB_TOG
                                      &to DEF         &trans              &none            &none
+			>;
+
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+		};
+
+		gimp_tog_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |      |     |      |     |      |                                     |      |       |       |      |       |
+// |      |     |      |     |      |                                     |      |       |       |      |       |
+// | DEF  |     |      |     |      |                                     |      |       |       |      |       |
+//        |     |      |                                                                 |       |      |
+//                     | LCTRL | LSHFT |                                  |      |       |
+//                                   | SPACE |       |          |     |     |
+//                                   |  DEF  |       |          |     |     |
+			bindings = <
+	&none    &none &none &none &none                                                     &none  &none  &none  &none  &none
+	&none    &none &none &none &none                                                     &none  &none  &none  &none  &none
+	&to DEF  &none &none &none &none                                                     &none  &none  &none  &none  &none
+	         &none &none                                                                 &none  &none
+                         &kp LCTRL &trans                               &trans  &trans
+                                     &kp SPACE   &trans     &trans  &trans
+                                     &to DEF     &trans      &none  &none
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
