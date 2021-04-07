@@ -263,15 +263,15 @@
 // |      |     |      |     |      |                                     |      |       |       |      |       |
 //        |     |      |                                                                 |       |      |
 //                     | LCTRL | LSHFT |                                  |      |       |
-//                                   |       | SPACE |          |     |     |
+//                                   |  TAB  | SPACE |          |     |     |
 //                                   |  DEF  | CS(J) |          |     |     |
 			bindings = <
-	&trans  &trans &trans &trans &trans                                                     &none  &none  &none  &none  &none
-	&trans  &trans &trans &trans &trans                                                     &none  &none  &none  &none  &none
-	&trans  &trans &trans &trans &trans                                                     &none  &none  &none  &none  &none
-	        &trans &trans                                                                                 &none  &none
+	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans  &trans  &trans
+	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans  &trans  &trans
+	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans  &trans  &trans
+	        &trans &trans                                                                                 &trans  &trans
                          &kp LCTRL &kp LSHFT                                              &trans  &trans
-                                     &trans   &kp SPACE                     &trans  &trans
+                                     &kp TAB   &kp SPACE                     &trans  &trans
                                      &to DEF  &kp LC(LS(J))                 &trans  &trans
 			>;
 
