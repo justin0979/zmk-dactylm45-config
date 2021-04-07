@@ -20,6 +20,7 @@
 #define BT      6
 #define MCR     7
 #define ACC     8 // add all tog_layers access here
+#define RGB     9
 
 / {
 // ----------------------------------------------------------------------------------------------------------------------------------
@@ -149,7 +150,7 @@
 // | F1  | F2  |  F3  |  F4   |  F5  |                                          | PG_UP |   7   |   8   |  9   |   +   |
 // | F6  | F7  |  F8  |  F9   |  F10 |                                          | PG_DN |   4   |   5   |  6   |   -   |
 // | F11 | F12 |      |       |      |                                          |       |   1   |   2   |  3   |       |
-//       |     |      |                                                                                 |       |      |
+//       |     |      |                                                                                 |      |       |
 //                    |       |      |                                          |   0   |  DOT  |
 //                                   |      |      |                |      |    |
 //                                   |      |      |                |      |    |
@@ -192,11 +193,11 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  1  |  2  |  3   |  4   |  5   |                                          |      |       |       |      |       |
 // |  Q  |  A  |  W   |  D   |  E   |                                          |      |       |       |      |       |
-// |     |     |  S   |  F   |      |                                          |      |       |       |      |       |
+// | DEF |     |  S   |  F   |      |                                          |      |       |       |      |       |
 //       |     |      |                                                                       |       |
-//                    |      |SPACE |                                          |      |       |
-//                                  | LSHFT | ESC |               |       |    |
-//                                  | LCTRL |  F5 |               |       |    |
+//                    | SPACE| LSHFT|                                          |      |       |
+//                                  | LCTRL | ESC |               |       |    |
+//                                  |  DEF  |  F5 |               |       |    |
 			bindings = <
 	&kp N1 &kp N2  &kp N3 &kp N4 &kp N5                                             &trans &trans &trans &trans &trans
 	&kp Q  &kp A   &kp W  &kp D  &kp E                                              &trans &trans &trans &trans &trans
@@ -212,7 +213,7 @@
 
 		access_tog_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// | QWER |     |      |      |  BT  |                                     |      |       |       |      |       |
+// | QWER |     | RGB  |      |  BT  |                                     |      |       |       |      |       |
 // |      |     |      |      |      |                                     |      |       |       |      |       |
 // | DEF  |     | MCR  |      |      |                                     |      |       |       |      |       |
 //        |     |      |                                                                  |       |      |
@@ -227,6 +228,28 @@
                          &none &none                                                     &none  &none
                                      &ext_power EP_ON &ext_power EP_OFF     &none  &none
                                      &to DEF          &trans                &none  &none
+			>;
+
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+		};
+
+		rgb_tog_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |      |     |      |      |      |                                     |      |       |       |      |       |
+// |      |     |      |      |      |                                     |      |       |       |      |       |
+// | DEF  |     |      |      |      |                                     |      |       |       |      |       |
+//        |     |      |                                                                  |       |      |
+//                     | BRD  |  BRI |                                     |  BRI |  BRD  |
+//                                   | TOG  |  TOG  |          | TOG | TOG |
+//                                   | DEF  |       |          |     |     |
+			bindings = <
+	&none    &none &none &none &none                                                     &none  &none  &none  &none  &none
+	&none    &none &none &none &none                                                     &none  &none  &none  &none  &none
+	&to DEF  &none &none &none &none                                                     &none  &none  &none  &none  &none
+	         &none &none                                                                               &none  &none
+                         &rgb_ug RGB_BRD &rgb_ug RGB_BRI                               &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
+                                     &rgb_ug RGB_TOG &rgb_ug RGB_TOG     &rgb_ug RGB_TOG  &rgb_ug RGB_TOG
+                                     &to DEF         &trans              &none            &none
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
