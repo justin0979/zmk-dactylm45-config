@@ -196,17 +196,17 @@
 // |  Q  |  A  |  W   |  D   |  E   |                                          |      |       |       |      |       |
 // | DEF |     |  S   |  F   |      |                                          |      |       |       |      |       |
 //       |     |      |                                                                       |       |
-//                    | SPACE| LSHFT|                                          |      |       |
-//                                  | LCTRL | ESC |               |       |    |
-//                                  |  DEF  |  F5 |               |       |    |
+//                    | LCTRL| LSHFT|                                          |      |       |
+//                                  | ESC | SPACE |               |       |    |
+//                                  | DEF |   F5  |               |       |    |
 			bindings = <
 	&kp N1 &kp N2  &kp N3 &kp N4 &kp N5                                             &trans &trans &trans &trans &trans
 	&kp Q  &kp A   &kp W  &kp D  &kp E                                              &trans &trans &trans &trans &trans
   &to DEF &trans &kp S  &kp F  &trans                                             &trans &trans &trans &trans &trans
 	        &trans &trans                                                                         &trans &trans
-                        &kp SPACE &kp LSHFT                                       &trans &trans 
-                                          &kp LCTRL &kp ESC       &trans  &trans
-                                          &to DEF   &kp F5        &trans  &trans
+                        &kp LCTRL &kp LSHFT                                       &trans &trans 
+                                          &kp ESC  &kp SPACE     &trans  &trans
+                                          &to DEF  &kp F5        &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -215,7 +215,7 @@
 		access_tog_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | QWER |     | RGB  |      |  BT  |                                     |      |       |       |      |       |
-// |      |     |      |      |      |                                     |      |       |       |      |       |
+// |      |     |      |      | GIMP |                                     |      |       |       |      |       |
 // | DEF  |     | MCR  |      |      |                                     |      |       |       |      |       |
 //        |     |      |                                                                  |       |      |
 //                     |      |      |                                     |      |       |
@@ -223,7 +223,7 @@
 //                                   |      |       |          |     |     |
 			bindings = <
 	&to QWER &none &none   &none &to BT                                                    &none  &none  &none  &none  &none
-	&none    &none &none   &none &none                                                     &none  &none  &none  &none  &none
+	&none    &none &none   &none &to GIMP                                                  &none  &none  &none  &none  &none
 	&to DEF  &none &to MCR &none &none                                                     &none  &none  &none  &none  &none
 	         &none &none                                                                                 &none  &none
                          &none &none                                                     &none  &none
@@ -260,19 +260,19 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |      |     |      |     |      |                                     |      |       |       |      |       |
 // |      |     |      |     |      |                                     |      |       |       |      |       |
-// | DEF  |     |      |     |      |                                     |      |       |       |      |       |
+// |      |     |      |     |      |                                     |      |       |       |      |       |
 //        |     |      |                                                                 |       |      |
 //                     | LCTRL | LSHFT |                                  |      |       |
-//                                   | SPACE |       |          |     |     |
-//                                   |  DEF  |       |          |     |     |
+//                                   |       | SPACE |          |     |     |
+//                                   |  DEF  | CS(J) |          |     |     |
 			bindings = <
-	&none    &none &none &none &none                                                     &none  &none  &none  &none  &none
-	&none    &none &none &none &none                                                     &none  &none  &none  &none  &none
-	&to DEF  &none &none &none &none                                                     &none  &none  &none  &none  &none
-	         &none &none                                                                 &none  &none
-                         &kp LCTRL &trans                               &trans  &trans
-                                     &kp SPACE   &trans     &trans  &trans
-                                     &to DEF     &trans      &none  &none
+	&trans  &trans &trans &trans &trans                                                     &none  &none  &none  &none  &none
+	&trans  &trans &trans &trans &trans                                                     &none  &none  &none  &none  &none
+	&trans  &trans &trans &trans &trans                                                     &none  &none  &none  &none  &none
+	        &trans &trans                                                                                 &none  &none
+                         &kp LCTRL &kp LSHFT                                              &trans  &trans
+                                     &trans   &kp SPACE                     &trans  &trans
+                                     &to DEF  &kp LC(LS(J))                 &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
