@@ -37,21 +37,21 @@
 
 		default_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  Q  |  D  |  R   |  W   |  B   |                                    |  J   |  F    |  U    |  P   |   ;   |
-// |  A  |  S  |  H   |  T   |  G   |                                    |  Y   |  N    |  E    |  O   |   I   |
-// |  Z  |  X  |  M   |  C   |  V   |                                    |  K   |  L    |  ,    |  .   |   /   |
-//       | MUTE| LMOD |                                                                 |  RMOD | RALT |
-//                    |LSIDE | SHIFT|                                    | SPACE| RSIDE |
-//                                  | BSPC  |  ESC |    |TILDE |   RET   |
-//                                  | LALT  |  ACC |    | CTRL |   RMOD  |
+// |  Q  |  D  |  R  |  W  |  B  |                                            |  J  |  F   |  U   |  P  |  ;  |
+// |  A  |  S  |  H  |  T  |  G  |                                            |  Y  |  N   |  E   |  O  |  I  |
+// |  Z  |  X  |  M  |  C  |  V  |                                            |  K  |  L   |  ,   |  .  |  /  |
+//       | MUTE| LMOD|                                                                     | RMOD |RALT |
+//                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
+//                                   | ESC  |  BSPC |      | RET  | RMOD  |
+//                                   | LALT |  ACC  |      | CTRL | TILDE |
 			bindings = <
 	&kp Q &kp D      &kp R     &kp W      &kp B                                                &kp J     &kp F    &kp U     &kp P   &kp SEMI
 	&kp A &kp S      &kp H     &kp T      &kp G                                                &kp Y     &kp N    &kp E     &kp O   &kp I   
 	&kp Z &kp X      &kp M     &kp C      &kp V                                                &kp K     &kp L    &kp COMMA &kp DOT &kp FSLH 
         &kp C_MUTE &tog LMOD                                                                                    &tog RMOD &kp RALT
                              &mo LSIDE  &kp LSHFT                                         &kp SPACE &mo RSIDE
-                                                  &kp ESC  &kp BSPC   &kp RET   &mo RMOD
-                                                  &kp LALT &tog ACC   &kp RCTRL &kp TILDE
+                                                  &kp ESC    &kp BSPC     &kp RET   &mo RMOD
+                                                  &kp LALT   &tog ACC     &kp RCTRL &kp TILDE
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
