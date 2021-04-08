@@ -237,7 +237,7 @@
 		rgb_tog_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |      |     |      |      |      |                                     |      |       |       |      |       |
-// |      |     |      |      |      |                                     |      |       |       |      |       |
+// |      |     |      |      |  HGR |                                     |      |       |       |      |       |
 // | DEF  |     |      |      |      |                                     |      |       |       |      |       |
 //        |     |      |                                                                  |       |      |
 //                     | BRD  |  BRI |                                     |  BRI |  BRD  |
@@ -245,7 +245,7 @@
 //                                   | DEF  |       |          |     |     |
 			bindings = <
 	&none    &none &none &none &none                                                     &none  &none  &none  &none  &none
-	&none    &none &none &none &none                                                     &none  &none  &none  &none  &none
+	&none    &none &none &none &rgb_ug RGB_COLOR_HSB(128,100,100)                        &none  &none  &none  &none  &none
 	&to DEF  &none &none &none &none                                                     &none  &none  &none  &none  &none
 	         &none &none                                                                               &none  &none
                          &rgb_ug RGB_BRD &rgb_ug RGB_BRI                               &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
