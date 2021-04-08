@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-#define DEF     0
+#define DEF     0 // Line 39
 #define QWER    1
 #define RSIDE   2
 #define LSIDE   3
@@ -19,9 +19,9 @@
 #define LMOD    5
 #define BT      6
 #define MCR     7
-#define ACC     8 // add all tog_layers access here
-#define RGB     9
-#define GIMP    10
+#define ACC     8  // add all tog_layers access here
+#define RGB     9  // Line 237
+#define GIMP    10 // Line 259
 
 / {
 // ----------------------------------------------------------------------------------------------------------------------------------
@@ -43,16 +43,16 @@
 // |  Z  |  X  |  M  |  C  |  V  |                                            |  K  |  L   |  ,   |  .  |  /  |
 //       | MUTE| LMOD|                                                                     | RMOD |RALT |
 //                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
-//                                   | ESC  |  BSPC |      | RET  | RMOD  |
-//                                   | LALT |  ACC  |      | CTRL | TILDE |
+//                                   | ALT  |  BSPC |      | RET  | RMOD  |
+//                                   | ACC  |  ESC  |      | CTRL | TILDE |
 			bindings = <
 	&kp Q &kp D      &kp R     &kp W      &kp B                                                &kp J     &kp F    &kp U     &kp P   &kp SEMI
 	&kp A &kp S      &kp H     &kp T      &kp G                                                &kp Y     &kp N    &kp E     &kp O   &kp I   
 	&kp Z &kp X      &kp M     &kp C      &kp V                                                &kp K     &kp L    &kp COMMA &kp DOT &kp FSLH 
         &kp C_MUTE &tog LMOD                                                                                    &tog RMOD &kp RALT
                              &mo LSIDE  &kp LSHFT                                         &kp SPACE &mo RSIDE
-                                                  &kp ESC    &kp BSPC     &kp RET   &mo RMOD
-                                                  &kp LALT   &tog ACC     &kp RCTRL &kp TILDE
+                                                  &kp LALT  &kp BSPC    &kp RET   &mo RMOD
+                                                  &tog ACC  &kp ESC     &kp RCTRL &kp TILDE
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
