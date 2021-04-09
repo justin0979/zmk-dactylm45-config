@@ -17,7 +17,7 @@
 #define LSIDE   3
 #define RMOD    4
 #define LMOD    5
-#define BT      6
+#define BT      6  // Line 171
 #define MCR     7
 #define ACC     8  // add all tog_layers access here
 #define RGB     9  // Line 237
@@ -170,21 +170,21 @@
 
 		bluetooth_tog_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |     |     |      |      |      |                                                           |      |       |       |      |     |
-// | BT0 | BT1 | BT2  | BT3  | BT4  |                                                           |      |       |       |      |     |
-// |     |     |      |      |      |                                                           |      |       |       |      |     |
-//       |     |      |                                                                                        |       |      |       
-//                    |      |      |                                                           |      |       |
-//                                  |        |         |                        |       |       |
-//                                  |        |         |                        |       |       |
+// | BT1 | BT2 | BT3 | BT4  |      |                                                           |      |       |       |      | BT0 |
+// |     |     |     |      |      |                                                           |      |       |       |      |     |
+// |     |     |     | BTC  |      |                                                           |      |       |       |      |     |
+//       |     |     |                                                                                        |       |      |       
+//                   |      |      |                                                           |      |       |
+//                                 |        |         |                        |       |       |
+//                                 |        |         |                        |       |       |
 			bindings = <
-	&trans       &trans       &trans       &trans       &trans                                      &trans &trans &trans &trans &trans
-	&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                                &trans &trans &trans &trans &trans
-	&to DEF      &trans       &trans       &trans       &trans                                      &trans &trans &trans &trans &trans 
-               &trans       &trans                                                                              &trans &trans
-                                         &trans       &trans                                      &trans &trans
-                                                                &trans  &trans     &trans  &trans
-                                                                &to DEF &trans     &trans  &trans
+	&bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                      &none &none &none &none &none
+	&none       &none       &none       &none       &none                                      &none &none &none &none &none
+	&to DEF      &none       &none       &bt BT_CLR       &none                                      &none &none &none &none &none 
+               &none       &none                                                                              &none &none
+                                         &none       &none                                      &none &none
+                                                                &none  &none     &none  &none
+                                                                &to DEF &none     &none  &none
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
