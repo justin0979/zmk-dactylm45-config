@@ -269,7 +269,7 @@
 	&to QWER &none &to RGB   &none &to BT                                                    &none  &none  &none  &none  &none
 	&none    &none &none   &none &to GIMP                                                  &none  &none  &none  &none  &none
 	&to DEF  &none &to MCR &none &none                                                     &none  &none  &none  &none  &none
-	         &none &none                                                                                 &none  &rgb_ug RGB(0,100,20)
+	         &none &none                                                                                 &none  &rgb_ug RGB_COLOR_HSB(0,100,20)
                          &none &none                                                     &none  &none
                                      &ext_power EP_ON &ext_power EP_OFF     &none  &none
                                      &to DEF          &trans                &none  &none
