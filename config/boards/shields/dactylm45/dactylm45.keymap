@@ -160,7 +160,7 @@
 	&kp F6  &kp F7  &kp F8 &kp F9 &kp F10                                    &kp PG_DN &kp KP_N4  &kp KP_N5 &kp KP_N6 &kp KP_MINUS
 	&kp F11 &kp F12 &trans &trans &trans                                     &trans    &kp KP_N1  &kp KP_N2 &kp KP_N3 &trans       
           &trans  &trans                                                                        &trans    &trans
-                         &trans &trans                                     &kp KP_N0 &kp KP_DOT
+                         &kp PG_DN &kp PG_UP                                     &kp KP_N0 &kp KP_DOT
                                        &trans  &trans      &trans   &trans
                                        &to DEF &trans      &trans   &trans
 			>;
