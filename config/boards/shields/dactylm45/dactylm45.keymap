@@ -41,7 +41,7 @@
 // |  Q  |  D  |  R  |  W  |  B  |                                            |  J  |  F   |  U   |  P  |  ;  |
 // |  A  |  S  |  H  |  T  |  G  |                                            |  Y  |  N   |  E   |  O  |  I  |
 // |  Z  |  X  |  M  |  C  |  V  |                                            |  K  |  L   |  ,   |  .  |  /  |
-//       | LMOD| MUTE|                                                                     | RMOD |RALT |
+//       | MUTE| LMOD|                                                                     | RMOD |CLEAR|
 //                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
 //                                   | ALT  |  BSPC |      | RET  | RMOD  |
 //                                   | ESC  |  ACC  |      | CTRL | TILDE |
@@ -49,7 +49,7 @@
 	&kp Q &kp D      &kp R     &kp W      &kp B                                                &kp J     &kp F    &kp U     &kp P   &kp SEMI
 	&kp A &kp S      &kp H     &kp T      &kp G                                                &kp Y     &kp N    &kp E     &kp O   &kp I   
 	&kp Z &kp X      &kp M     &kp C      &kp V                                                &kp K     &kp L    &kp COMMA &kp DOT &kp FSLH 
-        &tog LMOD  &kp C_MUTE                                                                                   &tog RMOD &kp RALT
+        &kp C_MUTE  &tog LMOD                                                                                   &tog RMOD &rg_ug RGB_COLOR_HSB(128,0,20)
                              &mo LSIDE  &kp LSHFT                                         &kp SPACE &mo RSIDE
                                                   &kp LALT  &kp BSPC    &kp RET   &mo RMOD
                                                   &kp ESC   &tog ACC    &kp RCTRL &kp TILDE
@@ -63,7 +63,7 @@
 // |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |  
 // |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   | 
 // |  Z  |  X  |  C   |  V   |  B   |                                          |  N   |  M    |  ,    |  .   |   /   |
-//       |     |      |                                                                       |       |      |
+//       |     |      |                                                                       |       |ORANGE|
 //                    |      |      |                                          |      |       |
 //                                  |     |     |               |    |         |
 //                                  |     |     |               |    |         |
@@ -71,7 +71,7 @@
 	&kp Q &kp W   &kp E  &kp R  &kp T                                         &kp Y  &kp U  &kp I     &kp O   &kp P   
 	&kp A &kp S   &kp D  &kp F  &kp G                                         &kp H  &kp J  &kp K     &kp L   &kp SEMI
 	&kp Z &kp X   &kp C  &kp V  &kp B                                         &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH
-	      &trans  &trans                                                                    &trans    &trans
+	      &trans  &trans                                                                    &trans    &rgb_ug RGB_COLOR_HSB(30,100,20)
                        &trans &trans                                        &trans &trans
                                      &trans  &trans          &trans  &trans
                                      &to DEF &trans          &trans  &trans
@@ -151,7 +151,7 @@
 // | F1  | F2  |  F3  |  F4   |  F5  |                                          | PG_UP |   7   |   8   |  9   |   +   |
 // | F6  | F7  |  F8  |  F9   |  F10 |                                          | PG_DN |   4   |   5   |  6   |   -   |
 // | F11 | F12 |      |       |      |                                          |       |   1   |   2   |  3   |       |
-//       |     |      |                                                                                 |      |       |
+//       |     |      |                                                                         |       |LiBLUE|
 //                    |       |      |                                          |   0   |  DOT  |
 //                                   |      |      |                |      |    |
 //                                   |      |      |                |      |    |
@@ -159,7 +159,7 @@
 	&kp F1  &kp F2  &kp F3 &kp F4 &kp F5                                     &kp PG_UP &kp KP_N7  &kp KP_N8 &kp KP_N9 &kp KP_PLUS 
 	&kp F6  &kp F7  &kp F8 &kp F9 &kp F10                                    &kp PG_DN &kp KP_N4  &kp KP_N5 &kp KP_N6 &kp KP_MINUS
 	&kp F11 &kp F12 &trans &trans &trans                                     &trans    &kp KP_N1  &kp KP_N2 &kp KP_N3 &trans       
-          &trans  &trans                                                                        &trans    &trans
+          &trans  &trans                                                                        &trans    &rgb_ug RGB_COLOR_HSB(200,100,20)
                          &kp PG_DN &kp PG_UP                                     &kp KP_N0 &kp KP_DOT
                                        &trans  &trans      &trans   &trans
                                        &to DEF &trans      &trans   &trans
@@ -173,7 +173,7 @@
 // | BT1 | BT2 | BT3 | BT4  |      |                                                           |      |       |       |      | BT0 |
 // |     |     |     |      |      |                                                           |      |       |       |      |     |
 // |     |     |     | BTC  |      |                                                           |      |       |       |      |     |
-//       |     |     |                                                                                        |       |      |       
+//       |     |     |                                                                                        |       | BLUE |       
 //                   |      |      |                                                           |      |       |
 //                                 |        |         |                        |       |       |
 //                                 |        |         |                        |       |       |
@@ -181,7 +181,7 @@
 	&bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                      &none &none &none &none &bt BT_SEL 0
 	&none        &none        &none        &none        &none                                      &none &none &none &none &none
 	&to DEF      &none        &none        &bt BT_CLR   &none                                      &none &none &none &none &none 
-               &none        &none                                                                                  &none &none
+               &none        &none                                                                                  &none &rgb_ug RGB_COLOR_HSB(240,100,20)
                                           &none       &none                                      &none &none
                                                                 &none   &none     &none  &none
                                                                 &to DEF &none     &none  &none
@@ -195,7 +195,7 @@
 // |  1  |  2  |  3   |  4   |  5   |                                          |      |       |       |      |       |
 // |  Q  |  A  |  W   |  D   |  E   |                                          |      |       |       |      |       |
 // | DEF |     |  S   |  F   |      |                                          |      |       |       |      |       |
-//       |     |      |                                                                       |       |
+//       |     |      |                                                                       |       | GREEN|
 //                    | LCTRL| LSHFT|                                          |      |       |
 //                                  | ESC | SPACE |               |       |    |
 //                                  | DEF |   F5  |               |       |    |
@@ -203,7 +203,7 @@
 	&kp N1 &kp N2  &kp N3 &kp N4 &kp N5                                             &trans &trans &trans &trans &trans
 	&kp Q  &kp A   &kp W  &kp D  &kp E                                              &trans &trans &trans &trans &trans
   &to DEF &trans &kp S  &kp F  &trans                                             &trans &trans &trans &trans &trans
-	        &trans &trans                                                                         &trans &trans
+	        &trans &trans                                                                         &trans &rgb_ug RGB_COLOR_HSB(120,100,20)
                         &kp LCTRL &kp LSHFT                                       &trans &trans 
                                           &kp ESC  &kp SPACE     &trans  &trans
                                           &to DEF  &kp F5        &trans  &trans
@@ -219,16 +219,16 @@
 // | DEF  |     |      |      |      |                                    |      |LiteBLU|       |      |       |
 //        |     |      |                                                                 |       |      |
 //                     | HUD  |  HUI |                                    |  BRI |  BRD  |
-//                                   |     |  SAD  |          | SAI |     |
-//                                   | DEF |       |          |     |     |
+//                                   | EFR |  EFF  |          | SAD | SAI |
+//                                   | DEF |       |          | SPD | SPI |
 			bindings = <
 	&none           &none &rgb_ug RGB_COLOR_HSB(0,100,100) &none  &rgb_ug RGB_COLOR_HSB(240,100,100)   &none                              &none                               &none  &rgb_ug RGB_COLOR_HSB(300,100,100)  &none
 	&rgb_ug RGB_TOG &none &none                            &none  &rgb_ug RGB_COLOR_HSB(120,100,100)   &rgb_ug RGB_COLOR_HSB(60,100,100)  &none                               &none  &none                               &rgb_ug RGB_TOG
 	&none           &none &none                            &none  &none                                &none                              &rgb_ug RGB_COLOR_HSB(180,100,100)  &none  &none                               &none
 	         &none &none                                                                                                                                                      &none  &none
                          &rgb_ug RGB_HUD &rgb_ug RGB_HUI                                       &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
-                                     &none    &rgb_ug RGB_SAD             &rgb_ug RGB_SAI  &none
-                                     &to DEF  &trans                      &none            &none
+                                     &rgb_ug RGB_EFR &rgb_ug RGB_EFF             &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
+                                     &to DEF         &trans                      &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -239,7 +239,7 @@
 // |      |     |      |     |      |                                     |      |       |       |      |       |
 // |      |     |      |     |      |                                     |      |       |       |      |       |
 // |      |     |      |     |      |                                     |      |       |       |      |       |
-//        |     |      |                                                                 |       |      |
+//        |     |      |                                                                 |       |YELLOW|
 //                     | LCTRL | LSHFT |                                  |      |       |
 //                                   |  TAB  | SPACE |          |     |     |
 //                                   |  DEF  | CS(J) |          |     |     |
@@ -247,7 +247,7 @@
 	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans  &trans  &trans
 	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans  &trans  &trans
 	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans  &trans  &trans
-	        &trans &trans                                                                                 &trans  &trans
+	        &trans &trans                                                                                 &trans  &rgb_ug RGB_COLOR_HSB(60,100,20)
                          &kp LCTRL &kp LSHFT                                              &trans  &trans
                                      &kp TAB   &kp SPACE                     &trans  &trans
                                      &to DEF  &kp LC(LS(J))                 &trans  &trans
@@ -269,7 +269,7 @@
 	&to QWER &none &to RGB   &none &to BT                                                    &none  &none  &none  &none  &none
 	&none    &none &none   &none &to GIMP                                                  &none  &none  &none  &none  &none
 	&to DEF  &none &to MCR &none &none                                                     &none  &none  &none  &none  &none
-	         &none &none                                                                                 &none  &none
+	         &none &none                                                                                 &none  &rgb_ug RGB(0,100,20)
                          &none &none                                                     &none  &none
                                      &ext_power EP_ON &ext_power EP_OFF     &none  &none
                                      &to DEF          &trans                &none  &none
