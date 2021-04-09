@@ -214,21 +214,21 @@
 
 		rgb_tog_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |      | SAI | HUI  | BRD  |      |                                     |      |       |       |      |       |
-// |      | SAD | HUD  | BRI  |  HGR |                                     |      |       |       |      |       |
-// | DEF  |     |      |      |      |                                     |      |       |       |      |       |
-//        |     |      |                                                                  |       |      |
-//                     | BRD  |  BRI |                                     |  BRI |  BRD  |
-//                                   | TOG  |  TOG  |          | TOG | TOG |
-//                                   | DEF  |       |          |     |     |
+// |      |     | RED  |      | BLUE |                                    |      |       |       |PURPLE|       |
+// | TOG  |     |      |      |GREEN |                                    |YELLOW|       |       |      |  TOG  |
+// | DEF  |     |      |      |      |                                    |      |LiteBLU|       |      |       |
+//        |     |      |                                                                 |       |      |
+//                     | HUD  |  HUI |                                    |  BRI |  BRD  |
+//                                   |     |  SAD  |          | SAI |     |
+//                                   | DEF |       |          |     |     |
 			bindings = <
-	&none &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_BRI &none                                                     &none  &none  &none  &none  &none
-	&none &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_BRD &rgb_ug RGB_COLOR_HSB(10,10,10)                        &none  &none  &none  &none  &none
-	&none           &none &none &none &none                                                     &none  &none  &none  &none  &none
-	         &none &none                                                                               &none  &none
-                         &rgb_ug RGB_BRD &rgb_ug RGB_BRI                               &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
-                                     &rgb_ug RGB_TOG &rgb_ug RGB_TOG     &rgb_ug RGB_TOG  &rgb_ug RGB_TOG
-                                     &to DEF         &trans              &none            &none
+	&none           &none &rgb_ug RGB_COLOR_HSB(0,100,100) &none  &rgb_ug RGB_COLOR_HSB(240,100,100)   &none                              &none                               &none  &rgb_ug RGB_COLOR_HSB(300,100,100)  &none
+	&rgb_ug RGB_TOG &none &none                            &none  &rgb_ug RGB_COLOR_HSB(120,100,100)   &rgb_ug RGB_COLOR_HSB(60,100,100)  &none                               &none  &none                               &rgb_ug RGB_TOG
+	&none           &none &none                            &none  &none                                &none                              &rgb_ug RGB_COLOR_HSB(180,100,100)  &none  &none                               &none
+	         &none &none                                                                                                                                                      &none  &none
+                         &rgb_ug RGB_HUD &rgb_ug RGB_HUI                                       &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
+                                     &none    &rgb_ug RGB_SAD             &rgb_ug RGB_SAI  &none
+                                     &to DEF  &trans                      &none            &none
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
