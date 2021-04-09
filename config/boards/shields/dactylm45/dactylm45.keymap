@@ -52,7 +52,7 @@
         &kp C_MUTE &tog LMOD                                                                                    &tog RMOD &kp RALT
                              &mo LSIDE  &kp LSHFT                                         &kp SPACE &mo RSIDE
                                                   &kp LALT  &kp BSPC    &kp RET   &mo RMOD
-                                                  &kp ESC   &tog ACC    &kp RCTRL &kp TILDE
+                                                  &kp ESC   &to ACC     &kp RCTRL &kp TILDE
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
