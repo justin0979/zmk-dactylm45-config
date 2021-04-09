@@ -41,7 +41,7 @@
 // |  Q  |  D  |  R  |  W  |  B  |                                            |  J  |  F   |  U   |  P  |  ;  |
 // |  A  |  S  |  H  |  T  |  G  |                                            |  Y  |  N   |  E   |  O  |  I  |
 // |  Z  |  X  |  M  |  C  |  V  |                                            |  K  |  L   |  ,   |  .  |  /  |
-//       | MUTE| LMOD|                                                                     | RMOD | SQT |
+//       | MUTE| LMOD|                                                                     | RMOD | PWR |
 //                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
 //                                   | ALT  |  BSPC |      | RET  | RMOD  |
 //                                   | ESC  |  ACC  |      | CTRL | TILDE |
@@ -49,7 +49,7 @@
 	&kp Q &kp D      &kp R     &kp W      &kp B                                                &kp J     &kp F    &kp U     &kp P   &kp SEMI
 	&kp A &kp S      &kp H     &kp T      &kp G                                                &kp Y     &kp N    &kp E     &kp O   &kp I   
 	&kp Z &kp X      &kp M     &kp C      &kp V                                                &kp K     &kp L    &kp COMMA &kp DOT &kp FSLH 
-        &kp C_MUTE  &tog LMOD                                                                                   &tog RMOD &kp SQT
+        &kp C_MUTE  &tog LMOD                                                                                   &tog RMOD &ext_power EP_TOG
                              &mo LSIDE  &kp LSHFT                                         &kp SPACE &mo RSIDE
                                                   &kp LALT  &kp BSPC    &kp RET   &mo RMOD
                                                   &kp ESC   &tog ACC    &kp RCTRL &kp TILDE
