@@ -49,7 +49,7 @@
 	&kp Q &kp D      &kp R     &kp W      &kp B                                                &kp J     &kp F    &kp U     &kp P   &kp SEMI
 	&kp A &kp S      &kp H     &kp T      &kp G                                                &kp Y     &kp N    &kp E     &kp O   &kp I   
 	&kp Z &kp X      &kp M     &kp C      &kp V                                                &kp K     &kp L    &kp COMMA &kp DOT &kp FSLH 
-        &tog LMOD &kp MUTE                                                                                    &tog RMOD &kp RALT
+        &tog LMOD  &kp C_MUTE                                                                                   &tog RMOD &kp RALT
                              &mo LSIDE  &kp LSHFT                                         &kp SPACE &mo RSIDE
                                                   &kp LALT  &kp BSPC    &kp RET   &mo RMOD
                                                   &kp ESC   &to ACC     &kp RCTRL &kp TILDE
