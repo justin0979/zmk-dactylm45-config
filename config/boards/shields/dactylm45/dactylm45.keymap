@@ -41,7 +41,7 @@
 // |  Q  |  D  |  R  |  W  |  B  |                                            |  J  |  F   |  U   |  P  |  ;  |
 // |  A  |  S  |  H  |  T  |  G  |                                            |  Y  |  N   |  E   |  O  |  I  |
 // |  Z  |  X  |  M  |  C  |  V  |                                            |  K  |  L   |  ,   |  .  |  /  |
-//       | MUTE| LMOD|                                                                     | RMOD |RALT |
+//       | LMOD| MUTE|                                                                     | RMOD |RALT |
 //                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
 //                                   | ALT  |  BSPC |      | RET  | RMOD  |
 //                                   | ESC  |  ACC  |      | CTRL | TILDE |
@@ -49,7 +49,7 @@
 	&kp Q &kp D      &kp R     &kp W      &kp B                                                &kp J     &kp F    &kp U     &kp P   &kp SEMI
 	&kp A &kp S      &kp H     &kp T      &kp G                                                &kp Y     &kp N    &kp E     &kp O   &kp I   
 	&kp Z &kp X      &kp M     &kp C      &kp V                                                &kp K     &kp L    &kp COMMA &kp DOT &kp FSLH 
-        &kp C_MUTE &tog LMOD                                                                                    &tog RMOD &kp RALT
+        &tog LMOD &kp MUTE                                                                                    &tog RMOD &kp RALT
                              &mo LSIDE  &kp LSHFT                                         &kp SPACE &mo RSIDE
                                                   &kp LALT  &kp BSPC    &kp RET   &mo RMOD
                                                   &kp ESC   &to ACC     &kp RCTRL &kp TILDE
@@ -236,17 +236,17 @@
 
 		rgb_tog_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |      |     |      |      |      |                                     |      |       |       |      |       |
-// |      |     |      |      |  HGR |                                     |      |       |       |      |       |
+// |      | SAI | HUI  | BRD  |      |                                     |      |       |       |      |       |
+// |      | SAD | HUD  | BRI  |  HGR |                                     |      |       |       |      |       |
 // | DEF  |     |      |      |      |                                     |      |       |       |      |       |
 //        |     |      |                                                                  |       |      |
 //                     | BRD  |  BRI |                                     |  BRI |  BRD  |
 //                                   | TOG  |  TOG  |          | TOG | TOG |
 //                                   | DEF  |       |          |     |     |
 			bindings = <
-	&none    &none &none &none &none                                                     &none  &none  &none  &none  &none
-	&none    &none &none &none &rgb_ug RGB_COLOR_HSB(10,10,10)                        &none  &none  &none  &none  &none
-	&to DEF  &none &none &none &none                                                     &none  &none  &none  &none  &none
+	&none &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_BRI &none                                                     &none  &none  &none  &none  &none
+	&none &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_BRD &rgb_ug RGB_COLOR_HSB(10,10,10)                        &none  &none  &none  &none  &none
+	&none           &none &none &none &none                                                     &none  &none  &none  &none  &none
 	         &none &none                                                                               &none  &none
                          &rgb_ug RGB_BRD &rgb_ug RGB_BRI                               &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
                                      &rgb_ug RGB_TOG &rgb_ug RGB_TOG     &rgb_ug RGB_TOG  &rgb_ug RGB_TOG
