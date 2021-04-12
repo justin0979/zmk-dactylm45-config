@@ -43,16 +43,16 @@
 // |  Z  |  X  |  M  |  C  |  V  |                                            |  K  |  L   |  ,   |  .  |  /  |
 //       | MUTE| LMOD|                                                                     | RMOD | PWR |
 //                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
-//                                   | ALT  |  BSPC |      | RET  | RMOD  |
-//                                   | ESC  |  ACC  |      | CTRL | TILDE |
+//                                   | ALT  |  BSPC |       | RET  | RMOD |
+//                                   | ESC  |  ACC  |       | BRD  | BRI  |
 			bindings = <
 	&kp Q &kp D      &kp R     &kp W      &kp B                                                &kp J     &kp F    &kp U     &kp P   &kp SEMI
 	&kp A &kp S      &kp H     &kp T      &kp G                                                &kp Y     &kp N    &kp E     &kp O   &kp I   
 	&kp Z &kp X      &kp M     &kp C      &kp V                                                &kp K     &kp L    &kp COMMA &kp DOT &kp FSLH 
         &kp C_MUTE  &tog LMOD                                                                                   &tog RMOD &ext_power EP_TOG
                              &mo LSIDE  &kp LSHFT                                         &kp SPACE &mo RSIDE
-                                                  &kp LALT  &kp BSPC    &kp RET   &mo RMOD
-                                                  &kp ESC   &tog ACC    &kp RCTRL &kp TILDE
+                                                  &kp LALT  &kp BSPC    &kp RET         &mo RMOD
+                                                  &kp ESC   &tog ACC    &rgb_ug RGB_BRD &rgb_ug RGB_BRI
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
