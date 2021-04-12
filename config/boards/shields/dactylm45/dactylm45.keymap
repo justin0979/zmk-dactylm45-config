@@ -116,7 +116,7 @@
 	&trans &trans &trans    &kp LC(LA(T)) &kp ESC                                         &kp LC(Y)      &kp LC(LS(N))  &kp EQUAL      &trans      &kp LC(LS(I))
   &trans &trans &trans    &kp LC(C)     &kp LC(V)                                       &trans         &trans         &kp LS(COMMA)  &kp LS(DOT) &trans       
          &trans &trans                                                                                                &trans    &trans
-                          &trans        &trans                                          &kp trans      &kp LS(SQT)
+                          &trans        &trans                                          &trans         &kp LS(SQT)
                                                   &trans &trans       &trans   &trans 
                                                   &trans &trans       &trans   &trans
 			>;
