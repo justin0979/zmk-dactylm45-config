@@ -231,7 +231,7 @@
                                      &to DEF         &trans                      &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp RGB_HUI RGB_HUD &inc_dec_kp PG_UP PG_DN>;
 		};
 
 		gimp_tog_layer {
