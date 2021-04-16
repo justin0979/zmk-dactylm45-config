@@ -41,15 +41,15 @@
 // |  Q  |  D  |  R  |  W  |  B  |                                            |  J  |  F   |  U   |  P  |  ;  |
 // |  A  |  S  |  H  |  T  |  G  |                                            |  Y  |  N   |  E   |  O  |  I  |
 // |  Z  |  X  |  M  |  C  |  V  |                                            |  K  |  L   |  ,   |  .  |  /  |
-//       | MUTE| LMOD|                                                                     | RMOD | PWR |
+//       | MUTE| ESC |                                                                     | RMOD | HUD |
 //                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
 //                                   | HUI  |  BSPC |       | RET  | RMOD |
-//                                   | ESC  |  ACC  |       | BRD  | BRI  |
+//                                   | LMOD |  ACC  |       | BRD  | BRI  |
 			bindings = <
 	&kp Q &kp D      &kp R     &kp W      &kp B                                                &kp J     &kp F    &kp U     &kp P   &kp SEMI
 	&kp A &kp S      &kp H     &kp T      &kp G                                                &kp Y     &kp N    &kp E     &kp O   &kp I   
 	&kp Z &kp X      &kp M     &kp C      &kp V                                                &kp K     &kp L    &kp COMMA &kp DOT &kp FSLH 
-        &kp C_MUTE  &kp ESC                                                                                     &kp RCTRL &ext_power EP_TOG
+        &kp C_MUTE  &kp ESC                                                                                     &kp RCTRL &rgb_ug RGB_HUD
                              &mo LSIDE  &kp LSHFT                                            &kp SPACE &mo RSIDE
                                                   &rgb_ug RGB_HUI &kp BSPC    &kp RET         &mo RMOD
                                                   &tog LMOD       &tog ACC    &rgb_ug RGB_BRD &rgb_ug RGB_BRI
@@ -261,7 +261,7 @@
 // | QWER |     | RGB  |      |  BT  |                                     |      |       |       |      |       |
 // |      |     |      |      | GIMP |                                     |      |       |       |      |       |
 // | DEF  |     | MCR  |      |      |                                     |      |       |       |      |       |
-//        |     |      |                                                                  |       |CLEAR |
+//        |     |      |                                                                  |       |  PWR |
 //                     |      |      |                                     |      |       |
 //                                   |      |       |          |     |     |
 //                                   |      |       |          |     |     |
@@ -269,7 +269,7 @@
 	&to QWER &none &to RGB   &none &to BT                                                    &none  &none  &none  &none  &none
 	&none    &none &none   &none &to GIMP                                                  &none  &none  &none  &none  &none
 	&to DEF  &none &to MCR &none &none                                                     &none  &none  &none  &none  &none
-	         &none &none                                                                                 &none  &rgb_ug RGB_COLOR_HSB(0,0,20)
+	         &none &none                                                                                 &none  &ext_power EP_TOG
                          &none &none                                                     &none  &none
                                      &ext_power EP_ON &ext_power EP_OFF     &none  &none
                                      &to DEF          &trans                &none  &none
