@@ -128,7 +128,7 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  !  |  @  |  #   |  $   |  %   |                                          |  ^   |   &   |  *    |  (   |   )   |      
 // |  `  |  ~  | ALT  | TAB  | ESC  |                                          |LARROW| DOWN  |  UP   |RARROW| KP_N5 |       
-// |HOME | GUI |      |      |      |                                          |LARROW| DOWN  |  UP   |RARROW|   /   |      
+// |HOME | GUI |      |      |      |                                          |LARROW| DOWN  |  UP   |RARROW|  END  |      
 //       |     |      |                                                                       |       |       |
 //                    | HOME | END  |                                          |      |       |
 //                                  |       |      |               |     |     |
@@ -136,7 +136,7 @@
 			bindings = <
 	&kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PRCNT                                      &kp CARET      &kp AMPS   &kp STAR  &kp LPAR        &kp RPAR  
 	&kp GRAVE &kp TILDE &sk LALT &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp DOWN   &kp UP    &kp RIGHT_ARROW &kp KP_N5
-  &to DEF   &kp LGUI  &trans   &trans   &trans                                         &kp LEFT_ARROW &kp DOWN   &kp UP    &kp RIGHT_ARROW &kp FSLH
+  &kp HOME  &kp LGUI  &trans   &trans   &trans                                         &kp LEFT_ARROW &kp DOWN   &kp UP    &kp RIGHT_ARROW &kp END
 	          &trans    &trans                                                                                    &trans    &trans
                                &kp HOME  &kp END                                       &trans         &trans
                                                &trans  &trans         &trans  &trans 
