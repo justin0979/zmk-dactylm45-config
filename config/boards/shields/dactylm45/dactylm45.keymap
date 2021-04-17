@@ -11,17 +11,18 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-#define DEF     0  // Line 39
-#define QWER    1  // Line 61
-#define RSIDE   2  // Line 83
-#define LSIDE   3  // Line 105
-#define RMOD    4  // Line 127
-#define LMOD    5  // Line 149
-#define BT      6  // Line 171
-#define MCR     7  // Line 193
-#define RGB     8  // Line 215
-#define GIMP    9  // Line 237
-#define ACC     10  // Line 259 add all tog_layers access here
+#define DEF     0  // Line 40
+#define WM      1  // Line 62
+#define QWER    2  // Line 84
+#define RSIDE   3  // Line 106
+#define LSIDE   4  // Line 128
+#define RMOD    5  // Line 150
+#define LMOD    6  // Line 172
+#define BT      7  // Line 194
+#define MCR     8  // Line 216
+#define RGB     8  // Line 237
+#define GIMP    9  // Line 260
+#define ACC     11  // Line 282 add all tog_layers access here
 
 / {
 // ----------------------------------------------------------------------------------------------------------------------------------
@@ -37,6 +38,28 @@
 		compatible = "zmk,keymap";
 
 		default_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |  Q  |  W  |  F  |  P  |  B  |                                            |  J  |  L   |  U   |  Y  |  ;  |
+// |  A  |  R  |  S  |  T  |  G  |                                            |  M  |  N   |  E   |  I  |  O  |
+// |  Z  |  X  |  C  |  D  |  V  |                                            |  K  |  H   |  ,   |  .  |  /  |
+//       | MUTE| CTRL|                                                                     | CTRL | HUD |
+//                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
+//                                   | HUI  |  BSPC |       | RET  | RMOD |
+//                                   | LMOD |  ACC  |       | BRD  | BRI  |
+			bindings = <
+	&kp Q &kp W      &kp F     &kp P      &kp B                                                &kp J     &kp L    &kp U     &kp Y   &kp SEMI
+	&kp A &kp R      &kp S     &kp T      &kp G                                                &kp M     &kp N    &kp E     &kp I   &kp O   
+	&kp Z &kp X      &kp C     &kp D      &kp V                                                &kp K     &kp H    &kp COMMA &kp DOT &kp FSLH 
+        &kp C_MUTE  &kp LCTRL                                                                                   &kp RCTRL &rgb_ug RGB_HUD
+                             &mo LSIDE  &kp LSHFT                                            &kp SPACE &mo RSIDE
+                                                  &rgb_ug RGB_HUI &kp BSPC    &kp RET         &mo RMOD
+                                                  &tog LMOD       &tog ACC    &rgb_ug RGB_BRD &rgb_ug RGB_BRI
+			>;
+
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+		};
+
+		workman_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  Q  |  D  |  R  |  W  |  B  |                                            |  J  |  F   |  U   |  P  |  ;  |
 // |  A  |  S  |  H  |  T  |  G  |                                            |  Y  |  N   |  E   |  O  |  I  |
@@ -258,17 +281,17 @@
 
 		access_tog_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// | QWER |     | RGB  |      |  BT  |                                     |      |       |       |      |       |
-// |      |     |      |      | GIMP |                                     |      |       |       |      |       |
+// | QWER | WM  | RGB  |      |  BT  |                                     |      |       |       |      |       |
+// |      | RGB |      |      | GIMP |                                     | MCR  |       |       |      |       |
 // | DEF  |     | MCR  |      |      |                                     |      |       |       |      |       |
 //        |     |      |                                                                  |       |  PWR |
 //                     |      |      |                                     |      |       |
 //                                   |      |       |          |     |     |
 //                                   |      |       |          |     |     |
 			bindings = <
-	&to QWER &none &to RGB   &none &to BT                                                    &none  &none  &none  &none  &none
-	&none    &none &none   &none &to GIMP                                                  &none  &none  &none  &none  &none
-	&to DEF  &none &to MCR &none &none                                                     &none  &none  &none  &none  &none
+	&to QWER &to WM   &to RGB &none &to BT                                                    &none   &none  &none  &none  &none
+	&none    &to RGB  &none   &none &to GIMP                                                  &to MCR &none  &none  &none  &none
+	&to DEF  &none    &to MCR &none &none                                                     &none   &none  &none  &none  &none
 	         &none &none                                                                                 &none  &ext_power EP_TOG
                          &none &none                                                     &none  &none
                                      &ext_power EP_ON &ext_power EP_OFF     &none  &none
