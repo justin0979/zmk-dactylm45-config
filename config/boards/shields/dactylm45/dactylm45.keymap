@@ -127,19 +127,19 @@
 
 		left_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |     |     | C(R) | C(W) | C(B) |                                          | CS(6) | LS(F) |       |  (   |   )   |   
-// |     |     |      |CA(T) |  ESC |                                          | LC(Y) | CS(N) |   =   |      | CS(I) |  
-// |     |     |      | C(C) | C(V) |                                          |       |       |   <   |  >   |   /   | 
+// |     | C(W)| C(F) |      | C(B) |                                          | CS(6) | LS(F) |       | LS(Y)|   )   |   
+// |     |     | C(R) |CA(T) |  ESC |                                          |       | CS(N) |   =   |      | CS(I) |  
+// |     |     | C(C) |      | C(V) |                                          |       |       |   <   |  >   |   /   | 
 //       |     |      |                                                                        |       |      |
 //                    |      |      |                                          |       |LS(SQT)|
 //                                  |     |       |                |      |    |
 //                                  |     |       |                |      |    |
 			bindings = <
-	&trans &trans &kp LC(R) &kp LC(W)     &kp LC(B)                                       &kp LC(LS(N6)) &kp LC(F)      &trans         &kp LPAR    &kp RPAR      
-	&trans &trans &trans    &kp LC(LA(T)) &kp ESC                                         &kp LC(Y)      &kp LC(LS(N))  &kp EQUAL      &trans      &kp LC(LS(I))
-  &trans &trans &trans    &kp LC(C)     &kp LC(V)                                       &trans         &trans         &kp LS(COMMA)  &kp LS(DOT) &trans       
-         &trans &trans                                                                                                &trans    &trans
-                          &trans        &trans                                          &trans         &kp LS(SQT)
+	&trans &kp LC(W) &kp LC(F) &kp LC(W)     &kp LC(B)                                       &kp LC(LS(N6)) &trans         &trans         &kp LS(Y)   &kp RPAR      
+	&trans &trans    &kp LC(R) &kp LC(LA(T)) &kp ESC                                         &trans         &kp LC(LS(N))  &kp EQUAL      &trans      &kp LC(LS(I))
+  &trans &trans    &kp LC(C) &trans        &kp LC(V)                                       &trans         &trans         &kp LS(COMMA)  &kp LS(DOT) &trans       
+         &trans    &trans                                                                                                &trans    &trans
+                             &trans        &trans                                          &trans         &kp LS(SQT)
                                                   &trans &trans       &trans   &trans 
                                                   &trans &trans       &trans   &trans
 			>;
