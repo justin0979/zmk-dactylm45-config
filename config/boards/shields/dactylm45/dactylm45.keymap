@@ -37,7 +37,7 @@
 	keymap {
 		compatible = "zmk,keymap";
 
-		default_layer {
+		colemak-dh_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  Q  |  W  |  F  |  P  |  B  |                                            |  J  |  L   |  U   |  Y  |  ;  |
 // |  A  |  R  |  S  |  T  |  G  |                                            |  M  |  N   |  E   |  I  |  O  |
@@ -97,7 +97,7 @@
 	      &trans  &trans                                                                    &trans    &rgb_ug RGB_COLOR_HSB(30,100,20)
                        &trans &trans                                        &trans &trans
                                      &trans  &trans          &trans  &trans
-                                     &to CM &trans          &trans  &trans
+                                     &to CM  &trans          &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -163,7 +163,7 @@
 	          &trans    &trans                                                                                    &trans    &trans
                                &kp HOME  &kp END                                       &trans         &trans
                                                &trans  &trans         &trans  &trans 
-                                               &to CM &trans         &trans  &trans
+                                               &to CM  &trans         &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp PG_UP PG_DN>;
@@ -185,7 +185,7 @@
           &trans  &trans                                                                        &trans    &rgb_ug RGB_COLOR_HSB(200,100,20)
                          &kp PG_DN &kp PG_UP                                     &kp KP_N0 &kp KP_DOT
                                        &trans  &trans      &trans   &trans
-                                       &to CM &trans      &trans   &trans
+                                       &to CM  &trans      &trans   &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp PG_UP PG_DN>;
@@ -203,11 +203,11 @@
 			bindings = <
 	&bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                      &none &none &none &none &bt BT_SEL 0
 	&none        &none        &none        &none        &none                                      &none &none &none &none &none
-	&to CM      &none        &none        &bt BT_CLR   &none                                      &none &none &none &none &none 
+	&to CM       &none        &none        &bt BT_CLR   &none                                      &none &none &none &none &none 
                &none        &none                                                                                  &none &rgb_ug RGB_COLOR_HSB(240,100,20)
                                           &none       &none                                      &none &none
                                                                 &none   &none     &none  &none
-                                                                &to CM &none     &none  &none
+                                                                &to CM  &none     &none  &none
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -225,11 +225,11 @@
 			bindings = <
 	&kp N1 &kp N2  &kp N3 &kp N4 &kp N5                                             &trans &trans &trans &trans &trans
 	&kp Q  &kp A   &kp W  &kp D  &kp E                                              &trans &trans &trans &trans &trans
-  &to CM &trans &kp S  &kp F  &trans                                             &trans &trans &trans &trans &trans
+  &trans &trans  &kp S  &kp F  &trans                                             &trans &trans &trans &trans &trans
 	        &trans &trans                                                                         &trans &rgb_ug RGB_COLOR_HSB(120,100,20)
                         &kp LCTRL &kp LSHFT                                       &trans &trans 
                                           &kp ESC  &kp SPACE     &trans  &trans
-                                          &to CM  &kp F5        &trans  &trans
+                                          &to CM   &kp F5        &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -251,7 +251,7 @@
 	         &none &none                                                                                                                                                      &none  &none
                          &rgb_ug RGB_HUD &rgb_ug RGB_HUI                                       &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
                                      &rgb_ug RGB_EFR &rgb_ug RGB_EFF             &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
-                                     &to CM         &trans                      &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
+                                     &to CM          &trans                      &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -273,7 +273,7 @@
 	        &trans &trans                                                                                 &trans  &rgb_ug RGB_COLOR_HSB(60,100,20)
                          &kp LCTRL &kp LSHFT                                              &trans  &trans
                                      &kp TAB   &kp SPACE                     &trans  &trans
-                                     &to CM  &kp LC(LS(J))                 &trans  &trans
+                                     &to CM    &kp LC(LS(J))                 &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -283,7 +283,7 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | QWER | WM  | RGB  |      |  BT  |                                     |      |       |       |      |       |
 // |      | RGB |      |      | GIMP |                                     | MCR  |       |       |      |       |
-// | CM  |     | MCR  |      |      |                                     |      |       |       |      |       |
+// |  CM  |     | MCR  |      |      |                                     |      |       |       |      |       |
 //        |     |      |                                                                  |       |  PWR |
 //                     |      |      |                                     |      |       |
 //                                   |      |       |          |     |     |
@@ -295,7 +295,7 @@
 	         &none &none                                                                                 &none  &ext_power EP_TOG
                          &none &none                                                     &none  &none
                                      &ext_power EP_ON &ext_power EP_OFF     &none  &none
-                                     &to CM          &trans                &none  &none
+                                     &to CM           &trans                &none  &none
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
