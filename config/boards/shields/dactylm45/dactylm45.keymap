@@ -295,7 +295,7 @@
 	         &none &none                                                                                 &none  &ext_power EP_TOG
                          &none &none                                                     &none  &none
                                      &ext_power EP_ON &ext_power EP_OFF     &none  &none
-                                     &to CM           &trans                &none  &none
+                                     &trans           &trans                &none  &none
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
