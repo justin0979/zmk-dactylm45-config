@@ -225,11 +225,11 @@
 			bindings = <
 	&kp N1 &kp N2  &kp N3 &kp N4 &kp N5                                             &trans &trans &trans                            &trans &trans
 	&kp Q  &kp A   &kp W  &kp D  &kp E                                              &trans &trans &trans                            &trans &trans
-  &trans &trans  &kp S  &kp F  &trans                                             &trans &trans &trans                            &trans &trans
+  &to CM &trans  &kp S  &kp F  &trans                                             &trans &trans &trans                            &trans &trans
 	        &trans &trans                                                                         &rgb_ug RGB_COLOR_HSB(120,100,20) &trans
-                        &kp LCTRL &kp LSHFT                                       &trans &trans 
-                                          &kp ESC  &kp SPACE     &trans  &trans
-                                          &to CM   &kp F5        &trans  &trans
+                        &kp ESC &kp LSHFT                                         &trans &trans 
+                                          &kp LCTRL  &kp SPACE     &trans  &trans
+                                          &to CM     &kp F5        &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
