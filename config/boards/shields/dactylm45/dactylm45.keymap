@@ -20,9 +20,9 @@
 #define LMOD    6  // Line 172
 #define BT      7  // Line 194
 #define MCR     8  // Line 216
-#define RGB     8  // Line 237
-#define GIMP    9  // Line 260
-#define ACC     11  // Line 282 add all tog_layers access here
+#define RGB     9  // Line 237
+#define GIMP    10 // Line 260
+#define ACC     11 // Line 282 add all tog_layers access here
 
 / {
 // ----------------------------------------------------------------------------------------------------------------------------------
@@ -42,18 +42,18 @@
 // |  Q  |  W  |  F  |  P  |  B  |                                            |  J  |  L   |  U   |  Y  |  ;  |
 // |  A  |  R  |  S  |  T  |  G  |                                            |  M  |  N   |  E   |  I  |  O  |
 // |  Z  |  X  |  C  |  D  |  V  |                                            |  K  |  H   |  ,   |  .  |  /  |
-//       | MUTE| CTRL|                                                                     | CTRL | HUD |
+//       | MUTE| HUI |                                                                     | HUD  | LMOD|
 //                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
-//                                   | HUI  |  BSPC |       | RET  | RMOD |
+//                                   | CTRL |  BSPC |       | RET  | RMOD |
 //                                   | LMOD |  ACC  |       | BRD  | BRI  |
 			bindings = <
-	&kp Q &kp W      &kp F     &kp P      &kp B                                                &kp J     &kp L    &kp U     &kp Y   &kp SEMI
-	&kp A &kp R      &kp S     &kp T      &kp G                                                &kp M     &kp N    &kp E     &kp I   &kp O   
-	&kp Z &kp X      &kp C     &kp D      &kp V                                                &kp K     &kp H    &kp COMMA &kp DOT &kp FSLH 
-        &kp C_MUTE  &kp LCTRL                                                                                   &kp RCTRL &rgb_ug RGB_HUD
+	&kp Q &kp W      &kp F     &kp P      &kp B                                                &kp J     &kp L    &kp U             &kp Y   &kp SEMI
+	&kp A &kp R      &kp S     &kp T      &kp G                                                &kp M     &kp N    &kp E             &kp I   &kp O   
+	&kp Z &kp X      &kp C     &kp D      &kp V                                                &kp K     &kp H    &kp COMMA         &kp DOT &kp FSLH 
+        &kp C_MUTE  &rgb_ug RGB_HUI                                                                             &rgb_ug RGB_HUD   &tog LMOD
                              &mo LSIDE  &kp LSHFT                                            &kp SPACE &mo RSIDE
-                                                  &rgb_ug RGB_HUI &kp BSPC    &kp RET         &mo RMOD
-                                                  &tog LMOD       &tog ACC    &rgb_ug RGB_BRD &rgb_ug RGB_BRI
+                                                  &kp LCTRL  &kp BSPC    &kp RET         &mo RMOD
+                                                  &tog LMOD  &tog ACC    &rgb_ug RGB_BRD &rgb_ug RGB_BRI
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -291,7 +291,7 @@
 			bindings = <
 	&to QWER &to WM   &to RGB &none &to BT                                                    &none   &none  &none  &none  &none
 	&none    &to RGB  &none   &none &to GIMP                                                  &to MCR &none  &none  &none  &none
-	&to CM   &none    &to CM  &none &none                                                     &none   &none  &none  &none  &none
+	&none    &none    &to CM  &none &none                                                     &none   &none  &none  &none  &none
 	         &none &none                                                                                 &none  &ext_power EP_TOG
                          &none &none                                                     &none  &none
                                      &ext_power EP_ON &ext_power EP_OFF     &none  &none
