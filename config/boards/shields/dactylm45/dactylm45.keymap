@@ -45,15 +45,15 @@
 //       | MUTE| HUI |                                                                     | HUD  | LMOD|
 //                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
 //                                   | CTRL |  BSPC |       | RET  | RMOD |
-//                                   | LMOD |  ACC  |       | BRD  | BRI  |
+//                                   | LMOD |  ACC  |       | CTRL | BRI  |
 			bindings = <
-	&kp Q &kp W      &kp F     &kp P      &kp B                                                &kp J     &kp L    &kp U             &kp Y   &kp SEMI
-	&kp A &kp R      &kp S     &kp T      &kp G                                                &kp M     &kp N    &kp E             &kp I   &kp O   
-	&kp Z &kp X      &kp C     &kp D      &kp V                                                &kp K     &kp H    &kp COMMA         &kp DOT &kp FSLH 
-        &kp C_MUTE  &rgb_ug RGB_HUI                                                                             &rgb_ug RGB_HUD   &tog LMOD
-                             &mo LSIDE  &kp LSHFT                                            &kp SPACE &mo RSIDE
-                                                  &kp LCTRL  &kp BSPC    &kp RET         &mo RMOD
-                                                  &tog LMOD  &tog ACC    &rgb_ug RGB_BRD &rgb_ug RGB_BRI
+	&kp Q &kp W      &kp F     &kp P      &kp B                                           &kp J     &kp L    &kp U             &kp Y   &kp SEMI
+	&kp A &kp R      &kp S     &kp T      &kp G                                           &kp M     &kp N    &kp E             &kp I   &kp O   
+	&kp Z &kp X      &kp C     &kp D      &kp V                                           &kp K     &kp H    &kp COMMA         &kp DOT &kp FSLH 
+        &kp C_MUTE  &rgb_ug RGB_HUI                                                                        &rgb_ug RGB_HUD   &tog LMOD
+                             &mo LSIDE  &kp LSHFT                                       &kp SPACE &mo RSIDE
+                                                  &kp LCTRL  &kp BSPC    &kp RET    &mo RMOD
+                                                  &tog LMOD  &tog ACC    &kp RCTRL  &rgb_ug RGB_BRI
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -86,15 +86,15 @@
 // |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |  
 // |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   | 
 // |  Z  |  X  |  C   |  V   |  B   |                                          |  N   |  M    |  ,    |  .   |   /   |
-//       |     |      |                                                                       |       |ORANGE|
+//       |     |      |                                                                       |ORANGE |      |
 //                    |      |      |                                          |      |       |
 //                                  |     |     |               |    |         |
 //                                  |     |     |               |    |         |
 			bindings = <
-	&kp Q &kp W   &kp E  &kp R  &kp T                                         &kp Y  &kp U  &kp I     &kp O   &kp P   
-	&kp A &kp S   &kp D  &kp F  &kp G                                         &kp H  &kp J  &kp K     &kp L   &kp SEMI
-	&kp Z &kp X   &kp C  &kp V  &kp B                                         &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH
-	      &trans  &trans                                                                    &trans    &rgb_ug RGB_COLOR_HSB(30,100,20)
+	&kp Q &kp W   &kp E  &kp R  &kp T                                         &kp Y  &kp U  &kp I                            &kp O   &kp P   
+	&kp A &kp S   &kp D  &kp F  &kp G                                         &kp H  &kp J  &kp K                            &kp L   &kp SEMI
+	&kp Z &kp X   &kp C  &kp V  &kp B                                         &kp N  &kp M  &kp COMMA                        &kp DOT &kp FSLH
+	      &trans  &trans                                                                    &rgb_ug RGB_COLOR_HSB(30,100,20) &trans
                        &trans &trans                                        &trans &trans
                                      &trans  &trans          &trans  &trans
                                      &to CM  &trans          &trans  &trans
@@ -138,7 +138,7 @@
 	&trans &kp LC(W) &kp LC(F) &kp LC(W)     &kp LC(B)                                       &kp LC(LS(N6)) &trans         &trans         &kp LS(Y)     &kp RPAR      
 	&trans &kp LC(R) &trans    &kp LC(LA(T)) &kp ESC                                         &trans         &kp LC(LS(N))  &kp EQUAL      &kp LC(LS(I)) &trans
   &trans &trans    &kp LC(C) &trans        &kp LC(V)                                       &trans         &trans         &kp LS(COMMA)  &kp LS(DOT)   &trans       
-         &trans    &trans                                                                                                &trans    &trans
+         &trans    &trans                                                                                                &trans         &trans
                              &trans        &trans                                          &trans         &kp LS(SQT)
                                                   &trans &trans       &trans   &trans 
                                                   &trans &trans       &trans   &trans
@@ -174,15 +174,15 @@
 // | F1  | F2  |  F3  |  F4   |  F5  |                                          | PG_UP |   7   |   8   |  9   |   +   |
 // | F6  | F7  |  F8  |  F9   |  F10 |                                          | PG_DN |   4   |   5   |  6   |   -   |
 // | F11 | F12 |      |       |      |                                          |       |   1   |   2   |  3   |       |
-//       |     |      |                                                                         |       |LiBLUE|
+//       |     |      |                                                                         | LiBLUE|      |
 //                    |       |      |                                          |   0   |  DOT  |
 //                                   |      |      |                |      |    |
 //                                   |      |      |                |      |    |
 			bindings = <
-	&kp F1  &kp F2  &kp F3 &kp F4 &kp F5                                     &kp PG_UP &kp KP_N7  &kp KP_N8 &kp KP_N9 &kp KP_PLUS 
-	&kp F6  &kp F7  &kp F8 &kp F9 &kp F10                                    &kp PG_DN &kp KP_N4  &kp KP_N5 &kp KP_N6 &kp KP_MINUS
-	&kp F11 &kp F12 &trans &trans &trans                                     &trans    &kp KP_N1  &kp KP_N2 &kp KP_N3 &trans       
-          &trans  &trans                                                                        &trans    &rgb_ug RGB_COLOR_HSB(200,100,20)
+	&kp F1  &kp F2  &kp F3 &kp F4 &kp F5                                     &kp PG_UP &kp KP_N7  &kp KP_N8                         &kp KP_N9 &kp KP_PLUS 
+	&kp F6  &kp F7  &kp F8 &kp F9 &kp F10                                    &kp PG_DN &kp KP_N4  &kp KP_N5                         &kp KP_N6 &kp KP_MINUS
+	&kp F11 &kp F12 &trans &trans &trans                                     &trans    &kp KP_N1  &kp KP_N2                         &kp KP_N3 &trans       
+          &trans  &trans                                                                        &rgb_ug RGB_COLOR_HSB(200,100,20) &trans
                          &kp PG_DN &kp PG_UP                                     &kp KP_N0 &kp KP_DOT
                                        &trans  &trans      &trans   &trans
                                        &to CM  &trans      &trans   &trans
@@ -196,15 +196,15 @@
 // | BT1 | BT2 | BT3 | BT4  |      |                                                           |      |       |       |      | BT0 |
 // |     |     |     |      |      |                                                           |      |       |       |      |     |
 // |     |     |     | BTC  |      |                                                           |      |       |       |      |     |
-//       |     |     |                                                                                        |       | BLUE |       
+//       |     |     |                                                                                        |  BLUE |      |       
 //                   |      |      |                                                           |      |       |
 //                                 |        |         |                        |       |       |
 //                                 |        |         |                        |       |       |
 			bindings = <
-	&bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                      &none &none &none &none &bt BT_SEL 0
-	&none        &none        &none        &none        &none                                      &none &none &none &none &none
-	&to CM       &none        &none        &bt BT_CLR   &none                                      &none &none &none &none &none 
-               &none        &none                                                                                  &none &rgb_ug RGB_COLOR_HSB(240,100,20)
+	&bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                      &none &none &none                             &none &bt BT_SEL 0
+	&none        &none        &none        &none        &none                                      &none &none &none                             &none &none
+	&to CM       &none        &none        &bt BT_CLR   &none                                      &none &none &none                             &none &none 
+               &none        &none                                                                            &rgb_ug RGB_COLOR_HSB(240,100,20) &none
                                           &none       &none                                      &none &none
                                                                 &none   &none     &none  &none
                                                                 &to CM  &none     &none  &none
@@ -217,16 +217,16 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  1  |  2  |  3   |  4   |  5   |                                          |      |       |       |      |       |
 // |  Q  |  A  |  W   |  D   |  E   |                                          |      |       |       |      |       |
-// | CM |     |  S   |  F   |      |                                          |      |       |       |      |       |
-//       |     |      |                                                                       |       | GREEN|
+// | CM  |     |  S   |  F   |      |                                          |      |       |       |      |       |
+//       |     |      |                                                                       | GREEN |      |
 //                    | LCTRL| LSHFT|                                          |      |       |
 //                                  | ESC | SPACE |               |       |    |
 //                                  | CM |   F5  |               |       |    |
 			bindings = <
-	&kp N1 &kp N2  &kp N3 &kp N4 &kp N5                                             &trans &trans &trans &trans &trans
-	&kp Q  &kp A   &kp W  &kp D  &kp E                                              &trans &trans &trans &trans &trans
-  &trans &trans  &kp S  &kp F  &trans                                             &trans &trans &trans &trans &trans
-	        &trans &trans                                                                         &trans &rgb_ug RGB_COLOR_HSB(120,100,20)
+	&kp N1 &kp N2  &kp N3 &kp N4 &kp N5                                             &trans &trans &trans                            &trans &trans
+	&kp Q  &kp A   &kp W  &kp D  &kp E                                              &trans &trans &trans                            &trans &trans
+  &trans &trans  &kp S  &kp F  &trans                                             &trans &trans &trans                            &trans &trans
+	        &trans &trans                                                                         &rgb_ug RGB_COLOR_HSB(120,100,20) &trans
                         &kp LCTRL &kp LSHFT                                       &trans &trans 
                                           &kp ESC  &kp SPACE     &trans  &trans
                                           &to CM   &kp F5        &trans  &trans
@@ -239,11 +239,11 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |      |     | RED  |      | BLUE |                                    |      |       |       |PURPLE|       |
 // | TOG  |     |      |      |GREEN |                                    |YELLOW|       |       |      |  TOG  |
-// | CM  |     |      |      |      |                                    |      |LiteBLU|       |      |       |
+// | CM   |     |      |      |      |                                    |      |LiteBLU|       |      |       |
 //        |     |      |                                                                 |       |      |
 //                     | HUD  |  HUI |                                    |  BRI |  BRD  |
 //                                   | EFR |  EFF  |          | SAD | SAI |
-//                                   | CM |       |          | SPD | SPI |
+//                                   | CM  |       |          | SPD | SPI |
 			bindings = <
 	&none           &none &rgb_ug RGB_COLOR_HSB(0,100,100) &none  &rgb_ug RGB_COLOR_HSB(240,100,100)   &none                              &none                               &none  &rgb_ug RGB_COLOR_HSB(300,100,100)  &none
 	&rgb_ug RGB_TOG &none &none                            &none  &rgb_ug RGB_COLOR_HSB(120,100,100)   &rgb_ug RGB_COLOR_HSB(60,100,100)  &none                               &none  &none                               &rgb_ug RGB_TOG
@@ -262,15 +262,15 @@
 // |      |     |      |     |      |                                     |      |       |       |      |       |
 // |      |     |      |     |      |                                     |      |       |       |      |       |
 // |      |     |      |     |      |                                     |      |       |       |      |       |
-//        |     |      |                                                                 |       |YELLOW|
+//        |     |      |                                                                 |YELLOW |      |
 //                     | LCTRL | LSHFT |                                  |      |       |
 //                                   |  TAB  | SPACE |          |     |     |
-//                                   |  CM  | CS(J) |          |     |     |
+//                                   |   CM  | CS(J) |          |     |     |
 			bindings = <
-	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans  &trans  &trans
-	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans  &trans  &trans
-	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans  &trans  &trans
-	        &trans &trans                                                                                 &trans  &rgb_ug RGB_COLOR_HSB(60,100,20)
+	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans                           &trans  &trans
+	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans                           &trans  &trans
+	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans                           &trans  &trans
+	        &trans &trans                                                                                   &rgb_ug RGB_COLOR_HSB(60,100,20) &trans
                          &kp LCTRL &kp LSHFT                                              &trans  &trans
                                      &kp TAB   &kp SPACE                     &trans  &trans
                                      &to CM    &kp LC(LS(J))                 &trans  &trans
