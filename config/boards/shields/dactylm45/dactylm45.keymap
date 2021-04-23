@@ -127,7 +127,7 @@
 
 		left_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |     | C(W)| C(F) |      | C(B) |                                          | CS(6) |       |       | LS(Y)|   )   |   
+// |     | C(W)| C(F) |      | C(B) |                                          | CS(6) |       |       | CS(Y)|   )   |   
 // |     | C(R)|      |CA(T) |  ESC |                                          |       | CS(N) |   =   | CS(I)|       |  
 // |     |     | C(C) |      | C(V) |                                          |       |       |   <   |  >   |   /   | 
 //       |     |      |                                                                        |       |      |
@@ -135,7 +135,7 @@
 //                                  |     |       |                |      |    |
 //                                  |     |       |                |      |    |
 			bindings = <
-	&trans &kp LC(W) &kp LC(F) &kp LC(W)     &kp LC(B)                                       &kp LC(LS(N6)) &trans         &trans         &kp LS(Y)     &kp RPAR      
+	&trans &kp LC(W) &kp LC(F) &kp LC(W)     &kp LC(B)                                       &kp LC(LS(N6)) &trans         &trans         &kp LC(LS(Y)) &kp RPAR      
 	&trans &kp LC(R) &trans    &kp LC(LA(T)) &kp ESC                                         &trans         &kp LC(LS(N))  &kp EQUAL      &kp LC(LS(I)) &trans
   &trans &trans    &kp LC(C) &trans        &kp LC(V)                                       &trans         &trans         &kp LS(COMMA)  &kp LS(DOT)   &trans       
          &trans    &trans                                                                                                &trans         &trans
