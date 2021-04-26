@@ -45,7 +45,7 @@
 //       | MUTE| HUI |                                                                     | HUD  | LMOD|
 //                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
 //                                   | CTRL |  BSPC |       | RET  | RMOD |
-//                                   | LMOD |  ACC  |       | CTRL | BRI  |
+//                                   | LMOD |  ACC  |       | CTRL | ALT  |
 			bindings = <
 	&kp Q &kp W      &kp F     &kp P      &kp B                                           &kp J     &kp L    &kp U             &kp X   &kp SEMI
 	&kp A &kp R      &kp S     &kp T      &kp G                                           &kp M     &kp N    &kp E             &kp I   &kp O   
@@ -53,7 +53,7 @@
         &kp C_MUTE &rgb_ug RGB_HUI                                                                         &rgb_ug RGB_HUD   &tog LMOD
                              &mo LSIDE  &kp LSHFT                                       &kp SPACE &mo RSIDE
                                                   &kp LCTRL  &kp BSPC    &kp RET    &mo RMOD
-                                                  &tog LMOD  &tog ACC    &kp RCTRL  &rgb_ug RGB_BRI
+                                                  &tog LMOD  &tog ACC    &kp RCTRL  &kp RALT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -241,17 +241,17 @@
 // | TOG  |     |      |      |GREEN |                                    |YELLOW|       |       |      |  TOG  |
 // | CM   |     |      |      |      |                                    |      |LiteBLU|       |      |       |
 //        |     |      |                                                                 |       |      |
-//                     | HUD  |  HUI |                                    |  BRI |  BRD  |
+//                     | HUD  |  HUI |                                    |  SPD |  SPI  |
 //                                   | EFR |  EFF  |          | SAD | SAI |
-//                                   | CM  |       |          | SPD | SPI |
+//                                   | CM  |       |          | BRD | BRI |
 			bindings = <
 	&none           &none &rgb_ug RGB_COLOR_HSB(0,100,100) &none  &rgb_ug RGB_COLOR_HSB(240,100,100)   &none                              &none                               &none  &rgb_ug RGB_COLOR_HSB(300,100,100)  &none
 	&rgb_ug RGB_TOG &none &none                            &none  &rgb_ug RGB_COLOR_HSB(120,100,100)   &rgb_ug RGB_COLOR_HSB(60,100,100)  &none                               &none  &none                               &rgb_ug RGB_TOG
 	&none           &none &none                            &none  &none                                &none                              &rgb_ug RGB_COLOR_HSB(180,100,100)  &none  &none                               &none
 	         &none &none                                                                                                                                                      &none  &none
-                         &rgb_ug RGB_HUD &rgb_ug RGB_HUI                                       &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
+                         &rgb_ug RGB_HUD &rgb_ug RGB_HUI                                       &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
                                      &rgb_ug RGB_EFR &rgb_ug RGB_EFF             &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
-                                     &to CM          &trans                      &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
+                                     &to CM          &trans                      &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
