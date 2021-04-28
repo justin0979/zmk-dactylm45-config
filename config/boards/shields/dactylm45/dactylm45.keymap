@@ -1,4 +1,4 @@
-/*
+/<*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -204,7 +204,7 @@
 	&bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                      &none &none &none                             &none &bt BT_SEL 0
 	&none        &none        &none        &none        &none                                      &none &none &none                             &none &none
 	&to CM       &none        &none        &bt BT_CLR   &none                                      &none &none &none                             &none &none 
-               &none        &none                                                                            &rgb_ug RGB_COLOR_HSB(240,100,20) &none
+               &none        &none                                                                            &rgb_ug RGB_COLOR_HSB(240,100,10) &none
                                           &none       &none                                      &none &none
                                                                 &none   &none     &none  &none
                                                                 &to CM  &none     &none  &none
@@ -226,7 +226,7 @@
 	&kp N1 &kp N2  &kp N3 &kp N4 &kp N5                                             &trans &trans &trans                            &trans &trans
 	&kp Q  &kp A   &kp W  &kp D  &kp E                                              &trans &trans &trans                            &trans &trans
   &to CM &trans  &kp S  &kp F  &trans                                             &trans &trans &trans                            &trans &trans
-	        &trans &trans                                                                         &rgb_ug RGB_COLOR_HSB(120,100,20) &trans
+	        &trans &trans                                                                         &rgb_ug RGB_COLOR_HSB(120,100,10) &trans
                         &kp ESC &kp LSHFT                                         &trans &trans 
                                           &kp LCTRL  &kp SPACE     &trans  &trans
                                           &to CM     &kp F5        &trans  &trans
@@ -245,9 +245,9 @@
 //                                   | EFR |  EFF  |          | SAD | SAI |
 //                                   | CM  |       |          | BRD | BRI |
 			bindings = <
-	&none           &none &rgb_ug RGB_COLOR_HSB(0,100,100) &none  &rgb_ug RGB_COLOR_HSB(240,100,100)   &none                              &none                               &none  &rgb_ug RGB_COLOR_HSB(300,100,100)  &none
-	&rgb_ug RGB_TOG &none &none                            &none  &rgb_ug RGB_COLOR_HSB(120,100,100)   &rgb_ug RGB_COLOR_HSB(60,100,100)  &none                               &none  &none                               &rgb_ug RGB_TOG
-	&none           &none &none                            &none  &none                                &none                              &rgb_ug RGB_COLOR_HSB(180,100,100)  &none  &none                               &none
+	&none           &none &rgb_ug RGB_COLOR_HSB(0,100,10) &none  &rgb_ug RGB_COLOR_HSB(240,100,10)   &none                              &none                               &none  &rgb_ug RGB_COLOR_HSB(300,100,10)  &none
+	&rgb_ug RGB_TOG &none &none                            &none  &rgb_ug RGB_COLOR_HSB(120,100,10)   &rgb_ug RGB_COLOR_HSB(60,100,10)  &none                               &none  &none                               &rgb_ug RGB_TOG
+	&none           &none &none                            &none  &none                                &none                              &rgb_ug RGB_COLOR_HSB(180,100,10)  &none  &none                               &none
 	         &none &none                                                                                                                                                      &none  &none
                          &rgb_ug RGB_HUD &rgb_ug RGB_HUI                                       &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
                                      &rgb_ug RGB_EFR &rgb_ug RGB_EFF             &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
@@ -270,7 +270,7 @@
 	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans                           &trans  &trans
 	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans                           &trans  &trans
 	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans                           &trans  &trans
-	        &trans &trans                                                                                   &rgb_ug RGB_COLOR_HSB(60,100,20) &trans
+	        &trans &trans                                                                                   &rgb_ug RGB_COLOR_HSB(60,100,10) &trans
                          &kp LCTRL &kp LSHFT                                              &trans  &trans
                                      &kp TAB   &kp SPACE                     &trans  &trans
                                      &to CM    &kp LC(LS(J))                 &trans  &trans
