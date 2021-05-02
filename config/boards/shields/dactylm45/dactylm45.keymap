@@ -118,7 +118,7 @@
 	&kp LS(SQT)  &kp GRAVE  &trans    &kp DEL     &kp LC(LS(V))                                       &kp PIPE &kp UNDER  &kp COMMA &kp DOT  &kp FSLH
 	             &trans     &trans                                                                                        &trans    &trans
                                   &kp LS(SQT)  &trans                                             &trans   &trans
-                                                        &trans    &kp BSPC     &trans  &trans 
+                                                        &trans    &kp SQT      &trans  &trans 
                                                         &kp HOME  &kp END      &trans  &trans
 			>;
 
