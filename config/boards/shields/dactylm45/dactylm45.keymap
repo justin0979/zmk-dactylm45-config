@@ -39,17 +39,17 @@
 
 		colemak-dh_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  Q  |  W  |  F  |  P  |  B  |                                            |  J  |  L   |  U   |  Y  |  ;  |
-// |  A  |  R  |  S  |  T  |  G  |                                            |  H  |  N   |  E   |  I  |  O  |
-// |  Z  |  X  |  C  |  D  |  V  |                                            |  K  |  M   |  ,   |  .  |  /  |
+// |  Q  |  W  |  F  |  P  |  G  |                                            |  J  |  L   |  U   |  Y  |  ;  |
+// |  A  |  R  |  S  |  T  |  D  |                                            |  H  |  N   |  E   |  I  |  O  |
+// |  Z  |  X  |  C  |  V  |  B  |                                            |  K  |  M   |  ,   |  .  |  /  |
 //       | MUTE| HUI |                                                                     | HUD  | LMOD|
 //                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
 //                                   | CTRL |  BSPC |       | RET  | RMOD |
 //                                   |  TAB |  ACC  |       | CTRL | ALT  |
 			bindings = <
-	&kp Q &kp W      &kp F     &kp P      &kp B                                           &kp J     &kp L    &kp U             &kp Y   &kp SEMI
-	&kp A &kp R      &kp S     &kp T      &kp G                                           &kp H     &kp N    &kp E             &kp I   &kp O   
-	&kp Z &kp X      &kp C     &kp D      &kp V                                           &kp K     &kp M    &kp COMMA         &kp DOT &kp FSLH 
+	&kp Q &kp W      &kp F     &kp P      &kp G                                           &kp J     &kp L    &kp U             &kp Y   &kp SEMI
+	&kp A &kp R      &kp S     &kp T      &kp D                                           &kp H     &kp N    &kp E             &kp I   &kp O   
+	&kp Z &kp X      &kp C     &kp V      &kp B                                           &kp K     &kp M    &kp COMMA         &kp DOT &kp FSLH 
         &kp C_MUTE &rgb_ug RGB_HUI                                                                         &rgb_ug RGB_HUD   &tog LMOD
                              &mo LSIDE  &kp LSHFT                                       &kp SPACE &mo RSIDE
                                                   &kp LCTRL  &kp BSPC    &kp RET    &mo RMOD
