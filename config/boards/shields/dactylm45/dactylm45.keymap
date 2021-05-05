@@ -37,7 +37,7 @@
 	keymap {
 		compatible = "zmk,keymap";
 
-		colemak-dh_layer {
+		colemak_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  Q  |  W  |  F  |  P  |  G  |                                            |  J  |  L   |  U   |  Y  |  ;  |
 // |  A  |  R  |  S  |  T  |  D  |                                            |  H  |  N   |  E   |  I  |  O  |
@@ -127,17 +127,17 @@
 
 		left_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |     | C(W)| C(F) |      | C(B) |                                          | CS(6) |       |       | CS(Y)|   )   |   
+// |     | C(W)| C(F) |      |      |                                          | CS(6) |       |       | CS(Y)|   )   |   
 // |     | C(R)|      |CA(T) |  ESC |                                          |       | CS(N) |   =   | CS(I)|   '   |  
-// |     |     | C(C) |      | C(V) |                                          |       |       |   <   |  >   |   "   | 
+// |     |     | C(C) | C(V) | C(B) |                                          |       |       |   <   |  >   |   "   | 
 //       |     |      |                                                                        |       |      |
 //                    |      |      |                                          |       |LS(SQT)|
 //                                  |     |       |                |      |    |
 //                                  |     |       |                |      |    |
 			bindings = <
-	&trans &kp LC(W) &kp LC(F) &kp LC(W)     &kp LC(B)                                       &kp LC(LS(N6)) &trans         &trans         &kp LC(LS(Y)) &kp RPAR      
+	&trans &kp LC(W) &kp LC(F) &kp LC(W)     &trans                                          &kp LC(LS(N6)) &trans         &trans         &kp LC(LS(Y)) &kp RPAR      
 	&trans &kp LC(R) &trans    &kp LC(LA(T)) &kp ESC                                         &trans         &kp LC(LS(N))  &kp EQUAL      &kp LC(LS(I)) &kp SQT
-  &trans &trans    &kp LC(C) &trans        &kp LC(V)                                       &trans         &trans         &kp LS(COMMA)  &kp LS(DOT)   &kp LS(SQT)       
+  &trans &trans    &kp LC(C) &kp LC(V)     &kp LC(B)                                       &trans         &trans         &kp LS(COMMA)  &kp LS(DOT)   &kp LS(SQT)       
          &trans    &trans                                                                                                &trans         &trans
                              &trans        &trans                                          &trans         &kp LS(SQT)
                                                   &trans &trans       &trans   &trans 
