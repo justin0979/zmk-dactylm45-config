@@ -24,7 +24,7 @@
 #define GIMP    10 // Line 262
 #define ACC     11 // Line 284 add all tog_layers access here
 
-// combos Line 307
+// combos Line 39
 
 / {
 // ----------------------------------------------------------------------------------------------------------------------------------
@@ -44,11 +44,11 @@
       bindings = <&kp SQT>;
     };
 
-    combos_shift_sqt {
-      timeout-ms = <50>;
-      kep-positions = <20 37>;
-      bindings = <&kp LS(SQT)>;
-    };
+//    combos_shift_sqt {
+//      timeout-ms = <50>;
+//      kep-positions = <20 37>;
+//      bindings = <&kp LS(SQT)>;
+//    };
   };
 
 
