@@ -153,7 +153,7 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  !  |  @  |  #   |  $   |  %   |                                          |  ^   |   &   |  *    |  (   |   )   |      
 // | SQT |  ~  | ALT  | TAB  | ESC  |                                          |LARROW| DOWN  |  UP   |RARROW| KP_N5 |       
-// |HOME |  `  |      |      |      |                                          |LARROW| DOWN  |  UP   |RARROW|  END  |      
+// |HOME |  `  |      |      |      |                                          |LARROW| DOWN  |   +   |RARROW|  END  |      
 //       |     |      |                                                                       |       |       |
 //                    | HOME | END  |                                          |      |       |
 //                                  |       |      |               |     |     |
@@ -161,7 +161,7 @@
 			bindings = <
 	&kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PRCNT                                      &kp CARET      &kp AMPS   &kp STAR  &kp LPAR        &kp RPAR  
 	&kp SQT   &kp TILDE &sk LALT &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp DOWN   &kp UP    &kp RIGHT_ARROW &kp KP_N5
-  &kp HOME  &kp GRAVE &trans   &trans   &trans                                         &kp LEFT_ARROW &kp DOWN   &kp UP    &kp RIGHT_ARROW &kp END
+  &kp HOME  &kp GRAVE &trans   &trans   &trans                                         &kp LEFT_ARROW &kp DOWN   &kp PLUS  &kp RIGHT_ARROW &kp END
 	          &trans    &trans                                                                                    &trans    &trans
                                &kp HOME  &kp END                                       &trans         &trans
                                                &trans  &trans         &trans  &trans 
