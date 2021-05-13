@@ -308,13 +308,13 @@
     compatible = "zmk,combos";
     combos_sqt {
       timeout-ms = <50>;
-      key-positions = <37 10>;
+      key-positions = <10 37>;
       bindings = <&kp SQT>;
     };
 
     combos_shift_sqt {
       timeout-ms = <50>;
-      kep-positions = <37 20>;
+      kep-positions = <20 37>;
       bindings = <&kp LS(SQT)>;
     };
   };
