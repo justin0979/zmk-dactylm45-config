@@ -24,7 +24,7 @@
 #define GIMP    10 // Line 262
 #define ACC     11 // Line 284 add all tog_layers access here
 
-// combos Line 39
+// combos Line 307
 
 / {
 // ----------------------------------------------------------------------------------------------------------------------------------
@@ -35,22 +35,6 @@
 //                      |  34  |  35  |                                     |  36  |  37  |                      numbers may be off due
 //                                    |  38  |  39  |         |  40  |  41  |                                    to how the wiring is 
 //                                    |  42  |  43  |         |  44  |  45  |                                    done.
-
-  combos {
-    compatible = "zmk,combos";
-    combos_sqt {
-      timeout-ms = <50>;
-      key-positions = <10 37>;
-      bindings = <&kp SQT>;
-    };
-
-//    combos_shift_sqt {
-//      timeout-ms = <50>;
-//      kep-positions = <20 37>;
-//      bindings = <&kp LS(SQT)>;
-//    };
-  };
-
 
 	keymap {
 		compatible = "zmk,keymap";
@@ -319,4 +303,20 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 	};
+
+  combos {
+    compatible = "zmk,combos";
+    combos_sqt {
+      timeout-ms = <50>;
+      key-positions = <10 37>;
+      bindings = <&kp SQT>;
+    };
+
+    combos_shift_sqt {
+      timeout-ms = <50>;
+      key-positions = <20 37>;
+      bindings = <&kp LS(SQT)>;
+    };
+  };
+
 };
