@@ -181,7 +181,7 @@
 //                                   |      |      |                |      |    |
 //                                   |      |      |                |      |    |
 			bindings = <
-	&kp F1  &kp F2  &kp F3 &kp F4 &kp F5                                     &kp PG_UP &kp KP_DN  &kp KP_N8                         &kp KP_N9 &kp KP_PLUS 
+	&kp F1  &kp F2  &kp F3 &kp F4 &kp F5                                     &kp PG_UP &kp PG_DN  &kp KP_N8                         &kp KP_N9 &kp KP_PLUS 
 	&kp F6  &kp F7  &kp F8 &kp F9 &kp F10                                    &kp KP_N4 &kp KP_N2  &kp KP_N8                         &kp KP_N6 &kp KP_5
 	&kp F11 &kp F12 &trans &trans &trans                                     &trans    &kp KP_N1  &kp KP_N2                         &kp KP_N3 &trans       
           &trans  &trans                                                                        &rgb_ug RGB_COLOR_HSB(200,100,10) &trans
