@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-#define CM      0  // Line 42
+#define DEF      0  // Line 42
 #define WM      1  // Line 64
 #define QWER    2  // Line 86
 #define RSIDE   3  // Line 108
@@ -99,7 +99,7 @@
 	      &trans  &trans                                                                    &rgb_ug RGB_COLOR_HSB(30,100,10) &trans
                        &trans &trans                                        &trans &trans
                                      &trans  &trans          &trans  &trans
-                                     &to CM  &trans          &trans  &trans
+                                     &to DEF  &trans          &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -187,7 +187,7 @@
           &trans  &trans                                                                        &rgb_ug RGB_COLOR_HSB(200,100,10) &trans
                          &kp PG_DN &kp PG_UP                                     &kp KP_N0 &kp KP_DOT
                                        &trans  &trans      &trans   &trans
-                                       &to CM  &trans      &trans   &trans
+                                       &to DEF  &trans      &trans   &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp PG_UP PG_DN>;
@@ -205,11 +205,11 @@
 			bindings = <
 	&bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                      &none &none &none                             &none &bt BT_SEL 0
 	&none        &none        &none        &none        &none                                      &none &none &none                             &none &none
-	&to CM       &none        &none        &bt BT_CLR   &none                                      &none &none &none                             &none &none 
+	&to DEF       &none        &none        &bt BT_CLR   &none                                      &none &none &none                             &none &none 
                &none        &none                                                                            &rgb_ug RGB_COLOR_HSB(240,100,10) &none
                                           &none       &none                                      &none &none
                                                                 &none   &none     &none  &none
-                                                                &to CM  &none     &none  &none
+                                                                &to DEF  &none     &none  &none
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -219,19 +219,19 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  1  |  2  |  3   |  4   |  5   |                                          |      |       |       |      |       |
 // |  Q  |  A  |  W   |  D   |  E   |                                          |      |       |       |      |       |
-// | CM  |     |  S   |  F   |      |                                          |      |       |       |      |       |
+// | DEF  |     |  S   |  F   |      |                                          |      |       |       |      |       |
 //       |     |      |                                                                       | GREEN |      |
 //                    |  ESC | LSHFT|                                          |      |       |
 //                                  |SHFT| SPACE |               |       |    |
-//                                  | CM |   F5  |               |       |    |
+//                                  | DEF |   F5  |               |       |    |
 			bindings = <
 	&kp N1 &kp N2  &kp N3 &kp N4 &kp N5                                             &trans &trans &trans                            &trans &trans
 	&kp Q  &kp A   &kp W  &kp D  &kp E                                              &trans &trans &trans                            &trans &trans
-  &to CM &trans  &kp S  &kp F  &trans                                             &trans &trans &trans                            &trans &trans
+  &to DEF &trans  &kp S  &kp F  &trans                                             &trans &trans &trans                            &trans &trans
 	        &trans &trans                                                                         &rgb_ug RGB_COLOR_HSB(120,100,10) &trans
                         &kp ESC &kp LSHFT                                         &trans &trans 
                                           &kp LCTRL  &kp SPACE     &trans  &trans
-                                          &to CM     &kp F5        &trans  &trans
+                                          &to DEF     &kp F5        &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -241,11 +241,11 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |      |     | RED  |      | BLUE |                                    |      |       |       |PURPLE|       |
 // | TOG  |     |      |      |GREEN |                                    |YELLOW|       |       |      |  TOG  |
-// | CM   |     |      |      |      |                                    |      |LiteBLU|       |      |       |
+// | DEF   |     |      |      |      |                                    |      |LiteBLU|       |      |       |
 //        |     |      |                                                                 |       |      |
 //                     | HUD  |  HUI |                                    |  SPD |  SPI  |
 //                                   | EFR |  EFF  |          | SAD | SAI |
-//                                   | CM  |       |          | BRD | BRI |
+//                                   | DEF  |       |          | BRD | BRI |
 			bindings = <
 	&none           &none &rgb_ug RGB_COLOR_HSB(0,100,10) &none  &rgb_ug RGB_COLOR_HSB(240,100,10)   &none                              &none                               &none  &rgb_ug RGB_COLOR_HSB(300,100,10)  &none
 	&rgb_ug RGB_TOG &none &none                            &none  &rgb_ug RGB_COLOR_HSB(120,100,10)  &rgb_ug RGB_COLOR_HSB(60,100,10)   &none                               &none  &none                              &rgb_ug RGB_TOG
@@ -253,7 +253,7 @@
 	         &none &none                                                                                                                                                      &none  &none
                          &rgb_ug RGB_HUD &rgb_ug RGB_HUI                                       &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
                                      &rgb_ug RGB_EFR &rgb_ug RGB_EFF             &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
-                                     &to CM          &trans                      &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
+                                     &to DEF          &trans                      &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -267,7 +267,7 @@
 //        |     |      |                                                                 |YELLOW |      |
 //                     | LCTRL | LSHFT |                                  |      |       |
 //                                   |  TAB  | SPACE |          |     |     |
-//                                   |   CM  | CS(J) |          |     |     |
+//                                   |   DEF  | CS(J) |          |     |     |
 			bindings = <
 	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans                           &trans  &trans
 	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans                           &trans  &trans
@@ -275,7 +275,7 @@
 	        &trans &trans                                                                                   &rgb_ug RGB_COLOR_HSB(60,100,10) &trans
                          &kp LCTRL &kp LSHFT                                              &trans  &trans
                                      &kp TAB   &kp SPACE                     &trans  &trans
-                                     &to CM    &kp LC(LS(J))                 &trans  &trans
+                                     &to DEF    &kp LC(LS(J))                 &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -285,7 +285,7 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | QWER | WM  | RGB  |      | GIMP |                                     |      |       |       |      |       |
 // |      | RGB |      |      |      |                                     |      |       |       |      |       |
-// |      |     |  CM  |      | BT   |                                     |      |  MCR  |       |      |       |
+// |      |     |  DEF  |      | BT   |                                     |      |  MCR  |       |      |       |
 //        |     |      |                                                                  |       |  PWR |
 //                     |      |      |                                     |      |       |
 //                                   |      |       |          |     |     |
@@ -293,7 +293,7 @@
 			bindings = <
 	&to QWER &to WM   &to RGB &none &to GIMP                                                  &none   &none    &none  &none  &none
 	&none    &to RGB  &none   &none &none                                                     &none   &none    &none  &none  &none
-	&none    &none    &to CM  &none &to BT                                                    &none   &to MCR  &none  &none  &none
+	&none    &none    &to DEF  &none &to BT                                                    &none   &to MCR  &none  &none  &none
 	         &none &none                                                                                 &none  &ext_power EP_TOG
                          &none &none                                                     &none  &none
                                      &ext_power EP_ON &ext_power EP_OFF     &none  &none
