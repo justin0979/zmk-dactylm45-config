@@ -17,7 +17,7 @@
 #define RSIDE   3  // Line 108
 #define LSIDE   4  // Line 130
 #define RMOD    5  // Line 152
-#define LMOD    6  // Line 174
+#define FNUM    6  // Line 174
 #define BT      7  // Line 196
 #define MCR     8  // Line 218
 #define RGB     9  // Line 239
@@ -44,7 +44,7 @@
 // |  Q  |  W  |  F  |  P  |  G  |                                            |  J  |  L   |  U   |  Y  |  ;  |
 // |  A  |  R  |  S  |  T  |  D  |                                            |  H  |  N   |  E   |  I  |  O  |
 // |  Z  |  X  |  C  |  V  |  B  |                                            |  K  |  M   |  ,   |  .  |  /  |
-//       | MUTE| HUI |                                                                     | HUD  | LMOD|
+//       | MUTE| HUI |                                                                     | HUD  | FNUM|
 //                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
 //                                   | CTRL |  BSPC |       | RET  | RMOD |
 //                                   |  TAB |  ACC  |       | CTRL | ALT  |
@@ -52,7 +52,7 @@
 	&kp Q &kp W      &kp F     &kp P      &kp G                                           &kp J     &kp L    &kp U             &kp Y   &kp SEMI
 	&kp A &kp R      &kp S     &kp T      &kp D                                           &kp H     &kp N    &kp E             &kp I   &kp O   
 	&kp Z &kp X      &kp C     &kp V      &kp B                                           &kp K     &kp M    &kp COMMA         &kp DOT &kp FSLH 
-        &kp C_MUTE &rgb_ug RGB_HUI                                                                         &rgb_ug RGB_HUD   &tog LMOD
+        &kp C_MUTE &rgb_ug RGB_HUI                                                                         &rgb_ug RGB_HUD   &tog FNUM
                              &mo LSIDE  &kp LSHFT                                       &kp SPACE &mo RSIDE
                                                   &kp LCTRL  &kp BSPC    &kp RET    &mo RMOD
                                                   &kp TAB    &tog ACC    &kp RCTRL  &kp RALT
@@ -66,10 +66,10 @@
 // |  Q  |  D  |  R  |  W  |  B  |                                            |  J  |  F   |  U   |  P  |  ;  |
 // |  A  |  S  |  H  |  T  |  G  |                                            |  Y  |  N   |  E   |  O  |  I  |
 // |  Z  |  X  |  M  |  C  |  V  |                                            |  K  |  L   |  ,   |  .  |  /  |
-//       | MUTE| HUI |                                                                     | HUD  | LMOD|
+//       | MUTE| HUI |                                                                     | HUD  | FNUM|
 //                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
 //                                   | CTRL |  BSPC |       | RET  | RMOD |
-//                                   | LMOD |  ACC  |       | CTRL | BRI  |
+//                                   | FNUM |  ACC  |       | CTRL | BRI  |
 			bindings = <
 	&kp Q &kp D      &kp R     &kp W      &kp B                                                &kp J     &kp F           &kp U           &kp P   &kp SEMI
 	&kp A &kp S      &kp H     &kp T      &kp G                                                &kp Y     &kp N           &kp E           &kp O   &kp I   
