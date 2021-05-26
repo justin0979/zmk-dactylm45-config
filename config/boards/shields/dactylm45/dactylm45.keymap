@@ -111,15 +111,15 @@
 // | SQT |  ~  | ALT  |   TAB  | ESC  |                                          |  \   |  -    |  =    |  [   |   ]   |      
 // |  "  |  `  |      |   DEL  | CA(V)|                                          | '|'  |  _    |  ,    |  .   |   /   |      
 //       |     |      |                                                                         |       |      |
-//                    | LS(SQT)|      |                                          |      |       |
+//                    |   ACC  |      |                                          |      |       |
 //                                  |     |     |                  |     |     |
 //                                  |     |     |                  |     |     |
 			bindings = <
-	&kp N1       &kp N2     &kp N3    &kp N4      &kp N5                                              &kp N6   &kp N7     &kp N8    &kp N9   &kp N0  
-	&kp SQT      &kp TILDE  &kp RALT  &kp TAB     &kp ESC                                             &kp BSLH &kp MINUS  &kp EQUAL &kp LBKT &kp RBKT
-	&kp LS(SQT)  &kp GRAVE  &trans    &kp DEL     &kp LC(LS(V))                                       &kp PIPE &kp UNDER  &kp COMMA &kp DOT  &kp FSLH
-	             &trans     &trans                                                                                        &trans    &trans
-                                  &kp LS(SQT)  &trans                                             &trans   &trans
+	&kp N1       &kp N2     &kp N3    &kp N4   &kp N5                                    &kp N6   &kp N7     &kp N8    &kp N9   &kp N0  
+	&kp SQT      &kp TILDE  &kp RALT  &kp TAB  &kp ESC                                   &kp BSLH &kp MINUS  &kp EQUAL &kp LBKT &kp RBKT
+	&kp LS(SQT)  &kp GRAVE  &trans    &kp DEL  &kp LC(LS(V))                             &kp PIPE &kp UNDER  &kp COMMA &kp DOT  &kp FSLH
+	             &trans     &trans                                                                           &trans    &trans
+                                    &mo ACC  &trans                                  &trans   &trans
                                                         &trans    &trans       &trans  &trans 
                                                         &kp HOME  &kp END      &trans  &trans
 			>;
@@ -141,7 +141,7 @@
 	&trans &kp LC(R) &trans    &kp LC(LA(T)) &kp ESC                                         &trans         &kp LC(LS(N))  &kp EQUAL   &kp LC(LS(I))     &kp SQT
   &trans &trans    &kp LC(C) &kp LC(V)     &kp LC(B)                                       &kp LEFT_ARROW &kp DOWN       &kp UP      &kp RIGHT_ARROW   &kp LS(SQT)       
          &trans    &trans                                                                                                &trans      &trans
-                             &trans        &trans                                          &kp RGUI         &trans
+                             &trans        &trans                                          &kp RGUI         &mo ACC
                                                   &trans &trans       &kp HOME   &kp END 
                                                   &trans &trans       &trans   &trans
 			>;
@@ -241,7 +241,7 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |      |     | RED  |      | BLUE |                                    |      |       |       |PURPLE|       |
 // | TOG  |     |      |      |GREEN |                                    |YELLOW|       |       |      |  TOG  |
-// | DEF   |     |      |      |      |                                    |      |LiteBLU|       |      |       |
+// | DEF  |     |      |      |      |                                    |      |LiteBLU|       |      |       |
 //        |     |      |                                                                 |       |      |
 //                     | HUD  |  HUI |                                    |  SPD |  SPI  |
 //                                   | EFR |  EFF  |          | SAD | SAI |
@@ -285,19 +285,19 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | QWER | WM  | RGB  |      | GIMP |                                     |      |       |       |      |       |
 // |      | RGB |      |      |      |                                     |      |       |       |      |       |
-// |      |     |  DEF  |      | BT   |                                     |      |  MCR  |       |      |       |
+// |      |     | DEF  |      | BT   |                                     |      |  MCR  |       |      |       |
 //        |     |      |                                                                  |       |  PWR |
 //                     |      |      |                                     |      |       |
 //                                   |      |       |          |     |     |
 //                                   |      |       |          |     |     |
 			bindings = <
-	&to QWER &to WM   &to RGB &none &to GIMP                                                  &none   &none    &none  &none  &none
-	&none    &to RGB  &none   &none &none                                                     &none   &none    &none  &none  &none
-	&none    &none    &to DEF  &none &to BT                                                    &none   &to MCR  &none  &none  &none
-	         &none &none                                                                                 &none  &ext_power EP_TOG
-                         &none &none                                                     &none  &none
-                                     &ext_power EP_ON &ext_power EP_OFF     &none  &none
-                                     &trans           &trans                &none  &none
+	&to QWER &to WM   &to RGB &none &to GIMP                                   &none   &none    &none  &none  &none
+	&none    &to RGB  &none   &none &none                                      &none   &none    &none  &none  &none
+	&none    &none    &to DEF  &none &to BT                                    &none   &to MCR  &none  &none  &none
+	         &none    &none                                                            &none    &ext_power EP_TOG
+                         &none &none                                   &none  &none
+                                     &none   &none              &none  &none
+                                     &none  &none             &none  &none
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
