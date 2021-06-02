@@ -150,17 +150,17 @@
 
 		right_mod_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  !  |  @  |  #   |  $   |  %   |                                          |  ^   |   &   |  *    |  (   |   )   |      
+// |  !  |  @  |  #   |  $   |  %   |                                          |  ^   |   &   |  *    |  (   |  BTC  |      
 // | SQT |  ~  | ALT  | TAB  | ESC  |                                          |LARROW| DOWN  |  UP   |RARROW| KP_N5 |       
-// |HOME |LGUI |      |      |      |                                          |  BT1 |  BT2  |  BT3  |  BT4 |  BTC  |      
+// |HOME |LGUI |      |      |      |                                          |  BT0 |  BT1  |  BT2  |  BT3 |  BT4  |      
 //       |     |      |                                                                       |       |       |
 //                    | HOME | END  |                                          |      |       |
 //                                  |       |      |               |     |     |
 //                                  |       |      |               |     |     |
 			bindings = <
-	&kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PRCNT                                      &kp CARET      &kp AMPS   &kp STAR  &kp LPAR        &kp RPAR  
+	&kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PRCNT                                      &kp CARET      &kp AMPS   &kp STAR  &kp LPAR        &bt BT_CLR  
 	&kp SQT   &kp TILDE &sk LALT &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp DOWN   &kp UP    &kp RIGHT_ARROW &kp KP_N5
-  &kp HOME  &kp LGUI  &trans   &trans   &trans                                         &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4 &bt BT_CLR
+  &kp HOME  &kp LGUI  &trans   &trans   &trans                                         &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4
 	          &trans    &trans                                                                                     &trans    &trans
                                &kp HOME  &kp END                                       &trans         &trans
                                                &trans  &trans         &trans  &trans 
