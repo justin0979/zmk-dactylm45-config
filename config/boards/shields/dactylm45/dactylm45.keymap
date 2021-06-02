@@ -20,7 +20,7 @@
 #define FNUM    6  // Line 172
 #define MCR     7  // Line 194
 #define GIMP    8  // Line 216
-#define ACC     9  // Line 237 add all tog_layers access here
+#define ACC     9  // Line 238 add all tog_layers access here
 
 // combos Line 261
 
@@ -152,7 +152,7 @@
 // |  !  |  @  |  #   |  $   |  %   |                                          |  ^   |   &   |  *    |  (   |  BTC  |      
 // | SQT |  ~  | ALT  | TAB  | ESC  |                                          |LARROW| DOWN  |  UP   |RARROW| KP_N5 |       
 // |HOME |LGUI |      |      |      |                                          |  BT0 |  BT1  |  BT2  |  BT3 |  BT4  |      
-//       |     |      |                                                                       |       |       |
+//       |     |      |                                                                       |       |  PWR |
 //                    |  BRD | BRI  |                                          |      |       |
 //                                  |  SAD  | SAI  |               |     |     |
 //                                  |  EFR  | EFF  |               |     |     |
@@ -160,7 +160,7 @@
 	&kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PRCNT                                      &kp CARET      &kp AMPS   &kp STAR  &kp LPAR        &bt BT_CLR  
 	&kp SQT   &kp TILDE &sk LALT &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp DOWN   &kp UP    &kp RIGHT_ARROW &kp KP_N5
   &kp HOME  &kp LGUI  &trans   &trans   &trans                                         &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4
-	          &trans    &trans                                                                                     &trans    &trans
+	          &trans    &trans                                                                                     &trans    &ext_power EP_TOG
                          &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                   &trans         &trans
                                    &rgb_ug RGB_SAD  &rgb_ug RGB_SAI    &trans  &trans 
                                    &rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &trans  &trans
@@ -237,20 +237,20 @@
 
 		access_tog_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// | QWER | WM  | RGB  |      | GIMP |                                     |      |       |       |      |       |
-// |      | RGB |      |      |      |                                     |      |       |       |      |       |
-// |      |     | DEF  |      | BT   |                                     |      |  MCR  |       |      |       |
+// | QWER | WM  |      |      | GIMP |                                     |      |       |       |      |       |
+// |      |     |      |      |      |                                     |      |       |       |      |       |
+// |      |     |      |      |      |                                     |      |  MCR  |       |      |       |
 //        |     |      |                                                                  |       |  PWR |
 //                     |      |      |                                     |      |       |
 //                                   |      |       |          |     |     |
 //                                   |      |       |          |     |     |
 			bindings = <
-	&to QWER &to WM   &to RGB &none &to GIMP                                   &none   &none    &none  &none  &none
-	&none    &to RGB  &none   &none &none                                      &none   &none    &none  &none  &none
-	&none    &none    &to DEF &none &none                                      &none   &to MCR  &none  &none  &none
+	&to QWER &to WM   &none   &none &to GIMP                                   &none   &none    &none  &none  &none
+	&none    &none    &none   &none &none                                      &none   &none    &none  &none  &none
+	&none    &none    &none   &none &none                                      &none   &to MCR  &none  &none  &none
 	         &none    &none                                                            &none    &ext_power EP_TOG
                          &none &none                                   &none  &none
-                                     &none   &none              &none  &none
+                                     &none  &none             &none  &none
                                      &none  &none             &none  &none
 			>;
 
