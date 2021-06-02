@@ -11,19 +11,18 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-#define DEF     0  // Line 42
-#define WM      1  // Line 64
-#define QWER    2  // Line 86
-#define RSIDE   3  // Line 108
-#define LSIDE   4  // Line 130
-#define RMOD    5  // Line 152
-#define FNUM    6  // Line 174
-#define MCR     7  // Line 196
-#define RGB     8  // Line 218
-#define GIMP    9  // Line 239
-#define ACC     10 // Line 262 add all tog_layers access here
+#define DEF     0  // Line 40
+#define WM      1  // Line 62
+#define QWER    2  // Line 84
+#define RSIDE   3  // Line 106
+#define LSIDE   4  // Line 128
+#define RMOD    5  // Line 150
+#define FNUM    6  // Line 172
+#define MCR     7  // Line 194
+#define GIMP    8  // Line 216
+#define ACC     9  // Line 237 add all tog_layers access here
 
-// combos Line 307
+// combos Line 261
 
 / {
 // ----------------------------------------------------------------------------------------------------------------------------------
@@ -154,17 +153,17 @@
 // | SQT |  ~  | ALT  | TAB  | ESC  |                                          |LARROW| DOWN  |  UP   |RARROW| KP_N5 |       
 // |HOME |LGUI |      |      |      |                                          |  BT0 |  BT1  |  BT2  |  BT3 |  BT4  |      
 //       |     |      |                                                                       |       |       |
-//                    | HOME | END  |                                          |      |       |
-//                                  |       |      |               |     |     |
-//                                  |       |      |               |     |     |
+//                    |  BRD | BRI  |                                          |      |       |
+//                                  |  SAD  | SAI  |               |     |     |
+//                                  |  EFR  | EFF  |               |     |     |
 			bindings = <
 	&kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PRCNT                                      &kp CARET      &kp AMPS   &kp STAR  &kp LPAR        &bt BT_CLR  
 	&kp SQT   &kp TILDE &sk LALT &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp DOWN   &kp UP    &kp RIGHT_ARROW &kp KP_N5
   &kp HOME  &kp LGUI  &trans   &trans   &trans                                         &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4
 	          &trans    &trans                                                                                     &trans    &trans
-                               &kp HOME  &kp END                                       &trans         &trans
-                                               &trans  &trans         &trans  &trans 
-                                               &trans  &trans         &trans  &trans
+                         &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                   &trans         &trans
+                                   &rgb_ug RGB_SAD  &rgb_ug RGB_SAI    &trans  &trans 
+                                   &rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp PG_UP PG_DN>;
@@ -209,28 +208,6 @@
                         &kp ESC &kp LSHFT                                         &trans &trans 
                                           &kp LCTRL  &kp SPACE     &trans  &trans
                                           &to DEF    &kp F5        &trans  &trans
-			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-		};
-
-		rgb_tog_layer {
-// ---------------------------------------------------------------------------------------------------------------------------------
-// |      |     | RED  |      |GREEN |                                    |      |       |       |PURPLE|       |
-// | TOG  |     |      |      |      |                                    |YELLOW|       |       |      |  TOG  |
-// | DEF  |     |      |      | BLUE |                                    |      |LiteBLU|       |      |       |
-//        |     |      |                                                                 |       |      |
-//                     | HUD  |  HUI |                                    |  SPD |  SPI  |
-//                                   | EFR |  EFF  |          | SAD | SAI |
-//                                   | DEF |       |          | BRD | BRI |
-			bindings = <
-	&none           &none &rgb_ug RGB_COLOR_HSB(0,100,100) &none  &rgb_ug RGB_COLOR_HSB(120,100,100)               &none                              &none                               &none  &rgb_ug RGB_COLOR_HSB(300,100,10)  &none
-	&rgb_ug RGB_TOG &none &none                            &none  &none                                            &rgb_ug RGB_COLOR_HSB(60,100,10)   &none                               &none  &none                              &rgb_ug RGB_TOG
-	&none           &none &none                            &none  &rgb_ug RGB_COLOR_HSB(240,100,100)               &none                              &rgb_ug RGB_COLOR_HSB(180,100,10)   &none  &none                              &none
-	         &none &none                                                                                                                                                      &none  &none
-                         &rgb_ug RGB_HUD &rgb_ug RGB_HUI                                       &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
-                                     &rgb_ug RGB_EFR &rgb_ug RGB_EFF             &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
-                                     &to DEF          &trans                      &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
