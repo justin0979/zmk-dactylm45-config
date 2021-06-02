@@ -126,7 +126,7 @@
 
 		left_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |     | C(W)| C(F) |      |      |                                          | CS(6) | CS(-) | CS(+) | CS(Y)|   )   |   
+// |     | C(W)| C(F) |      |      |                                          | CS(6) | C(-)  | C(+)  | CS(Y)|   )   |   
 // |     | C(R)|      |CA(T) |  ESC |                                          |       | CS(N) |   =   | CS(I)|   '   |  
 // |     |     | C(C) | C(V) | C(B) |                                          |LARROW | DOWN  |  UP   |RARROW|   "   | 
 //       |     |      |                                                                        |       |    |
@@ -134,10 +134,10 @@
 //                                  |     |       |                | HOME |END |
 //                                  |     |       |                |      |    |
 			bindings = <
-	&trans &kp LC(W) &kp LC(F) &kp LC(W)     &trans                                      &kp LC(LS(N6)) &kp LC(LS(MINUS)) &kp LC(LS(PLUS)) &kp LC(LS(Y))     &kp RPAR      
-	&trans &kp LC(R) &trans    &kp LC(LA(T)) &kp ESC                                     &trans         &kp LC(LS(N))     &kp EQUAL        &kp LC(LS(I))     &kp SQT
-  &trans &trans    &kp LC(C) &kp LC(V)     &kp LC(B)                                   &kp LEFT_ARROW &kp DOWN          &kp UP           &kp RIGHT_ARROW   &kp LS(SQT)       
-         &trans    &trans                                                                                               &trans           &trans
+	&trans &kp LC(W) &kp LC(F) &kp LC(W)     &trans                                      &kp LC(LS(N6)) &kp LC(MINUS) &kp LC(PLUS) &kp LC(LS(Y))     &kp RPAR      
+	&trans &kp LC(R) &trans    &kp LC(LA(T)) &kp ESC                                     &trans         &kp LC(LS(N)) &kp EQUAL    &kp LC(LS(I))     &kp SQT
+  &trans &trans    &kp LC(C) &kp LC(V)     &kp LC(B)                                   &kp LEFT_ARROW &kp DOWN      &kp UP       &kp RIGHT_ARROW   &kp LS(SQT)       
+         &trans    &trans                                                                                           &trans       &trans
                              &trans        &trans                                      &kp RGUI         &mo RMOD
                                                   &trans &trans       &kp HOME &kp END 
                                                   &trans &trans       &trans   &trans
