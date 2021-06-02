@@ -153,7 +153,7 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  !  |  @  |  #   |  $   |  %   |                                          |  ^   |   &   |  *    |  (   |   )   |      
 // | SQT |  ~  | ALT  | TAB  | ESC  |                                          |LARROW| DOWN  |  UP   |RARROW| KP_N5 |       
-// |HOME |LGUI |      |      |      |                                          |LARROW| DOWN  |   +   |RARROW|  END  |      
+// |HOME |LGUI |      |      |      |                                          |  BT1 |  BT2  |  BT3  |  BT4 |  BTC  |      
 //       |     |      |                                                                       |       |       |
 //                    | HOME | END  |                                          |      |       |
 //                                  |       |      |               |     |     |
@@ -161,7 +161,7 @@
 			bindings = <
 	&kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PRCNT                                      &kp CARET      &kp AMPS   &kp STAR  &kp LPAR        &kp RPAR  
 	&kp SQT   &kp TILDE &sk LALT &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp DOWN   &kp UP    &kp RIGHT_ARROW &kp KP_N5
-  &kp HOME  &kp LGUI  &trans   &trans   &trans                                         &kp LEFT_ARROW &kp DOWN   &kp PLUS  &kp RIGHT_ARROW &kp END
+  &kp HOME  &kp LGUI  &trans   &trans   &trans                                         &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4 &bt BT_CLR
 	          &trans    &trans                                                                                     &trans    &trans
                                &kp HOME  &kp END                                       &trans         &trans
                                                &trans  &trans         &trans  &trans 
