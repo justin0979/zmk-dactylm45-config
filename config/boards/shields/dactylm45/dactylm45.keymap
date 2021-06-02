@@ -270,7 +270,7 @@
 			bindings = <
 	&to QWER &to WM   &to RGB &none &to GIMP                                   &none   &none    &none  &none  &none
 	&none    &to RGB  &none   &none &none                                      &none   &none    &none  &none  &none
-	&none    &none    &to DEF  &none &to BT                                    &none   &to MCR  &none  &none  &none
+	&none    &none    &to DEF &none &none                                      &none   &to MCR  &none  &none  &none
 	         &none    &none                                                            &none    &ext_power EP_TOG
                          &none &none                                   &none  &none
                                      &none   &none              &none  &none
