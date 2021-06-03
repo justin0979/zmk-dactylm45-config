@@ -18,7 +18,7 @@
 #define LSIDE   4  // Line 128
 #define RMOD    5  // Line 150 access QWER, MCR, GIMP, WM here
 #define FNUM    6  // Line 172
-#define MCR     7  // Line 194 Minecraft keys
+#define MCR     7  // Line 194
 #define GIMP    8  // Line 216
 #define TW      9  // Rome: Total war keys layer
 
@@ -150,20 +150,20 @@
 		right_mod_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | QWER| WM  |  #   |  $   | GIMP |                                          |  ^   |   &   |  *    |  (   |  BTC  |      
-// | MCR | TW  | ALT  | TAB  | ESC  |                                          |LARROW| DOWN  |  UP   |RARROW| KP_N5 |       
+// | MCR |  ~  | ALT  | TAB  | ESC  |                                          |LARROW| DOWN  |  UP   |RARROW| KP_N5 |       
 // |HOME |LGUI |      |      |      |                                          |  BT0 |  BT1  |  BT2  |  BT3 |  BT4  |      
 //       |     |      |                                                                       |       |  PWR |
 //                    |      |      |                                          |      |       |
 //                                  |  SAD  | SAI  |               |     |     |
 //                                  |  EFR  | EFF  |               |     |     |
 			bindings = <
-	&to QWER  &to WM   &kp HASH &kp DLLR &to GIMP                                       &kp CARET      &kp AMPS   &kp STAR  &kp LPAR        &bt BT_CLR  
-	&to MCR   &to TW   &sk LALT &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp DOWN   &kp UP    &kp RIGHT_ARROW &kp KP_N5
-  &kp HOME  &kp LGU  &trans   &trans   &trans                                         &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4
-	          &trans   &trans                                                                                     &trans    &ext_power EP_TOG
-                                      &trans   &trans                                  &trans   &trans
-                                        &rgb_ug RGB_SAD  &rgb_ug RGB_SAI    &trans  &trans 
-                                        &rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &trans  &trans
+	&to QWER  &to WM    &kp HASH &kp DLLR &to GIMP                                       &kp CARET      &kp AMPS   &kp STAR  &kp LPAR        &bt BT_CLR  
+	&to MCR   &kp TILDE &sk LALT &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp DOWN   &kp UP    &kp RIGHT_ARROW &kp KP_N5
+  &kp HOME  &kp LGUI  &trans   &trans   &trans                                         &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4
+	          &trans    &trans                                                                                     &trans    &ext_power EP_TOG
+                                       &trans   &trans                                  &trans   &trans
+                                         &rgb_ug RGB_SAD  &rgb_ug RGB_SAI    &trans  &trans 
+                                         &rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp PG_UP PG_DN>;
@@ -245,9 +245,9 @@
 //                                  |SHFT| SPACE |               |       |    |
 //                                  | DEF|  ESC  |               |       |    |
 			bindings = <
-	&kp N1           &kp N2     &kp N3 &kp N4           &kp N5                                             &trans &trans &trans                            &trans &trans
+	&kp N1           &kp N2     &kp N3 &kp N4 &kp N5                                             &trans &trans &trans                            &trans &trans
 	&kp LEFT_ARROW   &kp DOWN   &kp UP &kp RIGHT_ARROW  &kp E                                              &trans &trans &trans                            &trans &trans
-  &to DEF          &trans     &kp S  &kp F            &trans                                             &trans &trans &trans                            &trans &trans
+  &to DEF          &trans     &kp S  &kp F  &trans                                             &trans &trans &trans                            &trans &trans
 	        &trans &trans                                                                         &rgb_ug RGB_COLOR_HSB(120,100,10) &trans
                         &kp F5 &kp LSHFT                                         &trans &trans 
                                           &kp LCTRL  &kp SPACE     &trans  &trans
