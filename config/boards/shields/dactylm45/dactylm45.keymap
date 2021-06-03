@@ -206,7 +206,7 @@
   &to DEF &trans  &kp S  &kp F  &trans                                             &trans &trans &trans                            &trans &trans
 	        &trans &trans                                                                         &rgb_ug RGB_COLOR_HSB(120,100,10) &trans
                         &kp F5 &kp LSHFT                                         &trans &trans 
-                                          &kp LCTRL  &kp SPACE     &trans  &trans
+                                          &kp LCTRL  &kp SPACE      &trans  &trans
                                           &to DEF    &kp ESC        &trans  &trans
 			>;
 
@@ -250,7 +250,7 @@
   &to DEF          &trans     &kp S  &kp F  &trans                                             &trans &trans &trans                            &trans &trans
 	        &trans &trans                                                                         &rgb_ug RGB_COLOR_HSB(120,100,10) &trans
                         &kp F5 &kp LSHFT                                         &trans &trans 
-                                          &kp LCTRL  &kp SPACE     &trans  &trans
+                                          &kp LCTRL  &kp SPACE      &trans  &trans
                                           &to DEF    &kp ESC        &trans  &trans
 			>;
 
