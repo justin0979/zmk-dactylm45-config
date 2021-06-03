@@ -18,7 +18,7 @@
 #define LSIDE   4  // Line 128
 #define RMOD    5  // Line 150 access QWER, MCR, GIMP, WM here
 #define FNUM    6  // Line 172
-#define MCR     7  // Line 194
+#define MCR     7  // Line 194 Minecraft keys
 #define GIMP    8  // Line 216
 #define TW      9  // Rome: Total war keys layer
 
@@ -245,9 +245,9 @@
 //                                  |SHFT| SPACE |               |       |    |
 //                                  | DEF|  ESC  |               |       |    |
 			bindings = <
-	&kp N1           &kp N2     &kp N3 &kp N4 &kp N5                                             &trans &trans &trans                            &trans &trans
+	&kp N1           &kp N2     &kp N3 &kp N4           &kp N5                                             &trans &trans &trans                            &trans &trans
 	&kp LEFT_ARROW   &kp DOWN   &kp UP &kp RIGHT_ARROW  &kp E                                              &trans &trans &trans                            &trans &trans
-  &to DEF          &trans     &kp S  &kp F  &trans                                             &trans &trans &trans                            &trans &trans
+  &to DEF          &trans     &kp S  &kp F            &trans                                             &trans &trans &trans                            &trans &trans
 	        &trans &trans                                                                         &rgb_ug RGB_COLOR_HSB(120,100,10) &trans
                         &kp F5 &kp LSHFT                                         &trans &trans 
                                           &kp LCTRL  &kp SPACE     &trans  &trans
