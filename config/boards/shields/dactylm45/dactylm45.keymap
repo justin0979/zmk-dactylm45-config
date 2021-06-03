@@ -238,16 +238,16 @@
 		rome_total_war_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  1  |  2  |  3   |  4   |  5   |                                          |      |       |       |      |       |
-// | <-- |  UP | DOWN | -->  |  E   |                                          |      |       |       |      |       |
-// | DEF |     |  S   |  F   |      |                                          |      |       |       |      |       |
+// |     | <-- |  UP  | -->  |  E   |                                          |      |       |       |      |       |
+// | DEF |     | DOWN |  F   |      |                                          |      |       |       |      |       |
 //       |     |      |                                                                       | GREEN |      |
 //                    |  F5  | LSHFT|                                          |      |       |
 //                                  |SHFT| SPACE |               |       |    |
 //                                  | DEF|  ESC  |               |       |    |
 			bindings = <
-	&kp N1           &kp N2     &kp N3 &kp N4 &kp N5                                             &trans &trans &trans                            &trans &trans
-	&kp LEFT_ARROW   &kp DOWN   &kp UP &kp RIGHT_ARROW  &kp E                                              &trans &trans &trans                            &trans &trans
-  &to DEF          &trans     &kp S  &kp F  &trans                                             &trans &trans &trans                            &trans &trans
+	&kp N1   &kp N2         &kp N3    &kp N4           &kp N5                                             &trans &trans &trans                            &trans &trans
+	&trans   &kp LEFT_ARROW &kp UP    &kp RIGHT_ARROW  &kp E                                              &trans &trans &trans                            &trans &trans
+  &to DEF  &trans         &kp DOWN  &kp F            &trans                                             &trans &trans &trans                            &trans &trans
 	        &trans &trans                                                                         &rgb_ug RGB_COLOR_HSB(120,100,10) &trans
                         &kp F5 &kp LSHFT                                         &trans &trans 
                                           &kp LCTRL  &kp SPACE      &trans  &trans
