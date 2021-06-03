@@ -150,7 +150,7 @@
 		right_mod_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | QWER| WM  |  #   |  $   | GIMP |                                          |  ^   |   &   |  *    |  (   |  BTC  |      
-// | MCR |  ~  | ALT  | TAB  | ESC  |                                          |LARROW| DOWN  |  UP   |RARROW| KP_N5 |       
+// | MCR | TW  | ALT  | TAB  | ESC  |                                          |LARROW| DOWN  |  UP   |RARROW| KP_N5 |       
 // |HOME |LGUI |      |      |      |                                          |  BT0 |  BT1  |  BT2  |  BT3 |  BT4  |      
 //       |     |      |                                                                       |       |  PWR |
 //                    |      |      |                                          |      |       |
@@ -158,7 +158,7 @@
 //                                  |  EFR  | EFF  |               |     |     |
 			bindings = <
 	&to QWER  &to WM    &kp HASH &kp DLLR &to GIMP                                       &kp CARET      &kp AMPS   &kp STAR  &kp LPAR        &bt BT_CLR  
-	&to MCR   &kp TILDE &sk LALT &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp DOWN   &kp UP    &kp RIGHT_ARROW &kp KP_N5
+	&to MCR   &to TW    &sk LALT &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp DOWN   &kp UP    &kp RIGHT_ARROW &kp KP_N5
   &kp HOME  &kp LGUI  &trans   &trans   &trans                                         &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4
 	          &trans    &trans                                                                                     &trans    &ext_power EP_TOG
                                        &trans   &trans                                  &trans   &trans
