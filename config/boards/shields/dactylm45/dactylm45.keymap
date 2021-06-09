@@ -193,18 +193,18 @@
 
 		minecraft_tog_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  1  |  2  |  3   |  4   |  5   |                                          |      |       |       |      |       |
-// |  Q  |  A  |  W   |  D   |  E   |                                          |      |       |       |      |       |
-// | DEF |     |  S   |  F   |      |                                          |      |       |       |      |       |
-//       |     |      |                                                                       | GREEN |      |
+// |  1  |  2  |  3   |  4   |  5   |                                          |   6  |   7   |   8   |  9   |   0   |
+// |SHFT |  A  |  W   |  D   |  E   |                                          |      |       |       |      |       |
+// |     |     |  S   |  F   |      |                                          |      |       |       |      |       |
+//       |     |  Q   |                                                                       |       |      |
 //                    | SHIFT| SPACE|                                          |      |       |
 //                                  |SHFT|   F5  |               |       |    |
 //                                  | DEF|  ESC  |               |       |    |
 			bindings = <
-	&kp N1  &kp N2  &kp N3 &kp N4 &kp N5                                             &trans &trans &trans                            &trans &trans
-	&kp Q   &kp A   &kp W  &kp D  &kp E                                              &trans &trans &trans                            &trans &trans
-  &to DEF &trans  &kp S  &kp F  &trans                                             &trans &trans &trans                            &trans &trans
-	        &trans &trans                                                                         &rgb_ug RGB_COLOR_HSB(120,100,10) &trans
+	&kp N1    &kp N2  &kp N3 &kp N4 &kp N5                                             &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
+	&kp LSHFT &kp A   &kp W  &kp D  &kp E                                              &trans &trans &trans &trans &trans
+  &trans    &trans  &kp S  &kp F  &trans                                             &trans &trans &trans &trans &trans
+	          &trans  &kp Q                                                                          &trans &trans
                         &kp LSHFT &kp SPACE                                         &trans &trans 
                                           &kp LCTRL  &kp F5         &trans  &trans
                                           &to DEF    &kp ESC        &trans  &trans
