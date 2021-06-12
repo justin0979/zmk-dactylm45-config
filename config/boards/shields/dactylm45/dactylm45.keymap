@@ -2,7 +2,8 @@
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
- *
+ * 
+ * F5 refreshes window, F6 goes to URL, F11 full screen
  */
 
 #include <behaviors.dtsi>
