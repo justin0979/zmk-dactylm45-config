@@ -198,7 +198,7 @@
 // |SHFT |  A  |  W   |  D   |  E   |                                          |      |       |       |      |       |
 // |     |     |  S   |  F   |      |                                          |      |       |       |      |       |
 //       |     |  Q   |                                                                       |       |      |
-//                    | SHIFT| SPACE|                                          |      |       |
+//                    | CTRL | SPACE|                                          |      |       |
 //                                  |SHFT|   F5  |               |       |    |
 //                                  | DEF|  ESC  |               |       |    |
 			bindings = <
@@ -206,7 +206,7 @@
 	&kp LSHFT &kp A   &kp W  &kp D  &kp E                                              &trans &trans &trans &trans &trans
   &trans    &trans  &kp S  &kp F  &trans                                             &trans &trans &trans &trans &trans
 	          &trans  &kp Q                                                                          &trans &trans
-                        &kp LSHFT &kp SPACE                                         &trans &trans 
+                        &kp LCTRL &kp SPACE                                         &trans &trans 
                                           &kp LCTRL  &kp F5         &trans  &trans
                                           &to DEF    &kp ESC        &trans  &trans
 			>;
