@@ -133,7 +133,7 @@
 // |     | GUI | C(C) | C(V) | C(B) |                                          |  HOME |  END  |       |      |   "   | 
 //       |     |      |                                                                        |       |    |
 //                    |      |      |                                          |  GUI  |  RMOD |
-//                                  |     |       |                | HOME |END |
+//                                  |     |       |                |      |    |
 //                                  |     |       |                |      |    |
 			bindings = <
 	&trans &kp LC(W) &kp LC(F) &kp LC(W)     &trans                                      &kp LC(LS(N6)) &kp LC(MINUS) &kp LC(PLUS) &kp LC(Y)       &kp RPAR      
@@ -141,7 +141,7 @@
   &trans &kp LGUI  &kp LC(C) &kp LC(V)     &kp LC(B)                                   &kp HOME       &kp END       &trans       &trans          &kp LS(SQT)       
          &trans    &trans                                                                                           &trans       &trans
                              &trans        &trans                                      &kp RGUI         &mo RMOD
-                                                  &trans &trans       &kp HOME &kp END 
+                                                  &trans &trans       &trans   &trans 
                                                   &trans &trans       &trans   &trans
 			>;
 
