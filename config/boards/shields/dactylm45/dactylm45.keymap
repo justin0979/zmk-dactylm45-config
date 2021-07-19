@@ -53,7 +53,7 @@
 	&kp Z &kp X      &kp C     &kp V      &kp B                                           &kp K     &kp M    &kp COMMA         &kp DOT &kp FSLH 
         &kp C_MUTE &rgb_ug RGB_HUI                                                                         &rgb_ug RGB_HUD   &tog FNUM
                              &mo LSIDE  &kp LSHFT                                       &kp SPACE &mo RSIDE
-                                                  &kp F11    &kp BSPC    &kp RET    &kp RCTRL
+                                                  &kp F11    &kp BSPC    &kp RET    &kp LCTRL
                                                   &kp LC([)  &kp LC(])   &kp F5     &kp F6
 			>;
 
