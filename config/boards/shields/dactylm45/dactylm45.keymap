@@ -107,16 +107,16 @@
 		right_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  1  |  2  |  3   |    4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |      
-// | SQT |  ~  | ALT  |   TAB  | ESC  |                                          |  \   |  -    |  =    |  [   |   ]   |      
-// |  "  |  `  | CTRL |   DEL  | CA(V)|                                          | C([) | C(])  |  ,    |  .   |   /   |      
+// | SQT |  ~  | ALT  |   TAB  | ESC  |                                          |  \   |  -    |  =    |  >   |   ]   |      
+// |  "  |  `  | CTRL |   DEL  | CA(V)|                                          | C([) |  [    |  ]    |  .   |   /   |      
 //       |     |      |                                                                         |       |      |
 //                    |  RMOD  |      |                                          |      |       |
 //                                  |LA(RA) |     |                  |     |     |
 //                                  |  BRD  | BRI |                  |     |     |
 			bindings = <
 	&kp N1       &kp N2     &kp N3    &kp N4   &kp N5                                          &kp N6       &kp N7        &kp N8    &kp N9   &kp N0  
-	&kp SQT      &kp TILDE  &kp RALT  &kp TAB  &kp ESC                                         &kp BSLH     &kp MINUS     &kp EQUAL &kp LBKT &kp RBKT
-	&kp LS(SQT)  &kp GRAVE  &kp LCTRL &kp DEL  &kp LC(LS(V))                                   &kp LC(LBKT) &kp LC(RBKT)  &kp COMMA &kp DOT  &kp FSLH
+	&kp SQT      &kp TILDE  &kp RALT  &kp TAB  &kp ESC                                         &kp BSLH     &kp MINUS     &kp EQUAL &kp GT   &kp RBKT
+	&kp LS(SQT)  &kp GRAVE  &kp LCTRL &kp DEL  &kp LC(LS(V))                                   &kp LC(LBKT) &kp LBKT      &kp RBKT  &kp DOT  &kp FSLH
 	             &trans     &trans                                                                                 &trans    &trans
                                     &mo RMOD  &trans                                          &trans   &trans
                                                &kp LA(RIGHT)    &trans             &trans  &trans 
