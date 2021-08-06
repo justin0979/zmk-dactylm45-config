@@ -54,7 +54,7 @@
         &kp C_MUTE &rgb_ug RGB_HUI                                                                         &rgb_ug RGB_HUD   &tog FNUM
                              &mo LSIDE  &kp LSHFT                                       &kp SPACE &mo RSIDE
                                                   &kp LCTRL  &kp BSPC     &kp RET    &kp RCTRL
-                                                  &kp F6     &kp F6       &kp F11    &kp RALT 
+                                                  &kp F6     &kp F5       &kp F11    &kp RALT 
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
