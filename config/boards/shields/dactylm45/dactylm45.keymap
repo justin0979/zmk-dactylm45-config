@@ -46,7 +46,7 @@
 //       | MUTE| HUI |                                                                     | HUD  | FNUM|
 //                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
 //                                   |A(LA) |  BSPC |       | RET  | CTRL |
-//                                   |  F6  |   F5  |       | F11  | ALT  |
+//                                   |  F6  |   F5  |       | F11  |C(TAB)|
 			bindings = <
 	&kp Q &kp W      &kp F     &kp P      &kp G                                           &kp J     &kp L    &kp U             &kp Y   &kp SEMI
 	&kp A &kp R      &kp S     &kp T      &kp D                                           &kp H     &kp N    &kp E             &kp I   &kp O   
@@ -54,7 +54,7 @@
         &kp C_MUTE &rgb_ug RGB_HUI                                                                         &rgb_ug RGB_HUD   &tog FNUM
                              &mo LSIDE  &kp LSHFT                                       &kp SPACE &mo RSIDE
                                                   &kp LA(LEFT) &kp BSPC     &kp RET    &kp RCTRL
-                                                  &kp F6       &kp F5       &kp F11    &kp RALT 
+                                                  &kp F6       &kp F5       &kp F11    &kp LC(TAB) 
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
