@@ -45,7 +45,7 @@
 // |  Z  |  X  |  C  |  V  |  B  |                                            |  K  |  M   |  ,   |  .  |  /  |
 //       | MUTE| HUI |                                                                     | HUD  | FNUM|
 //                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
-//                                   | CTRL |  BSPC |       | RET  | CTRL |
+//                                   |A(LA) |  BSPC |       | RET  | CTRL |
 //                                   |  F6  |   F5  |       | F11  | ALT  |
 			bindings = <
 	&kp Q &kp W      &kp F     &kp P      &kp G                                           &kp J     &kp L    &kp U             &kp Y   &kp SEMI
@@ -53,8 +53,8 @@
 	&kp Z &kp X      &kp C     &kp V      &kp B                                           &kp K     &kp M    &kp COMMA         &kp DOT &kp FSLH 
         &kp C_MUTE &rgb_ug RGB_HUI                                                                         &rgb_ug RGB_HUD   &tog FNUM
                              &mo LSIDE  &kp LSHFT                                       &kp SPACE &mo RSIDE
-                                                  &kp LCTRL  &kp BSPC     &kp RET    &kp RCTRL
-                                                  &kp F6     &kp F5       &kp F11    &kp RALT 
+                                                  &kp LA(LEFT) &kp BSPC     &kp RET    &kp RCTRL
+                                                  &kp F6       &kp F5       &kp F11    &kp RALT 
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -111,15 +111,15 @@
 // |  "  |  `  | CTRL |   DEL  | CA(V)|                                          | C([) | C(])  |  ,    |  .   |   /   |      
 //       |     |      |                                                                         |       |      |
 //                    |  RMOD  |      |                                          |      |       |
-//                                  |     |     |                  |     |     |
-//                                  | BRD | BRI |                  |     |     |
+//                                  |LA(RA) |     |                  |     |     |
+//                                  |  BRD  | BRI |                  |     |     |
 			bindings = <
 	&kp N1       &kp N2     &kp N3    &kp N4   &kp N5                                          &kp N6       &kp N7        &kp N8    &kp N9   &kp N0  
 	&kp SQT      &kp TILDE  &kp RALT  &kp TAB  &kp ESC                                         &kp BSLH     &kp MINUS     &kp EQUAL &kp LBKT &kp RBKT
 	&kp LS(SQT)  &kp GRAVE  &kp LCTRL &kp DEL  &kp LC(LS(V))                                   &kp LC(LBKT) &kp LC(RBKT)  &kp COMMA &kp DOT  &kp FSLH
 	             &trans     &trans                                                                                 &trans    &trans
                                     &mo RMOD  &trans                                          &trans   &trans
-                                               &trans           &trans             &trans  &trans 
+                                               &kp LA(RIGHT)    &trans             &trans  &trans 
                                                &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &trans  &trans
 			>;
 
