@@ -150,18 +150,18 @@
 
 		right_mod_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// | QWER| WM  |  #   |  $   | GIMP |                                          |  ^   |   &   |  *    |  (   |  BTC  |      
-// | MCR | TW  | ALT  | TAB  | ESC  |                                          |LARROW| DOWN  |  UP   |RARROW| KP_N5 |       
-// |HOME |LGUI |      |      |      |                                          |  BT0 |  BT1  |  BT2  |  BT3 |  BT4  |      
+// | QWER| WM  |  #   |  $   | GIMP |                                          |  ^   |   &   |  (    |  )   | SPACE |      
+// | MCR |SHIFT| CTL  | TAB  | ESC  |                                          |LARROW|   =   |  >    | SPACE|   {   |       
+// | TW  |LGUI |      |      |      |                                          |  BT0 |  BT1  |  BT2  |  BT3 |  BT4  |      
 //       |     |      |                                                                       |       |  PWR |
 //                    |      |      |                                          |      |       |
 //                                  |  SAD  | SAI  |               |     |     |
 //                                  |  EFR  | EFF  |               |     |     |
 			bindings = <
-	&to QWER  &to WM    &kp HASH &kp DLLR &to GIMP                                       &kp CARET      &kp AMPS   &kp STAR  &kp LPAR        &bt BT_CLR  
-	&to MCR   &to TW    &sk LALT &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp DOWN   &kp UP    &kp RIGHT_ARROW &kp KP_N5
-  &kp HOME  &kp LGUI  &trans   &trans   &trans                                         &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4
-	          &trans    &trans                                                                                     &trans    &ext_power EP_TOG
+	&to QWER  &to WM    &kp HASH  &kp DLLR &to GIMP                                       &kp CARET      &kp AMPS     &kp LPAR      &kp RPAR     &bt SPACE  
+	&to MCR   &kp LSHFT &kp LCTRL &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp EQUAL    &kp GT        &kp SPACE    &kp LBRC
+  &to TW    &kp LGUI  &trans    &trans   &trans                                         &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4
+	          &trans    &trans                                                                                        &trans    &ext_power EP_TOG
                                        &trans   &trans                                  &trans   &trans
                                          &rgb_ug RGB_SAD  &rgb_ug RGB_SAI    &trans  &trans 
                                          &rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &trans  &trans
