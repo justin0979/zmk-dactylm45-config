@@ -128,7 +128,7 @@
 
 		left_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |     | C(W)| C(F) |      |      |                                          | CS(6) | C(-)  | C(+)  | C(Y) |   )   |   
+// |     | C(W)| C(F) |      |      |                                          | CS(6) | C(-)  | C(+)  | C(Y) | C())  |   
 // |     | C(R)|      |CA(T) |  ESC |                                          | LARROW| DOWN  |  UP   |RARROW|   '   |  
 // |     | GUI | C(C) | C(V) | C(B) |                                          |  HOME |  END  |       |      |   "   | 
 //       |     |      |                                                                        |       |    |
@@ -136,7 +136,7 @@
 //                                  |     |       |                |      |    |
 //                                  |     |       |                |      |    |
 			bindings = <
-	&trans &kp LC(W) &kp LC(F) &kp LC(W)     &trans                                      &kp LC(LS(N6)) &kp LC(MINUS) &kp LC(PLUS) &kp LC(Y)       &kp RPAR      
+	&trans &kp LC(W) &kp LC(F) &kp LC(W)     &trans                                      &kp LC(LS(N6)) &kp LC(MINUS) &kp LC(PLUS) &kp LC(Y)       &kp LC(RPAR)      
 	&trans &kp LC(R) &trans    &kp LC(LA(T)) &kp ESC                                     &kp LEFT_ARROW &kp DOWN      &kp UP       &kp RIGHT_ARROW &kp SQT
   &trans &kp LGUI  &kp LC(C) &kp LC(V)     &kp LC(B)                                   &kp HOME       &kp END       &trans       &trans          &kp LS(SQT)       
          &trans    &trans                                                                                           &trans       &trans
