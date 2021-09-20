@@ -262,11 +262,6 @@
 
   combos {
     compatible = "zmk,combos";
-    combos_sqt {
-      timeout-ms = <50>;
-      key-positions = <10 37>;
-      bindings = <&kp SQT>;
-    };
 
     combos_shift_sqt {
       timeout-ms = <50>;
