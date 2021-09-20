@@ -150,21 +150,21 @@
 
 		right_mod_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// | QWER| WM    |  #   |  $   | GIMP |                                          | BTC  |   &   |  (    |  )   | SPACE |      
+// | QWER| WM    |  #   |  $   | GIMP |                                          |  ^   |   &   |  *    |  (   |   )   |      
 // | MCR |LS(TAB)| CTL  | TAB  | ESC  |                                          |LARROW|   =   |  >    | SPACE|   {   |       
 // | TW  |LGUI   |      |      |      |                                          |  BT0 |  BT1  |  BT2  |  BT3 |  BT4  |      
 //       |       |      |                                                                       |       |  PWR |
 //                      |      |      |                                          |      |       |
 //                                    |  SAD  | SAI  |               |     |     |
-//                                    |  EFR  | EFF  |               |     |     |
+//                                    |  EFR  | EFF  |               |     | BTC |
 			bindings = <
-	&to QWER  &to WM      &kp HASH  &kp DLLR &to GIMP                                       &bt BT_CLR     &kp AMPS     &kp LPAR      &kp RPAR     &kp SPACE  
+	&to QWER  &to WM      &kp HASH  &kp DLLR &to GIMP                                       &kp CARET      &kp AMPS     &kp STAR      &kp LPAR     &kp RPAR  
 	&to MCR   &kp LS(TAB) &kp LCTRL &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp EQUAL    &kp GT        &kp SPACE    &kp LBRC
   &to TW    &kp LGUI    &trans    &trans   &trans                                         &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4
 	          &trans      &trans                                                                                        &trans    &ext_power EP_TOG
                                          &trans   &trans                                  &trans   &trans
                                            &rgb_ug RGB_SAD  &rgb_ug RGB_SAI    &trans  &trans 
-                                           &rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &trans  &trans
+                                           &rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &trans  &bt BT_CLR
 			>;
 
 			sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp PG_UP PG_DN>;
