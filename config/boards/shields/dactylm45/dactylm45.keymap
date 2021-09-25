@@ -12,6 +12,10 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+&kscan0 {
+  debounce-period = <20>;
+};
+
 #define DEF     0  // Line 40
 #define WM      1  // Line 62
 #define QWER    2  // Line 84
