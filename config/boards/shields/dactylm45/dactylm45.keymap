@@ -132,13 +132,13 @@
 
 		left_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// | PG_UP | C(W)  | C(F) |CS(I) | LS(CS(E)) |                                          | CS(6) | C(-)  | C(+)  | C(Y) | C())  |   
-// | PG_DN | C(R)  |      |CA(T) | CS(P)     |                                          | LARROW| DOWN  |  UP   |RARROW| C())  |  
-// | LC(+) | LC(-) | C(C) |CS(V) | CS(A)     |                                          |  HOME |  END  |       |      |   "   | 
-//         |       |      |                                                                             |       |    |
-//                        |      |           |                                          |  GUI  |  RMOD |
-//                                           |     |       |                |      |    |
-//                                           |     |       |                |      |    |
+// | PG_UP | C(W)  | C(F) |CS(I) | CS(E) |                                          | CS(6) | C(-)  | C(+)  | C(Y) | C())  |   
+// | PG_DN | C(R)  |      |CA(T) | CS(P) |                                          | LARROW| DOWN  |  UP   |RARROW| C())  |  
+// | LC(+) | LC(-) | C(C) |CS(V) | CS(A) |                                          |  HOME |  END  |       |      |   "   | 
+//         |       |      |                                                                         |       |    |
+//                        |      |       |                                          |  GUI  |  RMOD |
+//                                       |     |       |                |      |    |
+//                                       |     |       |                |      |    |
 			bindings = <
 	&kp PG_UP    &kp LC(W)      &kp LC(F) &kp LC(LS(I)) &kp LC(LS(E))                               &kp LC(LS(N6)) &kp LC(MINUS) &kp LC(PLUS) &kp LC(Y)       &kp LC(RPAR)      
 	&kp PG_DN    &kp LC(R)      &trans    &kp LC(LA(T)) &kp LC(LS(P))                               &kp LEFT_ARROW &kp DOWN      &kp UP       &kp RIGHT_ARROW &kp LC(RPAR)
