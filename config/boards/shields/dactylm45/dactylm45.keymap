@@ -13,7 +13,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 &kscan0 {
-  debounce-period = <20>;
+  debounce-period = <25>;
 };
 
 #define DEF     0  // Line 40
@@ -24,7 +24,7 @@
 #define RMOD    5  // Line 150 access QWER, MCR, GIMP, WM here
 #define FNUM    6  // Line 172
 #define MCR     7  // Line 194
-#define GIMP    8  // Line 216
+#define GIMP    8  // Line 221
 #define TW      9  // Rome: Total war keys layer
 
 // combos Line 261
