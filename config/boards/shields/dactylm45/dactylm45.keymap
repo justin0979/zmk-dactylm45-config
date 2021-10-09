@@ -275,7 +275,7 @@
 
     combos_shift_semi {
       timeout-ms = <50>;
-      key-positions = <31 9>;
+      key-positions = <35 9>;
       bindings = <&kp LS(SEMI)>;
     };
   };
