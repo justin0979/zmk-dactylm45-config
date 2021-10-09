@@ -278,5 +278,11 @@
       key-positions = <35 9>;
       bindings = <&kp LS(SEMI)>;
     };
+    
+    combo_r_par {
+      timeout-ms = <50>;
+      key-positions = <9 35 37>;
+      bindings = <&kp RPAR>;
+    };
   };
 };
