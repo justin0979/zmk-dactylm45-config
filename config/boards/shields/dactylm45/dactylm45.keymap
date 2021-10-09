@@ -21,7 +21,7 @@
 #define QWER    2  // Line 84
 #define RSIDE   3  // Line 111
 #define LSIDE   4  // Line 133
-#define RMOD    5  // Line 150 access QWER, MCR, GIMP, WM here
+#define RMOD    5  // Line 155 access QWER, MCR, GIMP, WM here
 #define FNUM    6  // Line 172
 #define MCR     7  // Line 194
 #define GIMP    8  // Line 221
@@ -132,7 +132,7 @@
 
 		left_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// | UP    | C(W)  | C(F) |CS(I) | CS(E) |                                          | CS(6) | C(-)  | C(+)  | C(Y) | C())  |   
+// | UP    | C(W)  | C(F) |CS(I) | CS(E) |                                          | CS(6) | C(-)  | C(+)  | C(Y) | SEMI  |   
 // | DN    | C(R)  |      |CA(T) | CS(P) |                                          | LARROW| DOWN  |  UP   |RARROW| C())  |  
 // | LC(+) | LC(-) | C(C) |CS(V) | CS(A) |                                          |  HOME |  END  |       |      |   "   | 
 //         |       |A(-->)|                                                                         |       |    |
@@ -140,7 +140,7 @@
 //                                       |     |       |                |      |    |
 //                                       |     |       |                |      |    |
 			bindings = <
-	&kp UP      &kp LC(W)      &kp LC(F) &kp LC(LS(I)) &kp LC(LS(E))                               &kp LC(LS(N6)) &kp LC(MINUS) &kp LC(PLUS) &kp LC(Y)       &kp LC(RPAR)      
+	&kp UP      &kp LC(W)      &kp LC(F) &kp LC(LS(I)) &kp LC(LS(E))                               &kp LC(LS(N6)) &kp LC(MINUS) &kp LC(PLUS) &kp LC(Y)       &kp SEMI      
 	&kp DOWN    &kp LC(R)      &trans    &kp LC(LA(T)) &kp LC(LS(P))                               &kp LEFT_ARROW &kp DOWN      &kp UP       &kp RIGHT_ARROW &kp LC(RPAR)
   &kp LC(PLUS) &kp LC(MINUS)  &kp LC(C) &kp LC(V)     &kp LC(LS(A))                               &kp HOME       &kp END       &trans       &trans          &kp LS(SQT)       
             &trans    &kp RA(RIGHT)                                                                                    &trans       &trans
@@ -155,7 +155,7 @@
 		right_mod_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | QWER| WM    |  #   |  $   | GIMP |                                          |  ^   |   &   |  *    |  (   |   )   |      
-// | MCR |LS(TAB)| CTL  | TAB  | ESC  |                                          |LARROW|   =   |  >    | SPACE|   {   |       
+// | MCR |LS(TAB)| CTL  | TAB  | ESC  |                                          |LARROW|  SPC  |  =    |   >  |   {   |       
 // | TW  |LGUI   |      |      |      |                                          |  BT0 |  BT1  |  BT2  |  BT3 |  BT4  |      
 //       |       |      |                                                                       |       |  PWR |
 //                      |      |      |                                          |      |       |
@@ -163,7 +163,7 @@
 //                                    |  EFR  | EFF  |               |     | BTC |
 			bindings = <
 	&to QWER  &to WM      &kp HASH  &kp DLLR &to GIMP                                       &kp CARET      &kp AMPS     &kp STAR      &kp LPAR     &kp RPAR  
-	&to MCR   &kp LS(TAB) &kp LCTRL &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp EQUAL    &kp GT        &kp SPACE    &kp LBRC
+	&to MCR   &kp LS(TAB) &kp LCTRL &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp SPACE    &kp EQUAL     &kp GT       &kp LBRC
   &to TW    &kp LGUI    &trans    &trans   &trans                                         &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4
 	          &trans      &trans                                                                                        &trans    &ext_power EP_TOG
                                          &trans   &trans                                  &trans   &trans
@@ -271,18 +271,6 @@
       timeout-ms = <50>;
       key-positions = <20 37>;
       bindings = <&kp LS(SQT)>;
-    };
-
-    combos_shift_semi {
-      timeout-ms = <50>;
-      key-positions = <35 9>;
-      bindings = <&kp LS(SEMI)>;
-    };
-    
-    combo_r_par {
-      timeout-ms = <50>;
-      key-positions = <9 35 37>;
-      bindings = <&kp RPAR>;
     };
   };
 };
