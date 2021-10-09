@@ -272,6 +272,11 @@
       key-positions = <20 37>;
       bindings = <&kp LS(SQT)>;
     };
-  };
 
+    combos_shift_semi {
+      timeout-ms = <50>;
+      key-positions = <31 9>;
+      bindings = <&kp LS(SEMI)>;
+    };
+  };
 };
