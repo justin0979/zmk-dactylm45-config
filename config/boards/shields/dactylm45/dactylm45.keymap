@@ -224,16 +224,16 @@
 // |      |     |      |     |      |                                     |      |       |       |      |       |
 // |      |     |      |     |      |                                     |      |       |       |      |       |
 //        |     |      |                                                                 |YELLOW |      |
-//                     | LCTRL | LSHFT |                                  |      |       |
-//                                   |  TAB  | SPACE |          |     |     |
+//                     |  TAB  | LSHFT |                                  |      |       |
+//                                   |  CTRL | SPACE |          |     |     |
 //                                   |   DEF | CS(J) |          |     |     |
 			bindings = <
 	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans                           &trans  &trans
 	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans                           &trans  &trans
 	&trans  &trans &trans &trans &trans                                                     &trans  &trans  &trans                           &trans  &trans
 	        &trans &trans                                                                                   &rgb_ug RGB_COLOR_HSB(60,100,10) &trans
-                         &kp LCTRL &kp LSHFT                                              &trans  &trans
-                                     &kp TAB   &kp SPACE                     &trans  &trans
+                         &kp TAB  &trans                                              &trans  &trans
+                                     &trans     &kp SPACE                     &trans  &trans
                                      &to DEF    &kp LC(LS(J))                 &trans  &trans
 			>;
 
