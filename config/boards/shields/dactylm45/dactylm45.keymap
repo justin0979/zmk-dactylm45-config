@@ -132,17 +132,17 @@
 
 		left_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// | UP    | C(W)  | C(F) |CS(I) | CS(E) |                                          | CS(6) | C(-)  | C(+)  | C(Y) | COLON |   
-// | DN    | C(R)  |      |CA(T) | CS(P) |                                          | LARROW| DOWN  |  UP   |RARROW| C())  |  
+// | UP    | C(W)  | PGUP |CS(I) | CS(E) |                                          | CS(6) | C(-)  | C(+)  | C(Y) | COLON |   
+// | DN    | C(R)  | PGDN |CA(T) | CS(P) |                                          | LARROW| DOWN  |  UP   |RARROW| C())  |  
 // | LC(+) | LC(-) | C(C) |CS(V) | CS(A) |                                          |  HOME |  END  |       |      |   "   | 
 //         |       |A(-->)|                                                                         |       |    |
 //                        |      |       |                                          |  GUI  |  RMOD |
 //                                       |     |       |                |      |    |
 //                                       |     |       |                |      |    |
 			bindings = <
-	&kp UP      &kp LC(W)      &kp LC(F) &kp LC(LS(I)) &kp LC(LS(E))                               &kp LC(LS(N6)) &kp LC(MINUS) &kp LC(PLUS) &kp LC(Y)       &kp COLON      
-	&kp DOWN    &kp LC(R)      &trans    &kp LC(LA(T)) &kp LC(LS(P))                               &kp LEFT_ARROW &kp DOWN      &kp UP       &kp RIGHT_ARROW &kp LC(RPAR)
-  &kp LC(PLUS) &kp LC(MINUS)  &kp LC(C) &kp LC(V)     &kp LC(LS(A))                               &kp HOME       &kp END       &trans       &trans          &kp LS(SQT)       
+	&kp UP       &kp LC(W)     &kp PG_UP &kp LC(LS(I)) &kp LC(LS(E))                               &kp LC(LS(N6)) &kp LC(MINUS) &kp LC(PLUS) &kp LC(Y)       &kp COLON      
+	&kp DOWN     &kp LC(R)     &kp PG_DN &kp LC(LA(T)) &kp LC(LS(P))                               &kp LEFT_ARROW &kp DOWN      &kp UP       &kp RIGHT_ARROW &kp LC(RPAR)
+  &kp LC(PLUS) &kp LC(MINUS) &kp LC(C) &kp LC(V)     &kp LC(LS(A))                               &kp HOME       &kp END       &trans       &trans          &kp LS(SQT)       
             &trans    &kp RA(RIGHT)                                                                                    &trans       &trans
                                 &trans        &trans                                      &kp RGUI         &mo RMOD
                                                      &trans &trans       &trans   &trans 
