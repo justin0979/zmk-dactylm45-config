@@ -49,7 +49,7 @@
 // |  Z  |  X  |  C  |  V  |  B  |                                            |  K  |  M   |  ,   |  .  |  /  |
 //       | MUTE|A(<--) |                                                                   | HUI  | FNUM|
 //                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
-//                                   | CTRL |  BSPC |       | RET  | CTRL |
+//                                   | LALT |  BSPC |       | RET  | CTRL |
 //                                   |  F6  |   F5  |       | F11  |C(TAB)|
 			bindings = <
 	&kp Q &kp W      &kp F     &kp P      &kp G                                           &kp J     &kp L    &kp U         &kp Y   &kp SEMI
@@ -57,7 +57,7 @@
 	&kp Z &kp X      &kp C     &kp V      &kp B                                           &kp K     &kp M    &kp COMMA     &kp DOT &kp FSLH 
         &kp C_MUTE &kp RA(LEFT)                                                                            &rgb_ug RGB_HUI  &tog FNUM
                              &mo LSIDE  &kp LSHFT                                       &kp SPACE &mo RSIDE
-                                                  &kp LCTRL &kp BSPC     &kp RET    &kp RCTRL
+                                                  &kp LALT &kp BSPC     &kp RET    &kp RCTRL
                                                   &kp F6    &kp F5       &kp F11    &kp LC(TAB) 
 			>;
 
