@@ -19,13 +19,13 @@
 #define DEF     0  // Line 40
 //#define WM      1  // Line 62
 //#define QWER    2  // Line 84
-#define RSIDE   3  // Line 67 111
-#define LSIDE   4  // Line 89 133
-#define RMOD    5  // Line 111 155 access QWER, MCR, GIMP, WM here
-#define FNUM    6  // Line 133 172 
-#define MCR     7  // Line 155 194
-#define GIMP    8  // Line 177 221
-#define TW      9  // Line 199 Rome: Total war keys layer
+#define RSIDE   2  // Line 67 111
+#define LSIDE   3  // Line 89 133
+#define RMOD    4  // Line 111 155 access QWER, MCR, GIMP, WM here
+#define FNUM    5  // Line 133 172 
+#define MCR     6  // Line 155 194
+#define GIMP    7  // Line 177 221
+#define TW      8  // Line 199 Rome: Total war keys layer
 
 // combos Line 223
 
@@ -90,7 +90,7 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | UP    | C(+)  | PGUP |CS(I) | CS(E) |                                          | CS(6) | C(-)  | C(+)  | C(Y) | COLON |   
 // | DN    | C(-)  | PGDN |CA(T) | CS(P) |                                          | LARROW| DOWN  |  UP   |RARROW| C())  |  
-// | LC(Z) | LC(-) | C(C) |CS(V) | CS(A) |                                          |  HOME |  END  |       |      |   "   | 
+// | LC(Z) | LC(Y) | C(C) |CS(V) | CS(A) |                                          |  HOME |  END  |       |      |   "   | 
 //         |       |A(-->)|                                                                         |       |    |
 //                        |      |       |                                          |  GUI  |  RMOD |
 //                                       |     |       |                |      |    |
@@ -98,7 +98,7 @@
 			bindings = <
 	&kp UP    &kp LC(PLUS)  &kp PG_UP &kp LC(LS(I)) &kp LC(LS(E))                               &kp LC(LS(N6)) &kp LC(MINUS) &kp LC(PLUS) &kp LC(Y)       &kp COLON      
 	&kp DOWN  &kp LC(MINUS) &kp PG_DN &kp LC(LA(T)) &kp LC(LS(P))                               &kp LEFT_ARROW &kp DOWN      &kp UP       &kp RIGHT_ARROW &kp LC(RPAR)
-  &kp LC(Z) &trans        &kp LC(C) &kp LC(V)     &kp LC(LS(A))                               &kp HOME       &kp END       &trans       &trans          &kp LS(SQT)       
+  &kp LC(Z) &kp LC(Y)     &kp LC(C) &kp LC(V)     &kp LC(LS(A))                               &kp HOME       &kp END       &trans       &trans          &kp LS(SQT)       
             &trans        &kp RA(RIGHT)                                                                                    &trans       &trans
                                 &trans        &trans                                      &kp RGUI         &mo RMOD
                                                      &trans &trans       &trans   &trans 
