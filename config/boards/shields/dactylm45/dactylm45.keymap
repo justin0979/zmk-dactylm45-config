@@ -19,13 +19,13 @@
 #define DEF     0  // Line 40
 //#define WM      1  // Line 62
 //#define QWER    2  // Line 84
-#define RSIDE   2  // Line 67 111
-#define LSIDE   3  // Line 89 133
-#define RMOD    4  // Line 111 155 access QWER, MCR, GIMP, WM here
-#define FNUM    5  // Line 133 172 
-#define MCR     6  // Line 155 194
-#define GIMP    7  // Line 177 221
-#define TW      8  // Line 199 Rome: Total war keys layer
+#define RSIDE   1  // Line 67 111
+#define LSIDE   2  // Line 89 133
+#define RMOD    3  // Line 111 155 access QWER, MCR, GIMP, WM here
+#define FNUM    4  // Line 133 172 
+#define MCR     5  // Line 155 194
+#define GIMP    6  // Line 177 221
+#define TW      7  // Line 199 Rome: Total war keys layer
 
 // combos Line 223
 
