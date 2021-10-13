@@ -19,10 +19,11 @@
 #define DEF     0  // Line 44
 #define RSIDE   1  // Line 67 111
 #define LSIDE   2  // Line 89 133
-#define RMOD    3  // Line 111 155 access QWER, MCR, GIMP, WM here
-#define FNUM    4  // Line 133 172 
-#define MCR     5  // Line 155 194
-#define TW      6  // Line 176 Rome: Total war keys layer
+#define LLS     3  // Line 111
+#define RMOD    4  // Line 133 155 access QWER, MCR, GIMP, WM here
+#define FNUM    5  // Line 155 172 
+#define MCR     6  // Line 176 194
+#define TW      7  // Line 176 Rome: Total war keys layer
 
 // combos Line 223
 //#define WM      1  // Line 62
@@ -87,17 +88,39 @@
 
 		left_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// | UP    | C(+)  | PGUP |CS(I) |  M    |                                          | CS(6) | C(-)  | C(+)  | C(Y) | COLON |   
-// | DN    | C(-)  | PGDN |CA(T) | CS(D) |                                          | LARROW| DOWN  |  UP   |RARROW| C())  |  
+// | UP    | C(W)  | PGUP |CS(I) |  M    |                                          | CS(6) | C(-)  | C(+)  | C(Y) | COLON |   
+// | LLS   | C(+)  |  UP  |CA(T) | CS(D) |                                          | LARROW| DOWN  |  UP   |RARROW| C())  |  
 // | LC(Z) | LC(Y) | C(C) | S(E) | CS(J) |                                          |  HOME |  END  |       |      |   "   | 
 //         |       |A(-->)|                                                                         |       |    |
 //                        |      |       |                                          |  GUI  |  RMOD |
 //                                       |     |       |                |      |    |
 //                                       |     |       |                |      |    |
 			bindings = <
-	&kp UP    &kp LC(PLUS)  &kp PG_UP &kp LC(LS(I)) &kp M                                       &kp LC(LS(N6)) &kp LC(MINUS) &kp LC(PLUS) &kp LC(Y)       &kp COLON      
-	&kp DOWN  &kp LC(MINUS) &kp PG_DN &kp LC(LA(T)) &kp LC(LS(D))                               &kp LEFT_ARROW &kp DOWN      &kp UP       &kp RIGHT_ARROW &kp LC(RPAR)
-  &kp LC(Z) &kp LC(Y)     &kp LC(C) &kp LS(E)     &kp LC(LS(J))                               &kp HOME       &kp END       &trans       &trans          &kp LS(SQT)       
+	&kp UP    &kp LC(W)    &kp PG_UP  &kp LC(LS(I)) &kp M                                       &kp LC(LS(N6)) &kp LC(MINUS) &kp LC(PLUS) &kp LC(Y)       &kp COLON      
+	&mo LLS   &kp LC(PLUS) &kp UP     &kp LC(LA(T)) &kp LC(LS(D))                               &kp LEFT_ARROW &kp DOWN      &kp UP       &kp RIGHT_ARROW &kp LC(RPAR)
+  &kp LC(Z) &kp LC(Y)    &kp LC(C)  &kp LS(E)     &kp LC(LS(J))                               &kp HOME       &kp END       &trans       &trans          &kp LS(SQT)       
+            &trans       &kp RA(RIGHT)                                                                                    &trans       &trans
+                               &trans        &trans                                      &kp RGUI         &mo RMOD
+                                                    &trans &trans       &trans   &trans 
+                                                    &trans &trans       &trans   &trans
+			>;
+
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+		};
+
+		lower_left_mo_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// | UP    | C(+)  | PGDN |CS(I) |  M    |                                          | CS(6) | C(-)  | C(+)  | C(Y) | COLON |   
+// |       | C(-)  |  DN  |CA(T) | CS(D) |                                          | LARROW| DOWN  |  UP   |RARROW| C())  |  
+// | LC(Z) | LC(Y) | C(C) | S(E) | CS(J) |                                          |  HOME |  END  |       |      |   "   | 
+//         |       |A(-->)|                                                                         |       |    |
+//                        |      |       |                                          |  GUI  |  RMOD |
+//                                       |     |       |                |      |    |
+//                                       |     |       |                |      |    |
+			bindings = <
+	&kp UP    &trans        &kp PG_DN  &kp LC(LS(I)) &kp M                                       &kp LC(LS(N6)) &kp LC(MINUS) &kp LC(PLUS) &kp LC(Y)       &kp COLON      
+	&trans    &kp LC(MINUS) &kp DOWN   &kp LC(LA(T)) &kp LC(LS(D))                               &kp LEFT_ARROW &kp DOWN      &kp UP       &kp RIGHT_ARROW &kp LC(RPAR)
+  &kp LC(Z) &kp LC(Y)     &kp LC(C)  &kp LS(E)     &kp LC(LS(J))                               &kp HOME       &kp END       &trans       &trans          &kp LS(SQT)       
             &trans        &kp RA(RIGHT)                                                                                    &trans       &trans
                                 &trans        &trans                                      &kp RGUI         &mo RMOD
                                                      &trans &trans       &trans   &trans 
