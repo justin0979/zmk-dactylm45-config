@@ -89,16 +89,16 @@
 		left_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | UP    | C(+)  | PGUP |CS(I) | CS(E) |                                          | CS(6) | C(-)  | C(+)  | C(Y) | COLON |   
-// | DN    | C(-)  | PGDN |CA(T) | CS(P) |                                          | LARROW| DOWN  |  UP   |RARROW| C())  |  
-// | LC(Z) | LC(Y) | C(C) |CS(V) | CS(A) |                                          |  HOME |  END  |       |      |   "   | 
+// | DN    | C(-)  | PGDN |CA(T) |  TAB  |                                          | LARROW| DOWN  |  UP   |RARROW| C())  |  
+// | LC(Z) | LC(Y) | C(C) |CS(V) | CS(J) |                                          |  HOME |  END  |       |      |   "   | 
 //         |       |A(-->)|                                                                         |       |    |
 //                        |      |       |                                          |  GUI  |  RMOD |
 //                                       |     |       |                |      |    |
 //                                       |     |       |                |      |    |
 			bindings = <
 	&kp UP    &kp LC(PLUS)  &kp PG_UP &kp LC(LS(I)) &kp LC(LS(E))                               &kp LC(LS(N6)) &kp LC(MINUS) &kp LC(PLUS) &kp LC(Y)       &kp COLON      
-	&kp DOWN  &kp LC(MINUS) &kp PG_DN &kp LC(LA(T)) &kp LC(LS(P))                               &kp LEFT_ARROW &kp DOWN      &kp UP       &kp RIGHT_ARROW &kp LC(RPAR)
-  &kp LC(Z) &kp LC(Y)     &kp LC(C) &kp LC(V)     &kp LC(LS(A))                               &kp HOME       &kp END       &trans       &trans          &kp LS(SQT)       
+	&kp DOWN  &kp LC(MINUS) &kp PG_DN &kp LC(LA(T)) &kp TAB                                     &kp LEFT_ARROW &kp DOWN      &kp UP       &kp RIGHT_ARROW &kp LC(RPAR)
+  &kp LC(Z) &kp LC(Y)     &kp LC(C) &kp LC(V)     &kp LC(LS(J))                               &kp HOME       &kp END       &trans       &trans          &kp LS(SQT)       
             &trans        &kp RA(RIGHT)                                                                                    &trans       &trans
                                 &trans        &trans                                      &kp RGUI         &mo RMOD
                                                      &trans &trans       &trans   &trans 
