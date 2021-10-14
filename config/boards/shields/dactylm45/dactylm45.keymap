@@ -60,8 +60,8 @@
 	&kp Z &kp X      &kp C     &kp V      &kp B                               &kp K     &kp M    &kp COMMA     &kp DOT &kp FSLH 
         &kp C_MUTE &kp RA(LEFT)                                                                &rgb_ug RGB_HUI  &tog FNUM
                              &mo LSIDE  &mt LSHFT BSPC                       &kp SPACE &lt RSIDE RET 
-                                         &kp LCTRL   &kp F5     &kp F11  &mt RCTRL SQT
-                                         &kp LALT    &kp F6     &kp ESC  &kp TAB 
+                                         &kp LCTRL   &kp F6     &kp F11  &mt RCTRL SQT
+                                         &kp LALT    &kp F5     &kp ESC  &kp TAB 
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
