@@ -49,7 +49,7 @@
 // |  Z  |  X  |  C  |  V  |  B  |                                            |  K  |  M   |  ,   |  .  |  /  |
 //       | MUTE|A(<--) |                                                                   | HUI  | FNUM|
 //                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
-//                                   | CTRL |  BSPC |       | RET  | ALT |
+//                                   | CTRL |  BSPC |       | RET  | CTRL|
 //                                   |  F6  |   F5  |       | F11  | TAB |
 			bindings = <
 	&kp Q &kp W      &kp F     &kp P      &kp G                               &kp J     &kp L    &kp U         &kp Y   &kp SEMI
@@ -57,7 +57,7 @@
 	&kp Z &kp X      &kp C     &kp V      &kp B                               &kp K     &kp M    &kp COMMA     &kp DOT &kp FSLH 
         &kp C_MUTE &kp RA(LEFT)                                                                &rgb_ug RGB_HUI  &tog FNUM
                              &mo LSIDE  &kp LSHFT                           &kp SPACE &mo RSIDE
-                                         &kp LCTRL &kp BSPC     &kp RET    &kp RALT
+                                         &kp LCTRL &kp BSPC     &kp RET    &kp RCTRL
                                          &kp F6    &kp F5       &kp F11    &kp TAB 
 			>;
 
@@ -65,13 +65,14 @@
 		};
 
 		right_mo_layer {
+// C(T), C(W), CA(V) --> open browser tab, close tab, paste
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  1  |  2  |  3   |    4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |      
 // | SQT |  ~  | ALT  |   TAB  | ESC  |                                          |  \   |  -    |  =    |  [   |   ]   |      
 // |  "  |  `  |      |   DEL  | CA(V)|                                          | C(T) | C(W)  |       |  .   |   /   |      
 //       |     | HUD  |                                                                         |       |      |
 //                    |  RMOD  |      |                                          |      |       |
-//                                  |LA(RA) |     |                  |     |     |
+//                                  |       |     |                  |     |     |
 //                                  |  BRD  | BRI |                  |     |     |
 			bindings = <
 	&kp N1       &kp N2     &kp N3    &kp N4   &kp N5                                          &kp N6    &kp N7      &kp N8    &kp N9    &kp N0  
@@ -79,7 +80,7 @@
 	&kp LS(SQT)  &kp GRAVE  &trans    &kp DEL  &kp LC(LS(V))                                   &kp LC(T) &kp LC(W)   &trans    &kp DOT   &kp FSLH
 	             &trans     &trans                                                                                   &rgb_ug RGB_HUD  &trans
                                     &mo RMOD  &trans                                          &trans   &trans
-                                               &kp LA(RIGHT)    &trans             &trans  &trans 
+                                               &trans           &trans             &trans  &trans 
                                                &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &trans  &trans
 			>;
 
@@ -87,10 +88,14 @@
 		};
 
 		left_mo_layer {
+// CS(E), CS(P), CS(D), C(Z), C(Y) --> xournal++ Erasure, Pen, Hand, Undo, Redo
+// S(E), CS(J), CS(D), C(Z), C(Y) --> GIPM Erasure, window, doc layer, Undo, Redo
+// CA(T), C()), CS(I) --> new console window, open dev tools, open split horizontal console
+// CS(6) --> NERDTree traverse windows
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | CS(E) | CS(P) | PGDN |CS(I) |  M    |                                          | CS(6) |       |       | C(Y) | COLON |   
 // | LLS   | C(+)  |  DN  |CA(T) | CS(D) |                                          | LARROW| DOWN  |  UP   |RARROW| C())  |  
-// | LC(Z) | LC(Y) | C(C) | S(E) | CS(J) |                                          |  HOME |  END  |       |      |   "   | 
+// |  C(Z) |  C(Y) | C(C) | S(E) | CS(J) |                                          |  HOME |  END  |       |      |   "   | 
 //         |       |A(-->)|                                                                         |       |    |
 //                        |      |       |                                          |  GUI  |  RMOD |
 //                                       |     |       |                |      |    |
@@ -99,7 +104,7 @@
 	&kp LC(LS(E)) &kp LC(LS(P)) &kp PG_DN  &kp LC(LS(I)) &kp M                                       &kp LC(LS(N6)) &trans    &trans  &kp LC(Y)       &kp COLON      
 	&mo LLS       &kp LC(PLUS)  &kp DOWN   &kp LC(LA(T)) &kp LC(LS(D))                               &kp LEFT_ARROW &kp DOWN  &kp UP  &kp RIGHT_ARROW &kp LC(RPAR)
   &kp LC(Z)     &kp LC(Y)     &kp LC(C)  &kp LS(E)     &kp LC(LS(J))                               &kp HOME       &kp END   &trans  &trans          &kp LS(SQT)       
-                &trans        &kp RA(RIGHT)                                                                                    &trans       &trans
+                &trans        &kp RA(RIGHT)                                                                                 &trans  &trans
                                     &trans        &trans                                      &kp RGUI         &mo RMOD
                                                          &trans &trans       &trans   &trans 
                                                          &trans &trans       &trans   &trans
@@ -110,21 +115,21 @@
 
 		lower_left_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// | UP    |       | PGUP |      |  H    |                                          |       |       |       |      |       |   
+// |       |       | PGUP |      |  H    |                                          |       |       |       |      |       |   
 // |       | C(-)  |  UP  |      |       |                                          |       |       |       |      |       |  
-// | LC(Z) | LC(Y) | C(C) |      |       |                                          |       |       |       |      |       | 
-//         |       |A(-->)|                                                                         |       |    |
-//                        |      |       |                                          |  GUI  |  RMOD |
+// |       |       |      |      |       |                                          |       |       |       |      |       | 
+//         |       |      |                                                                         |       |    |
+//                        |      |       |                                          |       |       |
 //                                       |     |       |                |      |    |
 //                                       |     |       |                |      |    |
 			bindings = <
-	&kp UP    &trans        &kp PG_UP  &trans  &kp H                                &trans &trans &trans &trans &trans      
-	&trans    &kp LC(MINUS) &kp UP     &trans  &trans                               &trans &trans &trans &trans &trans
-  &kp LC(Z) &kp LC(Y)     &kp LC(C)  &trans  &trans                               &trans &trans &trans &trans &trans       
-            &trans        &kp RA(RIGHT)                                                         &trans &trans
-                                &trans        &trans                                      &kp RGUI     &mo RMOD
-                                                     &trans &trans       &trans   &trans 
-                                                     &trans &trans       &trans   &trans
+	&trans  &trans        &kp PG_UP  &trans  &kp H                                &trans &trans &trans &trans &trans      
+	&trans  &kp LC(MINUS) &kp UP     &trans  &trans                               &trans &trans &trans &trans &trans
+  &trans  &trans        &trans     &trans  &trans                               &trans &trans &trans &trans &trans       
+          &trans        &trans                                                         &trans &trans
+                              &trans        &trans                                      &trans     &trans
+                                                &trans &trans       &trans   &trans 
+                                                &trans &trans       &trans   &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
