@@ -90,7 +90,7 @@
 		left_mo_layer {
 // CS(E), CS(P), CS(D), C(Z), C(Y) --> xournal++ Erasure, Pen, Hand, Undo, Redo
 // S(E), CS(J), CS(D), C(Z), C(Y) --> GIPM Erasure, window, doc layer, Undo, Redo
-// CA(T), C()), CS(I) --> new console window, open dev tools, open split horizontal console
+// CA(T), C()), CS(I) --> new console, split horizontal console, open browser dev tools
 // CS(6) --> NERDTree traverse windows
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | CS(E) | CS(P) | PGDN |CS(I) |  M    |                                          | CS(6) |       |       | C(Y) | COLON |   
@@ -117,26 +117,16 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |       |       | PGUP |      |  H    |                                          |       |       |       |      |       |   
 // |       | C(-)  |  UP  |      |       |                                          |       |       |       |      |       |  
-<<<<<<< HEAD
 // |       |       |      |      |       |                                          |       |       |       |      |       | 
 //         |       |      |                                                                         |       |    |
-=======
-// |       |       | C(C) |      |       |                                          |       |       |       |      |       | 
-//         |       |A(-->)|                                                                         |       |    |
->>>>>>> e379ec66fa37a7b3ef2861e2f1880685750ef3e0
 //                        |      |       |                                          |       |       |
 //                                       |     |       |                |      |    |
 //                                       |     |       |                |      |    |
 			bindings = <
 	&trans  &trans        &kp PG_UP  &trans  &kp H                                &trans &trans &trans &trans &trans      
 	&trans  &kp LC(MINUS) &kp UP     &trans  &trans                               &trans &trans &trans &trans &trans
-<<<<<<< HEAD
   &trans  &trans        &trans     &trans  &trans                               &trans &trans &trans &trans &trans       
           &trans        &trans                                                         &trans &trans
-=======
-  &trans  &trans        &kp LC(C)  &trans  &trans                               &trans &trans &trans &trans &trans       
-          &trans        &kp RA(RIGHT)                                                         &trans &trans
->>>>>>> e379ec66fa37a7b3ef2861e2f1880685750ef3e0
                               &trans        &trans                                      &trans     &trans
                                                 &trans &trans       &trans   &trans 
                                                 &trans &trans       &trans   &trans
