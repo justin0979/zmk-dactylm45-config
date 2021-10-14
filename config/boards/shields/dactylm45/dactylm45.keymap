@@ -30,6 +30,7 @@
 //#define QWER    2  // Line 84
 
 &lt { tapping-term-ms = <85>; };
+&mt { tapping-term-ms = <85>; };
 
 / {
 // ----------------------------------------------------------------------------------------------------------------------------------
@@ -50,17 +51,17 @@
 // |  A  |  R  |  S  |  T  |  D  |                                            |  H  |  N   |  E   |  I  |  O  |
 // |  Z  |  X  |  C  |  V  |  B  |                                            |  K  |  M   |  ,   |  .  |  /  |
 //       | MUTE|A(<--) |                                                                   | HUI  | FNUM|
-//                    |LSIDE | SHIFT|                                      | SPACE| RSIDE SQT |
-//                                   | CTRL |BSPC SPC|       | RET  | CTRL|
-//                                   |  F6  |   F5   |       | F11  | TAB |
+//                    |LSIDE | SHIFT BSPC|                                      | SPACE| RSIDE SQT |
+//                                   | CTRL | F5 |           | F11 | CTRL SQT|
+//                                   |  ALT | F6 |           | ESC |   TAB   |
 			bindings = <
 	&kp Q &kp W      &kp F     &kp P      &kp G                               &kp J     &kp L    &kp U         &kp Y   &kp SEMI
 	&kp A &kp R      &kp S     &kp T      &kp D                               &kp H     &kp N    &kp E         &kp I   &kp O   
 	&kp Z &kp X      &kp C     &kp V      &kp B                               &kp K     &kp M    &kp COMMA     &kp DOT &kp FSLH 
         &kp C_MUTE &kp RA(LEFT)                                                                &rgb_ug RGB_HUI  &tog FNUM
                              &mo LSIDE  &mt LSHFT BSPC                       &kp SPACE &lt RSIDE RET 
-                                         &kp LCTRL &kp BSPC     &kp RET    &mt RCTRL SQT
-                                         &kp F6    &kp F5       &kp F11    &kp TAB 
+                                         &kp LCTRL   &kp F5     &kp F11  &mt RCTRL SQT
+                                         &kp LALT    &kp F6     &kp ESC  &kp TAB 
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -71,7 +72,7 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  1  |  2  |  3   |    4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |      
 // | SQT |  ~  | ALT  |   TAB  | ESC  |                                          |  \   |  -    |  =    |  [   |   ]   |      
-// |  "  |  `  |      |   DEL  | CA(V)|                                          | C(T) | C(W)  |       |  .   |   /   |      
+// |  "  |  `  | C(C) |   DEL  | CA(V)|                                          | C(T) | C(W)  |       |  .   |   /   |      
 //       |     | HUD  |                                                                         |       |      |
 //                    |  RMOD  |      |                                          |      |       |
 //                                  |       |     |                  |     |     |
@@ -79,7 +80,7 @@
 			bindings = <
 	&kp N1       &kp N2     &kp N3    &kp N4   &kp N5                                          &kp N6    &kp N7      &kp N8    &kp N9    &kp N0  
 	&kp SQT      &kp TILDE  &kp RALT  &kp TAB  &kp ESC                                         &kp BSLH  &kp MINUS   &kp EQUAL &kp LBKT  &kp RBKT
-	&kp LS(SQT)  &kp GRAVE  &trans    &kp DEL  &kp LC(LS(V))                                   &kp LC(T) &kp LC(W)   &trans    &kp DOT   &kp FSLH
+	&kp LS(SQT)  &kp GRAVE  &kp LC(C) &kp DEL  &kp LC(LS(V))                                   &kp LC(T) &kp LC(W)   &trans    &kp DOT   &kp FSLH
 	             &trans     &trans                                                                                   &rgb_ug RGB_HUD  &trans
                                     &mo RMOD  &trans                                          &trans   &trans
                                                &trans           &trans             &trans  &trans 
