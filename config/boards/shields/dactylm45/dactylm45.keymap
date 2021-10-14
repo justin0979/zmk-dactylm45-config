@@ -16,14 +16,14 @@
   debounce-period = <15>;
 };
 
-#define DEF     0  // Line 44
-#define RSIDE   1  // Line 67 111
-#define LSIDE   2  // Line 89 133
-#define LLS     3  // Line 111
-#define RMOD    4  // Line 133 155 access QWER, MCR, GIMP, WM here
-#define FNUM    5  // Line 155 172 
-#define MCR     6  // Line 176 194
-#define TW      7  // Line 176 Rome: Total war keys layer
+#define DEF     0  // Line 48
+#define RSIDE   1  // Line 70 111
+#define LSIDE   2  // Line 93 133
+#define LLS     3  // Line 119
+#define RMOD    4  // Line 141 155 access QWER, MCR, GIMP, WM here
+#define FNUM    5  // Line 163 172 
+#define MCR     6  // Line 185 194
+#define TW      7  // Line 207 Rome: Total war keys layer
 
 // combos Line 223
 //#define WM      1  // Line 62
@@ -72,19 +72,19 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  1  |  2  |  3   |    4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |      
 // | SQT |  ~  | ALT  |   TAB  | ESC  |                                          |  \   |  -    |  =    |  [   |   ]   |      
-// |  "  |  `  | C(C) |   DEL  | CA(V)|                                          | C(T) | C(W)  |       |  .   |   /   |      
+// | C(Z)|  `  | C(C) |   DEL  | CA(V)|                                          | C(T) | C(W)  |       |  .   |   /   |      
 //       |     | HUD  |                                                                         |       |      |
 //                    |  RMOD  |      |                                          |      |       |
 //                                  |       |     |                  |     |     |
 //                                  |  BRD  | BRI |                  |     |     |
 			bindings = <
-	&kp N1       &kp N2     &kp N3    &kp N4   &kp N5                                          &kp N6    &kp N7      &kp N8    &kp N9    &kp N0  
-	&kp SQT      &kp TILDE  &kp RALT  &kp TAB  &kp ESC                                         &kp BSLH  &kp MINUS   &kp EQUAL &kp LBKT  &kp RBKT
-	&kp LS(SQT)  &kp GRAVE  &kp LC(C) &kp DEL  &kp LC(LS(V))                                   &kp LC(T) &kp LC(W)   &trans    &kp DOT   &kp FSLH
-	             &trans     &trans                                                                                   &rgb_ug RGB_HUD  &trans
-                                    &mo RMOD  &trans                                          &trans   &trans
-                                               &trans           &trans             &trans  &trans 
-                                               &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &trans  &trans
+	&kp N1     &kp N2     &kp N3    &kp N4   &kp N5                                          &kp N6    &kp N7      &kp N8    &kp N9    &kp N0  
+	&kp SQT    &kp TILDE  &kp RALT  &kp TAB  &kp ESC                                         &kp BSLH  &kp MINUS   &kp EQUAL &kp LBKT  &kp RBKT
+	&kp LC(Z)  &kp GRAVE  &kp LC(C) &kp DEL  &kp LC(LS(V))                                   &kp LC(T) &kp LC(W)   &trans    &kp DOT   &kp FSLH
+	           &trans     &trans                                                                                   &rgb_ug RGB_HUD  &ext_power EP_TOG
+                                  &mo RMOD  &trans                                          &trans   &trans
+                                             &trans           &trans             &trans  &trans 
+                                             &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &trans  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN &inc_dec_kp PG_UP PG_DN>;
