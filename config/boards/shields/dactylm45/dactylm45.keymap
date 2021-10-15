@@ -51,7 +51,7 @@
 // |  A  |  R  |  S  |  T  |  D  |                                            |  H  |  N   |  E   |  I  |  O  |
 // |  Z  |  X  |  C  |  V  |  B  |                                            |  K  |  M   |  ,   |  .  |  /  |
 //       | MUTE|A(<--) |                                                                   | HUI  | FNUM|
-//                    |LSIDE | SHIFT BSPC|                                      | SPACE| RSIDE RET |
+//                    |LSIDE | SHIFT |                                       | SPACE| RSIDE RET |
 //                                   | CTRL | F5 |           | F11 | CTRL SQT|
 //                                   | BSPC | F6 |           | ESC |   TAB   |
 			bindings = <
@@ -59,7 +59,7 @@
 	&kp A &kp R      &kp S     &kp T      &kp D                               &kp H     &kp N    &kp E         &kp I   &kp O   
 	&kp Z &kp X      &kp C     &kp V      &kp B                               &kp K     &kp M    &kp COMMA     &kp DOT &kp FSLH 
         &kp C_MUTE &kp RA(LEFT)                                                                &rgb_ug RGB_HUI  &tog FNUM
-                             &mo LSIDE  &mt LSHFT BSPC                       &kp SPACE &lt RSIDE RET 
+                             &mo LSIDE  &kp LSHFT                        &kp SPACE &lt RSIDE RET 
                                          &kp LCTRL   &kp F6     &kp F11  &mt RCTRL SQT
                                          &kp BSPC    &kp F5     &kp ESC  &kp TAB 
 			>;
@@ -83,7 +83,7 @@
 	&kp LC(Z)  &kp GRAVE  &kp LC(C) &kp DEL  &kp LC(LS(V))                                   &kp LC(T) &kp LC(W)   &trans    &kp DOT   &kp FSLH
 	           &trans     &trans                                                                                   &rgb_ug RGB_HUD  &ext_power EP_TOG
                                   &mo RMOD  &trans                                          &trans   &trans
-                                             &trans           &trans             &trans  &trans 
+                                             &trans           &kp BSPC             &trans  &trans 
                                              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &trans  &trans
 			>;
 
