@@ -26,11 +26,10 @@
 #define TW      7  // Line 207 Rome: Total war keys layer
 
 // combos Line 223
-//#define WM      1  // Line 62
 //#define QWER    2  // Line 84
 
-&lt { tapping-term-ms = <85>; };
-&mt { tapping-term-ms = <85>; };
+//&lt { tapping-term-ms = <85>; };
+//&mt { tapping-term-ms = <85>; };
 
 / {
 // ----------------------------------------------------------------------------------------------------------------------------------
@@ -239,27 +238,6 @@
   };
 };
 
-//		workman_layer {
-//// ---------------------------------------------------------------------------------------------------------------------------------
-//// |  Q  |  D  |  R  |  W  |  B  |                                            |  J  |  F   |  U   |  P  |  ;  |
-//// |  A  |  S  |  H  |  T  |  G  |                                            |  Y  |  N   |  E   |  O  |  I  |
-//// |  Z  |  X  |  M  |  C  |  V  |                                            |  K  |  L   |  ,   |  .  |  /  |
-////       | MUTE| HUI |                                                                     | HUD  | FNUM|
-////                    |LSIDE | SHIFT|                                      | SPACE| RSIDE |
-////                                   | CTRL |  BSPC |       | RET  | RMOD |
-////                                   | DEF  |  ACC  |       | CTRL | BRI  |
-//			bindings = <
-//	&kp Q &kp D      &kp R     &kp W      &kp B                                                &kp J     &kp F           &kp U           &kp P   &kp SEMI
-//	&kp A &kp S      &kp H     &kp T      &kp G                                                &kp Y     &kp N           &kp E           &kp O   &kp I   
-//	&kp Z &kp X      &kp M     &kp C      &kp V                                                &kp K     &kp L           &kp COMMA       &kp DOT &kp FSLH 
-//        &trans     &trans                                                                              &rgb_ug RGB_HUD &trans
-//                             &trans     &trans                                               &trans    &trans
-//                                                  &trans  &trans             &trans   &trans
-//                                                  &to DEF &trans             &trans   &trans
-//			>;
-//
-//			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-//		};
 //
 //		qwerty_tog_layer {
 //// ---------------------------------------------------------------------------------------------------------------------------------
