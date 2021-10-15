@@ -51,16 +51,16 @@
 // |  A  |  R  |  S  |  T  |  D  |                                            |  H  |  N   |  E   |  I  |  O  |
 // |  Z  |  X  |  C  |  V  |  B  |                                            |  K  |  M   |  ,   |  .  |  /  |
 //       | MUTE|A(<--) |                                                                   | HUI  | FNUM|
-//                    |LSIDE BSPC | SHIFT |                                       | SPACE| RSIDE RET |
-//                                   | CTRL | BSPC |           | F11 |  CTRL  |
+//                    | LSIDE | SHIFT |                                       | SPACE| RSIDE |
+//                                   | CTRL | BSPC |           | RET |  CTRL  |
 //                                   |  F6  | F5   |           | ESC |  TAB   |
 			bindings = <
 	&kp Q &kp W      &kp F     &kp P      &kp G                               &kp J     &kp L    &kp U         &kp Y   &kp SEMI
 	&kp A &kp R      &kp S     &kp T      &kp D                               &kp H     &kp N    &kp E         &kp I   &kp O   
 	&kp Z &kp X      &kp C     &kp V      &kp B                               &kp K     &kp M    &kp COMMA     &kp DOT &kp FSLH 
         &kp C_MUTE &kp RA(LEFT)                                                                &rgb_ug RGB_HUI  &tog FNUM
-                             &lt LSIDE BSPC  &kp LSHFT                    &kp SPACE &lt RSIDE RET 
-                                         &kp LCTRL &kp BSPC     &kp F11  &kp RCTRL 
+                             &mo LSIDE   &kp LSHFT                    &kp SPACE &mo RSIDE  
+                                         &kp LCTRL &kp BSPC     &kp RET  &kp RCTRL 
                                          &kp F6    &kp F5       &kp ESC  &kp TAB 
 			>;
 
@@ -101,7 +101,7 @@
 // |  C(Z) |  C(Y) | C(C) | S(E) | CS(J) |                                          |  HOME |  END  |       |      |   "   | 
 //         |       |A(-->)|                                                                         |       |    |
 //                        |      |       |                                          |  GUI  |  RMOD |
-//                                       |     |       |                |      |    |
+//                                       |     |       |                |  F11 |    |
 //                                       |     |       |                |      |    |
 			bindings = <
 	&kp LC(LS(E)) &kp LC(LS(P)) &kp PG_DN  &kp LC(LS(I)) &kp M                                       &kp LC(LS(N6)) &trans    &trans  &kp LC(Y)       &kp COLON      
@@ -109,7 +109,7 @@
   &kp LC(Z)     &kp LC(Y)     &kp LC(C)  &kp LS(E)     &kp LC(LS(J))                               &kp HOME       &kp END   &trans  &trans          &kp LS(SQT)       
                 &trans        &kp RA(RIGHT)                                                                                 &trans  &trans
                                     &trans        &trans                                      &kp RGUI         &mo RMOD
-                                                         &trans &trans       &trans   &trans 
+                                                         &trans &trans       &kp F11  &trans 
                                                          &trans &trans       &trans   &trans
 			>;
 
