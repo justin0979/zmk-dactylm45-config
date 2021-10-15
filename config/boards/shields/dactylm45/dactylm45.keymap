@@ -52,8 +52,8 @@
 // |  Z  |  X  |  C  |  V  |  B  |                                            |  K  |  M   |  ,   |  .  |  /  |
 //       | MUTE|A(<--) |                                                                   | HUI  | FNUM|
 //                    |LSIDE BSPC | SHIFT |                                       | SPACE| RSIDE RET |
-//                                   | CTRL | F5 |           | F11 |  CTRL  |
-//                                   | BSPC | F6 |           | ESC |  TAB   |
+//                                   | CTRL | BSPC |           | F11 |  CTRL  |
+//                                   |  F6  | F5   |           | ESC |  TAB   |
 			bindings = <
 	&kp Q &kp W      &kp F     &kp P      &kp G                               &kp J     &kp L    &kp U         &kp Y   &kp SEMI
 	&kp A &kp R      &kp S     &kp T      &kp D                               &kp H     &kp N    &kp E         &kp I   &kp O   
