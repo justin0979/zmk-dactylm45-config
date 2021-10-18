@@ -90,9 +90,9 @@
 		};
 
 		left_mo_layer {
-// CS(E), CS(P), CS(D), C(Z), C(Y) --> xournal++ ==> Erasure, Pen, Hand, Undo, Redo
-// S(E), CS(J), CS(D), C(Z), C(Y) --> GIPM ==> Erasure, window, doc layer, Undo, Redo
-// CA(T), C()), CS(I) --> new console, split horizontal console, open browser dev tools
+// CS(E), CS(P), CS(A),  C(Z), C(Y)  --> xournal++ ==> Erasure, Pen, Hand, Undo, Redo
+//  S(E), CS(J), CS(A), CS(D), C(Z), C(Y)) --> GIMP ==> Erasure, window, Select None, doc layer, Undo, Redo
+// CA(T),  C()), CS(I) --> new console, split horizontal console, open browser dev tools
 // CS(6) --> NERDTree ==> traverse windows
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | CS(E) | CS(P) | PGDN |CS(I) |  M    |                                          | CS(6) |       |       | C(Y) | COLON |   
