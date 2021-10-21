@@ -120,7 +120,7 @@
 // |       |       | PGUP |  U   |  H    |                                          |       |       |       |      |       |   
 // |       | C(-)  |  UP  |      | CS(D) |                                          |       |       |       |      |       |  
 // |       |       |      |      |       |                                          |       |       |       |      |       | 
-//         |       |C(TAB)|                                                                         |       |    |
+//         |       |A(TAB)|                                                                         |       |    |
 //                        |      |       |                                          |       |       |
 //                                       |     |       |                |      |    |
 //                                       |     |       |                |      |    |
@@ -128,7 +128,7 @@
 	&trans  &trans        &kp PG_UP  &kp U  &kp H                                &trans &trans &trans &trans &trans      
 	&trans  &kp LC(MINUS) &kp UP     &trans &kp LC(LS(D))                        &trans &trans &trans &trans &trans
   &trans  &trans        &trans     &trans &trans                               &trans &trans &trans &trans &trans       
-          &trans        &kp LC(TAB)                                                         &trans &trans
+          &trans        &kp LA(TAB)                                                         &trans &trans
                               &trans        &trans                                      &trans     &trans
                                                 &trans &trans       &trans   &trans 
                                                 &trans &trans       &trans   &trans
