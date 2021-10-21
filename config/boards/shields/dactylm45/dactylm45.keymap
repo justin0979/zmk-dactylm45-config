@@ -17,12 +17,12 @@
 };
 
 #define DEF     0  // Line 48
-#define RSIDE   1  // Line 70 111
-#define LSIDE   2  // Line 93 133
+#define RSIDE   1  // Line 70 
+#define LSIDE   2  // Line 93 
 #define LLS     3  // Line 119
-#define RMOD    4  // Line 141 155 access QWER, MCR, GIMP, WM here
-#define FNUM    5  // Line 163 172 
-#define MCR     6  // Line 185 194
+#define RMOD    4  // Line 141  access QWER, MCR, GIMP, WM here
+#define FNUM    5  // Line 163  
+#define MCR     6  // Line 185 
 #define TW      7  // Line 207 Rome: Total war keys layer
 
 // combos Line 223
@@ -120,7 +120,7 @@
 // |       |       | PGUP |  U   |  H    |                                          |       |       |       |      |       |   
 // |       | C(-)  |  UP  |      | CS(D) |                                          |       |       |       |      |       |  
 // |       |       |      |      |       |                                          |       |       |       |      |       | 
-//         |       |      |                                                                         |       |    |
+//         |       |C(TAB)|                                                                         |       |    |
 //                        |      |       |                                          |       |       |
 //                                       |     |       |                |      |    |
 //                                       |     |       |                |      |    |
@@ -128,7 +128,7 @@
 	&trans  &trans        &kp PG_UP  &kp U  &kp H                                &trans &trans &trans &trans &trans      
 	&trans  &kp LC(MINUS) &kp UP     &trans &kp LC(LS(D))                        &trans &trans &trans &trans &trans
   &trans  &trans        &trans     &trans &trans                               &trans &trans &trans &trans &trans       
-          &trans        &trans                                                         &trans &trans
+          &trans        &kp LC(TAB)                                                         &trans &trans
                               &trans        &trans                                      &trans     &trans
                                                 &trans &trans       &trans   &trans 
                                                 &trans &trans       &trans   &trans
