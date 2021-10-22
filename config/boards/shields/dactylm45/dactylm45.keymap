@@ -227,15 +227,15 @@
 
 	};
 
-  combos {
-    compatible = "zmk,combos";
-
-    combos_shift_sqt {
-      timeout-ms = <50>;
-      key-positions = <20 37>;
-      bindings = <&kp LS(SQT)>;
-    };
-  };
+//  combos {
+//    compatible = "zmk,combos";
+//
+//    combos_shift_sqt {
+//      timeout-ms = <50>;
+//      key-positions = <20 37>;
+//      bindings = <&kp LS(SQT)>;
+//    };
+//  };
 };
 
 //
