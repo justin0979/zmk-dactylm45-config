@@ -97,7 +97,7 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | CS(E) | CS(P) | PGDN |CS(I) |  M    |                                          | CS(6) |       |       | C(Y) | COLON |   
 // | LLS   | C(+)  |  DN  |CA(T) | CS(A) |                                          | LARROW| DOWN  |  UP   |RARROW| C())  |  
-// |  C(Z) |  C(Y) | C(C) | S(E) | CS(J) |                                          |  HOME |  END  |       |      |   "   | 
+// |  C(Z) |  C(Y) | C(C) | S(E) | CS(J) |                                          |  HOME |  END  |       |      |   '   | 
 //         |       |A(-->)|                                                                         |       |    |
 //                        |      |       |                                          |  GUI  |  RMOD |
 //                                       |     |       |                |      |    |
@@ -105,7 +105,7 @@
 			bindings = <
 	&kp LC(LS(E)) &kp LC(LS(P)) &kp PG_DN  &kp LC(LS(I)) &kp M                                       &kp LC(LS(N6)) &trans    &trans  &kp LC(Y)       &kp COLON      
 	&mo LLS       &kp LC(PLUS)  &kp DOWN   &kp LC(LA(T)) &kp LC(LS(A))                               &kp LEFT_ARROW &kp DOWN  &kp UP  &kp RIGHT_ARROW &kp LC(RPAR)
-  &kp LC(Z)     &kp LC(Y)     &kp LC(C)  &kp LS(E)     &kp LC(LS(J))                               &kp HOME       &kp END   &trans  &trans          &kp LS(SQT)       
+  &kp LC(Z)     &kp LC(Y)     &kp LC(C)  &kp LS(E)     &kp LC(LS(J))                               &kp HOME       &kp END   &trans  &trans          &kp SQT       
                 &trans        &kp RA(RIGHT)                                                                                 &trans  &trans
                                     &trans        &trans                                      &kp RGUI         &mo RMOD
                                                          &trans &trans       &trans   &trans 
@@ -119,7 +119,7 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |       |       | PGUP |  U   |  H    |                                          |       |       |       |      |       |   
 // |       | C(-)  |  UP  |      | CS(D) |                                          |       |       |       |      |       |  
-// |       |       |      |      |       |                                          |       |       |       |      |       | 
+// |       |       |      |      |       |                                          |       |       |       |      |   "   | 
 //         |       |A(TAB)|                                                                         |       |    |
 //                        |      |       |                                          |       |       |
 //                                       |     |       |                |      |    |
@@ -127,7 +127,7 @@
 			bindings = <
 	&trans  &trans        &kp PG_UP  &kp U  &kp H                                &trans &trans &trans &trans &trans      
 	&trans  &kp LC(MINUS) &kp UP     &trans &kp LC(LS(D))                        &trans &trans &trans &trans &trans
-  &trans  &trans        &trans     &trans &trans                               &trans &trans &trans &trans &trans       
+  &trans  &trans        &trans     &trans &trans                               &trans &trans &trans &trans &kp LS(SQT)       
           &trans        &kp LA(TAB)                                                         &trans &trans
                               &trans        &trans                                      &trans     &trans
                                                 &trans &trans       &trans   &trans 
@@ -147,7 +147,7 @@
 //                                    |  SAD  | SAI  |               |     |     |
 //                                    |  EFR  | EFF  |               |     | BTC |
 			bindings = <
-	&trans    &trans      &kp HASH  &kp DLLR &trans                                         &kp CARET      &kp AMPS     &kp STAR      &kp LPAR     &kp RPAR  
+	&trans    &trans      &kp HASH  &kp DLLR &kp F5                                         &kp F6      &kp AMPS     &kp STAR      &kp LPAR     &kp RPAR  
 	&to MCR   &kp LS(TAB) &kp LCTRL &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp LS(SQT)  &kp SQT       &kp GT       &kp LBRC
   &to TW    &kp LGUI    &trans    &trans   &trans                                         &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4
 	          &trans      &trans                                                                                        &trans    &ext_power EP_TOG
