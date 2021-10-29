@@ -52,7 +52,7 @@
 //       | MUTE|A(<--) |                                                                   | HUI  | FNUM|
 //                    | LSIDE | SHIFT |                                       | SPACE| RSIDE |
 //                                   | CTRL | BSPC |           | RET |  CTRL  |
-//                                   |A(TAB)| F5   |           | SQT |  TAB   |
+//                                   |A(TAB)| F5   |           | SQT |  F11   |
 			bindings = <
 	&kp Q &kp W      &kp F     &kp P      &kp G                               &kp J     &kp L    &kp U         &kp Y   &kp SEMI
 	&kp A &kp R      &kp S     &kp T      &kp D                               &kp H     &kp N    &kp E         &kp I   &kp O   
@@ -60,7 +60,7 @@
         &kp C_MUTE &kp RA(LEFT)                                                                &rgb_ug RGB_HUI  &tog FNUM
                             &mo LSIDE   &kp LSHFT                    &kp SPACE &mo RSIDE  
                                       &kp LCTRL   &kp BSPC     &kp RET  &kp RCTRL 
-                                      &kp LA(TAB) &kp F5       &kp SQT  &kp TAB 
+                                      &kp LA(TAB) &kp F5       &kp SQT  &kp F11 
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -70,7 +70,7 @@
 // C(T), C(W), CA(V) --> open browser tab, close tab, paste
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  1  |  2  |  3   |    4   |  5   |                                          |  6   |  7    |  8    |  9   |   0   |      
-// |     |  ~  | ALT  |   TAB  | ESC  |                                          |  \   |  -    |  =    |  [   |   ]   |      
+// |  '  |  ~  | ALT  |   TAB  | ESC  |                                          |  \   |  -    |  =    |  [   |   ]   |      
 // | C(Z)|  `  | C(C) |   DEL  | CA(V)|                                          | C(T) | C(W)  |       |  .   |   /   |      
 //       |     | HUD  |                                                                         |       |      |
 //                    |  RMOD  |      |                                          |      |       |
@@ -78,11 +78,11 @@
 //                                  |  BRD  | BRI |                  |     |     |
 			bindings = <
 	&kp N1     &kp N2     &kp N3    &kp N4   &kp N5                                          &kp N6    &kp N7      &kp N8    &kp N9    &kp N0  
-	&trans     &kp TILDE  &kp RALT  &kp TAB  &kp ESC                                         &kp BSLH  &kp MINUS   &kp EQUAL &kp LBKT  &kp RBKT
+	&kp SQT    &kp TILDE  &kp RALT  &kp TAB  &kp ESC                                         &kp BSLH  &kp MINUS   &kp EQUAL &kp LBKT  &kp RBKT
 	&kp LC(Z)  &kp GRAVE  &kp LC(C) &kp DEL  &kp LC(LS(V))                                   &kp LC(T) &kp LC(W)   &trans    &kp DOT   &kp FSLH
 	           &trans     &trans                                                                                   &rgb_ug RGB_HUD  &ext_power EP_TOG
                                   &mo RMOD  &trans                                          &trans   &trans
-                                             &trans           &kp F6             &trans  &trans 
+                                             &trans           &trans             &trans  &trans 
                                              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &trans  &trans
 			>;
 
@@ -100,7 +100,7 @@
 // |  C(Z) |  C(Y) | C(C) | S(E) | CS(J) |                                          |  HOME |  END  |       |      |   "   | 
 //         |       |A(-->)|                                                                         |       |    |
 //                        |      |       |                                          |  GUI  |  RMOD |
-//                                       |     |       |                |  F11 |    |
+//                                       |     |       |                |      |    |
 //                                       |     |       |                |      |    |
 			bindings = <
 	&kp LC(LS(E)) &kp LC(LS(P)) &kp PG_DN  &kp LC(LS(I)) &kp M                                       &kp LC(LS(N6)) &trans    &trans  &kp LC(Y)       &kp COLON      
@@ -108,7 +108,7 @@
   &kp LC(Z)     &kp LC(Y)     &kp LC(C)  &kp LS(E)     &kp LC(LS(J))                               &kp HOME       &kp END   &trans  &trans          &kp LS(SQT)       
                 &trans        &kp RA(RIGHT)                                                                                 &trans  &trans
                                     &trans        &trans                                      &kp RGUI         &mo RMOD
-                                                         &trans &trans       &kp F11  &trans 
+                                                         &trans &trans       &trans   &trans 
                                                          &trans &trans       &trans   &trans
 			>;
 
@@ -139,8 +139,8 @@
 
 		right_mod_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |     |       |  #   |  $   |      |                                          |  ^   |   &   |  *    |  (   |   )   |      
-// | MCR |LS(TAB)| CTL  | TAB  | ESC  |                                          |LARROW|  SPC  |  =    |   >  |   {   |       
+// |     |       |  #   |  $   | F5   |                                          |  F6  |   &   |  *    |  (   |   )   |      
+// | MCR |LS(TAB)| CTL  | TAB  | ESC  |                                          |LARROW| S(SQT)|  '    |   >  |   {   |       
 // | TW  |LGUI   |      |      |      |                                          |  BT0 |  BT1  |  BT2  |  BT3 |  BT4  |      
 //       |       |      |                                                                       |       |  PWR |
 //                      |      |      |                                          |      |       |
@@ -148,7 +148,7 @@
 //                                    |  EFR  | EFF  |               |     | BTC |
 			bindings = <
 	&trans    &trans      &kp HASH  &kp DLLR &trans                                         &kp CARET      &kp AMPS     &kp STAR      &kp LPAR     &kp RPAR  
-	&to MCR   &kp LS(TAB) &kp LCTRL &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp SPACE    &kp EQUAL     &kp GT       &kp LBRC
+	&to MCR   &kp LS(TAB) &kp LCTRL &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp LS(SQT)  &kp SQT       &kp GT       &kp LBRC
   &to TW    &kp LGUI    &trans    &trans   &trans                                         &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4
 	          &trans      &trans                                                                                        &trans    &ext_power EP_TOG
                                          &trans   &trans                                  &trans   &trans
