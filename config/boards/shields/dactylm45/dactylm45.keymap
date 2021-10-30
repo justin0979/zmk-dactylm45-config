@@ -118,16 +118,16 @@
 		lower_left_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |       |       | PGUP |  U   |  H    |                                          |       |       |       |      |       |   
-// |       | C(-)  |  UP  |      | CS(D) |                                          |       |       |       |      |   "   |  
-// |       |       |      |      |       |                                          |       |       |       |      |       | 
+// |       | C(-)  |  UP  |      | CS(D) |                                          |       |       |       |      |       |  
+// |       |       |      |      |       |                                          |       |       |       |      |   "   | 
 //         |       |A(TAB)|                                                                         |       |    |
 //                        |      |       |                                          |       |       |
 //                                       |     |       |                |      |    |
 //                                       |     |       |                |      |    |
 			bindings = <
 	&trans  &trans        &kp PG_UP  &kp U  &kp H                                &trans &trans &trans &trans &trans      
-	&trans  &kp LC(MINUS) &kp UP     &trans &kp LC(LS(D))                        &trans &trans &trans &trans &kp LS(SQT)
-  &trans  &trans        &trans     &trans &trans                               &trans &trans &trans &trans &trans       
+	&trans  &kp LC(MINUS) &kp UP     &trans &kp LC(LS(D))                        &trans &trans &trans &trans &trans
+  &trans  &trans        &trans     &trans &trans                               &trans &trans &trans &trans &kp LS(SQT)       
           &trans        &kp LA(TAB)                                                         &trans &trans
                               &trans        &trans                                      &trans     &trans
                                                 &trans &trans       &trans   &trans 
