@@ -17,13 +17,14 @@
 };
 
 #define DEF     0  // Line 48
-#define RSIDE   1  // Line 70 
-#define LSIDE   2  // Line 93 
-#define LLS     3  // Line 119
-#define RMOD    4  // Line 141  access QWER, MCR, GIMP, WM here
-#define FNUM    5  // Line 163  
-#define MCR     6  // Line 185 
-#define TW      7  // Line 207 Rome: Total war keys layer
+#define QWE     1
+#define RSIDE   2  // Line 70 
+#define LSIDE   3  // Line 93 
+#define LLS     4  // Line 119
+#define RMOD    5  // Line 141  access QWER, MCR, GIMP, WM here
+#define FNUM    6  // Line 163  
+#define MCR     7  // Line 185 
+#define TW      8  // Line 207 Rome: Total war keys layer
 
 // combos Line 223
 //#define QWER    2  // Line 84
@@ -65,6 +66,29 @@
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
+
+		qwerty_tog_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |  
+// |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   | 
+// |  Z  |  X  |  C   |  V   |  B   |                                          |  N   |  M    |  ,    |  .   |   /   |
+//       |     |      |                                                                       |ORANGE |      |
+//                    |      |      |                                          |      |       |
+//                                  |     |     |               |    |         |
+//                                  |     |     |               |    |         |
+			bindings = <
+	&kp Q &kp W   &kp E  &kp R  &kp T                                         &kp Y  &kp U  &kp I                            &kp O   &kp P   
+	&kp A &kp S   &kp D  &kp F  &kp G                                         &kp H  &kp J  &kp K                            &kp L   &kp SEMI
+	&kp Z &kp X   &kp C  &kp V  &kp B                                         &kp N  &kp M  &kp COMMA                        &kp DOT &kp FSLH
+	      &trans  &trans                                                                    &rgb_ug RGB_COLOR_HSB(30,100,10) &trans
+                       &trans &trans                                        &trans &trans
+                                     &trans  &trans          &trans  &trans
+                                     &to DEF &trans          &trans  &trans
+			>;
+
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+		};
+
 
 		right_mo_layer {
 // C(T), C(W), CA(V) --> open browser tab, close tab, paste
@@ -139,7 +163,7 @@
 
 		right_mod_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |     |       |  #   |  $   | F5   |                                          |  F6  |   &   |  *    |  (   |   )   |      
+// | QWE |       |  #   |  $   | F5   |                                          |  F6  |   &   |  *    |  (   |   )   |      
 // | MCR |LS(TAB)| CTL  | TAB  | ESC  |                                          |LARROW| S(SQT)|  '    |   >  |   {   |       
 // | TW  |LGUI   |      |      |      |                                          |  BT0 |  BT1  |  BT2  |  BT3 |  BT4  |      
 //       |       |      |                                                                       |       |  PWR |
@@ -147,7 +171,7 @@
 //                                    |  SAD  | SAI  |               |     |     |
 //                                    |  EFR  | EFF  |               |     | BTC |
 			bindings = <
-	&trans    &trans      &kp HASH  &kp DLLR &kp F5                                         &kp F6      &kp AMPS     &kp STAR      &kp LPAR     &kp RPAR  
+	&to QWE   &trans      &kp HASH  &kp DLLR &kp F5                                         &kp F6         &kp AMPS     &kp STAR      &kp LPAR     &kp RPAR  
 	&to MCR   &kp LS(TAB) &kp LCTRL &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp LS(SQT)  &kp SQT       &kp GT       &kp LBRC
   &to TW    &kp LGUI    &trans    &trans   &trans                                         &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4
 	          &trans      &trans                                                                                        &trans    &ext_power EP_TOG
@@ -238,26 +262,3 @@
 //  };
 };
 
-//
-//		qwerty_tog_layer {
-//// ---------------------------------------------------------------------------------------------------------------------------------
-//// |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |  
-//// |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   | 
-//// |  Z  |  X  |  C   |  V   |  B   |                                          |  N   |  M    |  ,    |  .   |   /   |
-////       |     |      |                                                                       |ORANGE |      |
-////                    |      |      |                                          |      |       |
-////                                  |     |     |               |    |         |
-////                                  |     |     |               |    |         |
-//			bindings = <
-//	&kp Q &kp W   &kp E  &kp R  &kp T                                         &kp Y  &kp U  &kp I                            &kp O   &kp P   
-//	&kp A &kp S   &kp D  &kp F  &kp G                                         &kp H  &kp J  &kp K                            &kp L   &kp SEMI
-//	&kp Z &kp X   &kp C  &kp V  &kp B                                         &kp N  &kp M  &kp COMMA                        &kp DOT &kp FSLH
-//	      &trans  &trans                                                                    &rgb_ug RGB_COLOR_HSB(30,100,10) &trans
-//                       &trans &trans                                        &trans &trans
-//                                     &trans  &trans          &trans  &trans
-//                                     &to DEF &trans          &trans  &trans
-//			>;
-//
-//			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
-//		};
-//
