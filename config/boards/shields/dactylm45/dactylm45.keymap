@@ -17,14 +17,14 @@
 };
 
 #define DEF     0  // Line 48
-#define QWE     1
-#define RSIDE   2  // Line 70 
-#define LSIDE   3  // Line 93 
-#define LLS     4  // Line 119
-#define RMOD    5  // Line 141  access QWER, MCR, GIMP, WM here
-#define FNUM    6  // Line 163  
-#define MCR     7  // Line 185 
-#define TW      8  // Line 207 Rome: Total war keys layer
+#define QWE     1  // Line 70
+#define RSIDE   2  // Line 92 
+#define LSIDE   3  // Line 115
+#define LLS     4  // Line 141
+#define RMOD    5  // Line 163  access QWER, MCR, GIMP, WM here
+#define FNUM    6  // Line 185  
+#define MCR     7  // Line 207 
+#define TW      8  // Line 229 Rome: Total war keys layer
 
 // combos Line 223
 //#define QWER    2  // Line 84
@@ -88,7 +88,6 @@
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
 		};
-
 
 		right_mo_layer {
 // C(T), C(W), CA(V) --> open browser tab, close tab, paste
