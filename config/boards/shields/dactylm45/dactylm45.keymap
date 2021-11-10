@@ -163,16 +163,16 @@
 		right_mod_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | QWE |       |  #   |  $   | F5   |                                          |  F6  |   &   |  *    |  (   |   )   |      
-// | MCR |LS(TAB)| CTL  | TAB  | ESC  |                                          |LARROW|       |       |   >  |   {   |       
+// | MCR |LS(TAB)| CTL  | TAB  | ESC  |                                          |LARROW|  DN   |  UP   |RARROW|   {   |       
 // | TW  |LGUI   |      |      |      |                                          |  BT0 |  BT1  |  BT2  |  BT3 |  BT4  |      
 //       |       |      |                                                                       |       |  PWR |
 //                      |      |      |                                          |      |       |
 //                                    |  SAD  | SAI  |               |     |     |
 //                                    |  EFR  | EFF  |               |     | BTC |
 			bindings = <
-	&to QWE   &trans      &kp HASH  &kp DLLR &kp F5                                         &kp F6         &kp AMPS     &kp STAR      &kp LPAR     &kp RPAR  
-	&to MCR   &kp LS(TAB) &kp LCTRL &kp TAB  &kp ESC                                        &kp LEFT_ARROW &trans       &trans        &kp GT       &kp LBRC
-  &to TW    &kp LGUI    &trans    &trans   &trans                                         &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4
+	&to QWE   &trans      &kp HASH  &kp DLLR &kp F5                                         &kp F6         &kp AMPS     &kp STAR      &kp LPAR        &kp RPAR  
+	&to MCR   &kp LS(TAB) &kp LCTRL &kp TAB  &kp ESC                                        &kp LEFT_ARROW &kp DOWN     &kp UP        &kp RIGHT_ARROW &kp LBRC
+  &to TW    &kp LGUI    &trans    &trans   &trans                                         &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
 	          &trans      &trans                                                                                        &trans    &ext_power EP_TOG
                                          &trans   &trans                                  &trans   &trans
                                            &rgb_ug RGB_SAD  &rgb_ug RGB_SAI    &trans  &trans 
