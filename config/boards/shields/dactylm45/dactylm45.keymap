@@ -53,7 +53,7 @@
 //       | MUTE|A(<--) |                                                                   | HUI  | FNUM|
 //                    | LSIDE | SHIFT |                                       | SPACE| RSIDE |
 //                                   | CTRL | BSPC |           | RET |  CTRL  |
-//                                   | F5   | F6   |           | F11 | C(TAB) |
+//                                   | F5   | F6   |           | F11 |  ESC   |
 			bindings = <
 	&kp Q &kp W      &kp F     &kp P      &kp G                               &kp J     &kp L    &kp U         &kp Y   &kp SEMI
 	&kp A &kp R      &kp S     &kp T      &kp D                               &kp H     &kp N    &kp E         &kp I   &kp O   
@@ -61,7 +61,7 @@
         &kp C_MUTE &kp RA(LEFT)                                                                &rgb_ug RGB_HUI  &tog FNUM
                             &mo LSIDE   &kp LSHFT                    &kp SPACE &mo RSIDE  
                                       &kp LCTRL   &kp BSPC     &kp RET  &kp RCTRL 
-                                      &kp F5      &kp F6       &kp F11  &kp LC(TAB)
+                                      &kp F5      &kp F6       &kp F11  &kp ESC
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -118,7 +118,7 @@
 // CA(T),  C()), CS(I) --> new console, split horizontal console, open browser dev tools
 // CS(6) --> NERDTree ==> traverse windows
 // ---------------------------------------------------------------------------------------------------------------------------------
-// | CS(E) | CS(P) | PGDN |CS(I) |  M    |                                          | CS(6) |       |       | C(Y) | COLON |   
+// | CS(E) | CS(P) | PGDN |CS(I) |  M    |                                          | CS(6) | C(TAB)|       | C(Y) | COLON |   
 // | LLS   | C(+)  |  DN  |CA(T) | CS(A) |                                          | LARROW| DOWN  |  UP   |RARROW| C())  |  
 // |  C(Z) |  C(Y) | C(C) | S(E) | CS(J) |                                          |  HOME |  END  |       |      |  SQT  | 
 //         |       |A(-->)|                                                                         |       |    |
@@ -126,10 +126,10 @@
 //                                       |     |       |                |      |    |
 //                                       |     |       |                |      |    |
 			bindings = <
-	&kp LC(LS(E)) &kp LC(LS(P)) &kp PG_DN  &kp LC(LS(I)) &kp M                                       &kp LC(LS(N6)) &trans    &trans  &kp LC(Y)       &kp COLON      
-	&mo LLS       &kp LC(PLUS)  &kp DOWN   &kp LC(LA(T)) &kp LC(LS(A))                               &kp LEFT_ARROW &kp DOWN  &kp UP  &kp RIGHT_ARROW &kp LC(RPAR)
-  &kp LC(Z)     &kp LC(Y)     &kp LC(C)  &kp LS(E)     &kp LC(LS(J))                               &kp HOME       &kp END   &trans  &trans          &kp SQT       
-                &trans        &kp RA(RIGHT)                                                                                 &trans  &trans
+	&kp LC(LS(E)) &kp LC(LS(P)) &kp PG_DN  &kp LC(LS(I)) &kp M                                       &kp LC(LS(N6)) &kp LC(TAB) &trans  &kp LC(Y)       &kp COLON      
+	&mo LLS       &kp LC(PLUS)  &kp DOWN   &kp LC(LA(T)) &kp LC(LS(A))                               &kp LEFT_ARROW &kp DOWN    &kp UP  &kp RIGHT_ARROW &kp LC(RPAR)
+  &kp LC(Z)     &kp LC(Y)     &kp LC(C)  &kp LS(E)     &kp LC(LS(J))                               &kp HOME       &kp END     &trans  &trans          &kp SQT       
+                &trans        &kp RA(RIGHT)                                                                                   &trans  &trans
                                     &trans        &trans                                      &kp RGUI         &mo RMOD
                                                          &trans &trans       &trans   &trans 
                                                          &trans &trans       &trans   &trans
