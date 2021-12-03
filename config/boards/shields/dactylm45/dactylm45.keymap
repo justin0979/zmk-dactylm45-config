@@ -13,7 +13,8 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 &kscan0 {
-  debounce-period = <10>;
+  debounce-press-ms = <10>;
+  debounce-release-ms = <10>;
 };
 
 #define DEF     0  // Line 48
