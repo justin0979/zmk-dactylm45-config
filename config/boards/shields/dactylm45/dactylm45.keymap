@@ -12,10 +12,10 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-&kscan0 {
-  debounce-press-ms = <10>;
-  debounce-release-ms = <10>;
-};
+// &kscan0 {
+//   debounce-press-ms = <10>;
+//   debounce-release-ms = <10>;
+// };
 
 #define DEF     0  // Line 48
 #define QWE     1  // Line 70
