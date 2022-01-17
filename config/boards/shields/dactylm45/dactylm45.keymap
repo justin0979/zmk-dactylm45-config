@@ -164,17 +164,17 @@
 
 		lower_left_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |       |       | PGUP |  U   |  H    |                                          |       |       |       |      |       |   
-// |       | C(-)  |  UP  |      | CS(D) |                                          |       |       |       |      |       |  
-// |       |       |      |      |       |                                          |       |       |       |      |   "   | 
+// |       |       | PGUP |  U   |  H    |                                          |       |   (   |   )   |      |       |   
+// |       | C(-)  |  UP  |      | CS(D) |                                          |       |   [   |   ]   |      |       |  
+// |       |       |      |      |       |                                          |       |   {   |   }   |      |   "   | 
 //         |       |A(TAB)|                                                                         |       |    |
 //                        |      |       |                                          |       |       |
 //                                       |     |       |                |      |    |
 //                                       |     |       |                |      |    |
 			bindings = <
-	&trans  &trans        &kp PG_UP  &kp U  &kp H                                &trans &trans &trans &trans &trans      
-	&trans  &kp LC(MINUS) &kp UP     &trans &kp LC(LS(D))                        &trans &trans &trans &trans &trans
-  &trans  &trans        &trans     &trans &trans                               &trans &trans &trans &trans &kp LS(SQT)       
+	&trans  &trans        &kp PG_UP  &kp U  &kp H                                &trans &kp LPAR     &kp RPAR     &trans &trans      
+	&trans  &kp LC(MINUS) &kp UP     &trans &kp LC(LS(D))                        &trans &kp LBKT     &kp RBKT     &trans &trans
+  &trans  &trans        &trans     &trans &trans                               &trans &kp LS(LBKT) &kp LS(RBKT) &trans &kp LS(SQT)       
           &trans        &kp LA(TAB)                                                         &trans &trans
                               &trans        &trans                                      &trans     &trans
                                                 &trans &trans       &trans   &trans 
