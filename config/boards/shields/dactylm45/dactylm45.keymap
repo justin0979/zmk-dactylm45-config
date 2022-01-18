@@ -54,7 +54,7 @@
 //       | MUTE|A(<--) |                                                                   | HUI  | FNUM|
 //                    | LSIDE | SHIFT |                                       | SPACE| RSIDE |
 //                                   | CTRL | BSPC |           | RET |  CTRL  |
-//                                   | F5   | F6   |           | F11 |  ESC   |
+//                                   | ALT  | F6   |           | ESC |  ALT   |
 			bindings = <
 	&kp Q &kp W      &kp F     &kp P      &kp G                               &kp J     &kp L    &kp U         &kp Y   &kp SEMI
 	&kp A &kp R      &kp S     &kp T      &kp D                               &kp H     &kp N    &kp E         &kp I   &kp O   
@@ -62,7 +62,7 @@
         &kp C_MUTE &kp RA(LEFT)                                                                &rgb_ug RGB_HUI  &tog FNUM
                             &mo LSIDE   &kp LSHFT                    &kp SPACE &mo RSIDE  
                                       &kp LCTRL   &kp BSPC     &kp RET  &kp RCTRL 
-                                      &kp F5      &kp F6       &kp F11  &kp ESC
+                                      &kp LALT    &kp F6       &kp ESC  &kp RALT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -141,17 +141,17 @@
 
 		lower_left_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |       |       | PGUP |  U   |  H    |                                          |       |   (   |   )   |      |       |   
-// |       | C(-)  |  UP  |      | CS(D) |                                          |       |   [   |   ]   |      |       |  
-// |       |       |      |      |       |                                          |       |   {   |   }   |      |   "   | 
+// |       |       | PGUP |  U   |  H    |                                          |  F1   |  F2   |  F3   |  F4  |  F5   |   
+// |       | C(-)  |  UP  |      | CS(D) |                                          |  F6   |  F7   |  F8   |  F9  |  F10  |  
+// |       |       |      |      |       |                                          |  F11  |  F12  |       |      |       | 
 //         |       |A(TAB)|                                                                         |       |    |
 //                        |      |       |                                          |       |       |
 //                                       |     |       |                |      |    |
 //                                       |     |       |                |      |    |
 			bindings = <
-	&trans  &trans        &kp PG_UP  &kp U  &kp H                                &trans &kp LPAR     &kp RPAR     &trans &trans      
-	&trans  &kp LC(MINUS) &kp UP     &trans &kp LC(LS(D))                        &trans &kp LBKT     &kp RBKT     &trans &trans
-  &trans  &trans        &trans     &trans &trans                               &trans &kp LS(LBKT) &kp LS(RBKT) &trans &kp LS(SQT)       
+	&trans  &trans        &kp PG_UP  &kp U  &kp H                                &kp F1  &kp F2    &kp F3     &kp F4  &kp F5      
+	&trans  &kp LC(MINUS) &kp UP     &trans &kp LC(LS(D))                        &kp F6  &kp F7    &kp F8     &kp F9  &kp F10
+  &trans  &trans        &trans     &trans &trans                               &kp F11 &kp F12   &trans     &trans  &trans       
           &trans        &kp LA(TAB)                                                         &trans &trans
                               &trans        &trans                                      &trans     &trans
                                                 &trans &trans       &trans   &trans 
