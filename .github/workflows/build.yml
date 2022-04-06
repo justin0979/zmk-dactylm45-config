@@ -35,6 +35,9 @@ jobs:
         run: west zephyr-export
       - name: West Build (dactylm45_left)
         run: west build -s zmk/app -b nice_nano -- -DSHIELD=dactylm45_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: Dactylm45 DTS File
+        if: ${{ always() }}
+        run: cat -n build/zephyr/nice_nano.dts.pre.tmp
       - name: Dactylm45 Left Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
