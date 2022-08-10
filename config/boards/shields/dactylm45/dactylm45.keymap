@@ -54,7 +54,7 @@
 //       | MUTE| CTRL|                                                                   | CTRL | RALT|
 //                    | LSIDE | SHIFT |                                       | SPACE| RSIDE |
 //                                   | CTRL | BSPC |           | RET |  CTRL  |
-//                                   | ALT  | F6   |           | ESC |  ALT   |
+//                                   |A(TAB)| F6   |           | ESC |  ALT   |
 			bindings = <
 	&kp Q &kp W      &kp F     &kp P      &kp G                               &kp J     &kp L    &kp U      &kp Y   &kp SEMI
 	&kp A &kp R      &kp S     &kp T      &kp D                               &kp H     &kp N    &kp E      &kp I   &kp O   
@@ -62,7 +62,7 @@
         &kp C_MUTE &kp LCTRL                                                                   &kp RCTRL  &kp RALT
                             &mo LSIDE   &kp LSHFT                    &kp SPACE &mo RSIDE  
                                       &kp LCTRL   &kp BSPC     &kp RET  &kp RCTRL 
-                                      &kp LALT    &kp F6       &kp ESC  &kp RALT
+                                      &kp RA(TAB) &kp F6       &kp ESC  &kp RALT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -146,16 +146,16 @@
 // |  C(Z) |  C(Y) | C(C) | S(E) | CS(J) |                                          |  HOME |  END  |       |      |  SQT  | 
 //         |       |A(-->)|                                                                         |       |    |
 //                        |      |       |                                          |  GUI  |  RMOD |
-//                                       |      |       |                |      |    |
-//                                       |A(TAB)|       |                |      |    |
+//                                       |     |       |                |      |    |
+//                                       |     |       |                |      |    |
 			bindings = <
 	&kp LC(LS(E)) &kp LC(LS(P)) &kp PG_DN  &kp LC(LS(I)) &kp M                                       &kp LC(LS(N6)) &kp LC(TAB) &trans  &kp LC(Y)       &kp COLON      
 	&mo LLS       &kp LC(PLUS)  &kp DOWN   &kp LC(LA(T)) &kp LC(LS(A))                               &kp LEFT_ARROW &kp DOWN    &kp UP  &kp RIGHT_ARROW &kp LC(RPAR)
   &kp LC(Z)     &kp LC(Y)     &kp LC(C)  &kp LS(E)     &kp LC(LS(J))                               &kp HOME       &kp END     &trans  &trans          &kp SQT       
                 &trans        &kp RA(RIGHT)                                                                                   &trans  &trans
                                     &trans        &trans                                      &kp RGUI         &mo RMOD
-                                                         &trans      &trans       &trans   &trans 
-                                                         &kp RA(TAB) &trans       &trans   &trans
+                                                         &trans &trans       &trans   &trans 
+                                                         &trans &trans       &trans   &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
