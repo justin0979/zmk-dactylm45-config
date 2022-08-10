@@ -146,16 +146,16 @@
 // |  C(Z) |  C(Y) | C(C) | S(E) | CS(J) |                                          |  HOME |  END  |       |      |  SQT  | 
 //         |       |A(-->)|                                                                         |       |    |
 //                        |      |       |                                          |  GUI  |  RMOD |
-//                                       |     |       |                |      |    |
-//                                       |     |       |                |      |    |
+//                                       |      |       |                |      |    |
+//                                       |A(TAB)|       |                |      |    |
 			bindings = <
 	&kp LC(LS(E)) &kp LC(LS(P)) &kp PG_DN  &kp LC(LS(I)) &kp M                                       &kp LC(LS(N6)) &kp LC(TAB) &trans  &kp LC(Y)       &kp COLON      
 	&mo LLS       &kp LC(PLUS)  &kp DOWN   &kp LC(LA(T)) &kp LC(LS(A))                               &kp LEFT_ARROW &kp DOWN    &kp UP  &kp RIGHT_ARROW &kp LC(RPAR)
   &kp LC(Z)     &kp LC(Y)     &kp LC(C)  &kp LS(E)     &kp LC(LS(J))                               &kp HOME       &kp END     &trans  &trans          &kp SQT       
                 &trans        &kp RA(RIGHT)                                                                                   &trans  &trans
                                     &trans        &trans                                      &kp RGUI         &mo RMOD
-                                                         &trans &trans       &trans   &trans 
-                                                         &trans &trans       &trans   &trans
+                                                         &trans      &trans       &trans   &trans 
+                                                         &kp RA(TAB) &trans       &trans   &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
