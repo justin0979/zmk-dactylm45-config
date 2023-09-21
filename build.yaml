@@ -1,5 +1,6 @@
-board: ["nice_nano_v1"]
-shield: ["dactylm45_left", "dactylm45_right"]
-
 ---
-
+include:
+  - board: nice_nano
+    shield: dactylm45_left
+  - board: nice_nano
+    shield: dactylm45_right
