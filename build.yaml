@@ -1,0 +1,5 @@
+board: ["nice_nano_v1"]
+shield: ["dactylm45_left", "dactylm45_right"]
+
+---
+
