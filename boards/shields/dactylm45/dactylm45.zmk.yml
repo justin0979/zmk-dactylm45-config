@@ -1,0 +1,14 @@
+file_format: "1"
+id: dactylm45
+name: Dactylm45
+type: shield
+url: https://splitkb.com/products/kyria-pcb-kit
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - encoder
+  - underglow
+siblings:
+  - dactylm45_left
+  - dactylm45_right
