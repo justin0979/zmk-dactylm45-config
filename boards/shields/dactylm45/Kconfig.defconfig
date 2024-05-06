@@ -2,7 +2,7 @@
 if SHIELD_DACTYLM45_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "DactylM45"
+    default "DactylM4x5"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
