@@ -4,7 +4,6 @@ name: Dactylm45
 type: shield
 url: https://www.diykeyboards.com/keyboards/keyboard-kits/product/dactyl-manuform-kit
 requires: [pro_micro]
-exposes: [i2c_oled]
 features:
   - keys
   - encoder
