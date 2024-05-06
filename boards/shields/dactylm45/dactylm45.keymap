@@ -52,16 +52,16 @@
 // |  Z  |  X  |  C  |  V  |  B  |                                            |  K  |  M   |  ,   |  .  |  /  |
 //       | MUTE| CTRL|                                                                   | CTRL | RALT|
 //                    | LSIDE | SHIFT |                                       | SPACE| RSIDE |
-//                                   | CTRL | BSPC |           | RET |  CTRL  |
-//                                   |A(TAB)| F6   |           | ESC |  ALT   |
+//                                   | VOL UP |  BSPC  |           | RET |  CTRL  |
+//                                   | VOL DN | A(TAB) |           | ESC |  ALT   |
 			bindings = <
 	&kp Q &kp W      &kp F     &kp P      &kp G                               &kp J     &kp L    &kp U      &kp Y   &kp SEMI
 	&kp A &kp R      &kp S     &kp T      &kp D                               &kp H     &kp N    &kp E      &kp I   &kp O   
 	&kp Z &kp X      &kp C     &kp V      &kp B                               &kp K     &kp M    &kp COMMA  &kp DOT &kp FSLH 
         &kp C_MUTE &kp LCTRL                                                                   &kp RCTRL  &kp RALT
                             &mo LSIDE   &kp LSHFT                    &kp SPACE &mo RSIDE  
-                                      &kp LCTRL   &kp BSPC     &kp RET  &kp RCTRL 
-                                      &kp RA(TAB) &kp F6       &kp ESC  &kp RALT
+                                      &kp C_VOL_UP   &kp BSPC     &kp RET  &kp RCTRL 
+                                      &kp C_VOL_DN &kp RA(TAB)       &kp ESC  &kp RALT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
