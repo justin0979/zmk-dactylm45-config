@@ -68,7 +68,7 @@
                                       &kp C_VOL_DN &kp RA(TAB)       &kp ESC  &kp K_SLEEP
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 
 		qwerty_tog_layer {
