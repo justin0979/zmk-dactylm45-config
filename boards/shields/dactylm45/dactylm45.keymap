@@ -19,7 +19,7 @@
 
 &led_strip {
   chain-length = <8>;
-}
+};
 
 #define DEF     0  // Line 48
 #define QWE     1  // Line 70
