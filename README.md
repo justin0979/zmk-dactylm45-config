@@ -6,5 +6,5 @@ left is central.
 
 ## Issues
 
--   left encoder not working for volume.
--   Underglow works on left but not right.
+-   FIXED: Updated pin numbering ~~left encoder not working for volume.~~
+-   FIXED: Updated pin numbering ~~Underglow works on left but not right.~~
