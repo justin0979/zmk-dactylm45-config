@@ -61,7 +61,7 @@
         &kp C_MUTE &kp LCTRL                                                                   &kp RCTRL  &kp RALT
                             &mo LSIDE   &kp LSHFT                    &kp SPACE &mo RSIDE  
                                       &kp C_VOL_UP   &kp BSPC        &kp RET  &kp RCTRL 
-                                      &kp C_VOL_DN &kp z_m_k       &kp ESC  &to QWE
+                                      &kp C_VOL_DN  z_m_k       &kp ESC  &to QWE
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
