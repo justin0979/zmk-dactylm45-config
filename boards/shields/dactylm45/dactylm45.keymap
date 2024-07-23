@@ -70,7 +70,7 @@
 //                                   | VOL DN | A(TAB) |           | ESC |  QWE  |
 			bindings = <
 	&kp Q &kp W      &kp F     &kp P      &kp G                               &kp J     &kp L    &kp U      &kp Y   &kp SEMI
-	&z_m_k &kp R      &kp S     &kp T      &kp D                               &kp H     &kp N    &kp E      &kp I   &kp O   
+	&kp A &kp R      &kp S     &kp T      &kp D                               &kp H     &kp N    &kp E      &kp I   &kp O   
 	&kp Z &kp X      &kp C     &kp V      &kp B                               &kp K     &kp M    &kp COMMA  &kp DOT &kp FSLH 
         &kp C_MUTE &kp LCTRL                                                                   &kp RCTRL  &kp RALT
                             &mo LSIDE   &kp LSHFT                    &kp SPACE &mo RSIDE  
