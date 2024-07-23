@@ -17,16 +17,16 @@
 //  debounce-release-ms = <5>;
 //};
 
-#define DEF     0  // Line 48
-#define QWE     1  // Line 70
-#define RSIDE   2  // Line 92 
-#define LSIDE   3  // Line 115
-#define LLS     4  // Line 141
-#define RMOD    5  // Line 163  access QWER, MCR, GIMP, WM here
-#define MCR     6  // Line 210 
-#define TW      7  // Line 232 Rome: Total war keys layer
+#define DEF     0  // Line 61
+#define QWE     1  // Line 83
+#define RSIDE   2  // Line 105 
+#define LSIDE   3  // Line 128
+#define LLS     4  // Line 154
+#define RMOD    5  // Line 176  access QWER, MCR, GIMP, WM here
+#define MCR     6  // Line 198 
+#define TW      7  // Line 220 Rome: Total war keys layer
 
-// combos Line 223
+// combos Line 244
 //#define QWER    2  // Line 84
 
 //&lt { tapping-term-ms = <85>; };
