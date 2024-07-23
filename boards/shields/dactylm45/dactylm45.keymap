@@ -54,14 +54,14 @@
 //                    | LSIDE | SHIFT |                                       | SPACE| RSIDE |
 //                                   | VOL UP |  BSPC  |           | RET |  CTRL |
 //                                   | VOL DN | A(TAB) |           | ESC |  QWE  |
-			bindings = <
+			bindings = <&z_m_k>, <
 	&kp Q &kp W      &kp F     &kp P      &kp G                               &kp J     &kp L    &kp U      &kp Y   &kp SEMI
 	&kp A &kp R      &kp S     &kp T      &kp D                               &kp H     &kp N    &kp E      &kp I   &kp O   
 	&kp Z &kp X      &kp C     &kp V      &kp B                               &kp K     &kp M    &kp COMMA  &kp DOT &kp FSLH 
         &kp C_MUTE &kp LCTRL                                                                   &kp RCTRL  &kp RALT
                             &mo LSIDE   &kp LSHFT                    &kp SPACE &mo RSIDE  
                                       &kp C_VOL_UP   &kp BSPC        &kp RET  &kp RCTRL 
-                                      &kp C_VOL_DN &kp RA(TAB)       &kp ESC  &to QWE
+                                      &kp C_VOL_DN &kp z_m_k       &kp ESC  &to QWE
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -227,6 +227,18 @@
 		};
 
 	};
+
+  macros {
+    z_m_k: z_m_k {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+          = <&macro_press &kp LSHFT>
+          , <&macro_tap &kp Z &kp M &kp K>
+          , <&macro_release &kp LSHFT>
+          ;
+    };
+  };
 
 //  combos {
 //    compatible = "zmk,combos";
