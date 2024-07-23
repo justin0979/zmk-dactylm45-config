@@ -64,7 +64,7 @@
                                       &kp C_VOL_DN &kp RA(TAB)       &kp ESC  &to QWE
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 
 		qwerty_tog_layer {
@@ -86,7 +86,7 @@
                                      &trans  &trans          &to DEF  &trans
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 
 		right_mo_layer {
@@ -109,7 +109,7 @@
                                               &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &trans  &trans
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
 		};
 
 		left_mo_layer {
@@ -135,7 +135,7 @@
                                                          &trans &trans       &trans   &trans
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 
 		lower_left_mo_layer {
