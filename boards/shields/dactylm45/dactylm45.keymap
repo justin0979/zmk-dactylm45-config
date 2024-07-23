@@ -74,7 +74,7 @@
         &kp C_MUTE &kp LCTRL                                                                   &kp RCTRL  &kp RALT
                             &mo LSIDE   &kp LSHFT                    &kp SPACE &mo RSIDE  
                                       &kp C_VOL_UP   &kp BSPC        &kp RET  &kp RCTRL 
-                                      &kp C_VOL_DN &kp alt_tab_mute  &kp ESC  &to QWE
+                                      &kp C_VOL_DN   &alt_tab_mute   &kp ESC  &to QWE
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
