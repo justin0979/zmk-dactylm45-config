@@ -137,7 +137,7 @@
 //         |       |A(-->)|                                                                         |       |    |
 //                        |      |       |                                          |  GUI  |  RMOD |
 //                                       |     |       |                |      |    |
-//                                       |     |       |                |      |    |
+//                                       |     |       |                |      | QWE|
 			bindings = <
 	&kp LC(LS(E)) &kp LC(LS(P)) &kp PG_DN  &kp LC(LS(I)) &kp M                                       &kp LC(LS(N6)) &kp LC(TAB) &trans  &kp LC(Y)       &kp COLON      
 	&mo LLS       &kp LC(PLUS)  &kp DOWN   &kp LC(LA(T)) &kp LC(LS(A))                               &kp LEFT_ARROW &kp DOWN    &kp UP  &kp RIGHT_ARROW &kp LC(RPAR)
@@ -145,7 +145,7 @@
                 &trans        &kp RA(RIGHT)                                                                                   &trans  &trans
                                     &trans        &trans                                      &kp RGUI         &mo RMOD
                                                          &trans &trans       &trans   &trans 
-                                                         &trans &trans       &trans   &trans
+                                                         &trans &trans       &trans   &to QWE
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
