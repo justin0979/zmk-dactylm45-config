@@ -25,6 +25,7 @@
 #define RMOD    5  // Line 176  access QWER, MCR, GIMP, WM here
 #define MCR     6  // Line 198 
 #define TW      7  // Line 220 Rome: Total war keys layer
+#define GIMP    8  // 
 
 // combos Line 244
 //#define QWER    2  // Line 84
@@ -175,7 +176,7 @@
 
 		right_mod_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// | QWE |       |      |      | F5   |                                          |  F6  |       |       |      |       |      
+// | QWE |       |      |      | GIMP |                                          |  F6  |       |       |      |       |      
 // | MCR |LS(TAB)| CTL  | TAB  | DEF  |                                          |LARROW|  DN   |  UP   |RARROW|       |       
 // | TW  |       |      |      |      |                                          |  BT0 |  BT1  |  BT2  |  BT3 |   "   |      
 //       |       |      |                                                                       |       |  PWR |
@@ -183,7 +184,7 @@
 //                                    |       |      |               |     |     |
 //                                    |       |      |               |     | BTC |
 			bindings = <
-	&to QWE   &trans      &trans    &trans   &kp F5                                         &kp F6         &trans       &trans        &trans          &trans  
+	&to QWE   &trans      &trans    &trans   &to GIMP                                       &kp F6         &trans       &trans        &trans          &trans  
 	&to MCR   &kp LS(TAB) &kp LCTRL &kp TAB  &to DEF                                        &kp LEFT_ARROW &kp DOWN     &kp UP        &kp RIGHT_ARROW &trans
   &to TW    &trans      &trans    &trans   &trans                                         &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3    &kp LS(SQT)
 	          &trans      &trans                                                                                        &trans    &ext_power EP_TOG
@@ -240,6 +241,28 @@
 		};
 
 	};
+
+		gimp_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |     |       |      |      | F5   |                                          |  F6  |       |       |      |       |      
+// |     |LS(TAB)| CTL  | TAB  | DEF  |                                          |LARROW|  DN   |  UP   |RARROW|       |       
+// | C(Z)|  C(Y) |       |      |      |      |                                          |      |       |       |      |   "   |      
+//       |       |      |                                                                       |       |  PWR |
+//                      |      | SPACE|                                          |      |       |
+//                                    |       |      |               |     |     |
+//                                    |       |      |               |     | DEF |
+			bindings = <
+	&trans     &trans      &trans    &trans   &kp F5                                         &kp F6         &trans       &trans        &trans          &trans  
+	&trans     &kp LS(TAB) &kp LCTRL &kp TAB  &to DEF                                        &kp LEFT_ARROW &kp DOWN     &kp UP        &kp RIGHT_ARROW &trans
+  &kp LC(Z)  &kp LC(Y)   &trans    &trans   &trans                                         &trans         &trans       &rans         &trans          &kp LS(SQT)
+	          &trans      &trans                                                                                        &trans    &ext_power EP_TOG
+                                         &trans   &kp SPACE                            &trans   &trans
+                                           &trans           &trans             &trans  &trans 
+                                           &trans           &trans             &trans  &to DEF
+			>;
+
+			sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp PG_UP PG_DN>;
+		};
 
 //  combos {
 //    compatible = "zmk,combos";
