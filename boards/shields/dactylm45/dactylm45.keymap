@@ -242,19 +242,19 @@
 
 		gimp_layer {
 //  S(E), CS(J), CS(A), CS(D), C(Z), C(Y)) ==> Erasure, window, Select None, doc layer, Undo, Redo
-//  Z, H ==> Zoom, Heal
+//  Z, H, C ==> Zoom, Heal, Clone
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | C(Z)| C(Y)  |      |      | F5   |                                          |  F6  |       |       |      |       |      
 // |     |LS(TAB)| CTL  | S(E) | CS(J)|                                          |LARROW|  DN   |  UP   |RARROW|       |       
-// |  Z  |  H    |      | CS(A)|      |      |                                   |      |       |       |      |       |   "   |      
+// |  Z  |  H    |  C   | CS(A)|      |      |                                   |      |       |       |      |       |   "   |      
 //       |       |      |                                                                       |       |  PWR |
 //                      |      | SPACE|                                          |      |       |
 //                                    |       |      |               |     |     |
 //                                    |  DEF  |      |               |     | DEF |
 			bindings = <
-	&kp LC(Z)  &LC(Y)      &trans    &trans        &kp F5                                         &kp F6         &trans       &trans        &trans          &trans  
+	&kp LC(Z)  &kp LC(Y)   &trans    &trans        &kp F5                                         &kp F6         &trans       &trans        &trans          &trans  
 	&trans     &kp LS(TAB) &kp LCTRL &kp LS(E)     &kp LC(LS(J))                                  &kp LEFT_ARROW &kp DOWN     &kp UP        &kp RIGHT_ARROW &trans
-  &kp Z      &kp H  &trans    &kp LC(LS(A)) &trans                                         &trans         &trans       &trans        &trans          &kp LS(SQT)
+  &kp Z      &kp H       &kp C     &kp LC(LS(A)) &trans                                         &trans         &trans       &trans        &trans          &kp LS(SQT)
 	          &trans      &trans                                                                                        &trans    &ext_power EP_TOG
                                          &trans   &kp SPACE                            &trans   &trans
                                            &trans           &trans             &trans  &trans 
