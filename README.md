@@ -1,6 +1,6 @@
 # 4x5 Dactyl Manuform
 
-As of January 3, 2026, NOT up-to-date with Zephyr 41 latest updates; however,
+As of January 3, 2026, NOT up-to-date with Zephyr 4.1 latest updates; however,
 v0.3 is working with changes posted on [blog](https://zmk.dev/blog).
 
 Configuration for a hand wired 4x5 Dactyl Manuform from
