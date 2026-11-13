@@ -17,16 +17,16 @@
 //  debounce-release-ms = <5>;
 //};
 
-#define DEF     0  // Line 61
-#define QWE     1  // Line 83
-#define RSIDE   2  // Line 105 
-#define LSIDE   3  // Line 128
-#define LLS     4  // Line 154
-#define RMOD    5  // Line 176  access QWER, MCR, GIMP, WM here
-#define MCR     6  // Line 198 
-#define TW      7  // Line 220 Rome: Total war keys layer
-#define GIMP    8  // Line 243
-#define GUTIL   9  // Line 268
+#define DEF     0  // Line 63
+#define QWE     1  // Line 86
+#define RSIDE   2  // Line 109
+#define LSIDE   3  // Line 133
+#define LLS     4  // Line 160
+#define RMOD    5  // Line 183  access QWER, MCR, GIMP, WM here
+#define MCR     6  // Line 206
+#define TW      7  // Line 229 Rome: Total war keys layer
+#define GIMP    8  // Line 252
+#define GUTIL   9  // Line 277
 
 // combos Line 244
 //#define QWER    2  // Line 84
@@ -60,6 +60,7 @@
 	keymap {
 		compatible = "zmk,keymap";
 
+    // DEF
 		colemak_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  Q  |  W  |  F  |  P  |  G  |                                            |  J  |  L   |  U   |  Y  |  ;  |
@@ -82,6 +83,7 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 
+    // QWE
 		qwerty_tog_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |  
@@ -104,6 +106,7 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 
+    // RSIDE
 		right_mo_layer {
 // C(T), C(W), CA(V) --> open browser tab, close tab, paste
 // ---------------------------------------------------------------------------------------------------------------------------------
@@ -127,6 +130,7 @@
 			sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
 		};
 
+    // LSIDE
 		left_mo_layer {
 // CS(E), CS(P), CS(A),  C(Z), C(Y)  --> xournal++ ==> Erasure, Pen, Hand, Undo, Redo
 //  S(E), CS(J), CS(A), CS(D), C(Z), C(Y)) --> GIMP ==> Erasure, window, Select None, doc layer, Undo, Redo
@@ -153,6 +157,7 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 
+    // LLS
 		lower_left_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |       |       | PGUP |  U   |  H    |                                          |  F1   |  F2   |  F3   |  F4  |  F5   |   
@@ -175,6 +180,7 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
 		};
 
+    // RMOD
 		right_mod_mo_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | QWE |       |      |      | GIMP |                                          |  F6  |       |       |      |       |      
@@ -197,6 +203,7 @@
 			sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp PG_UP PG_DN>;
 		};
 
+    // MCR
 		minecraft_tog_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  1  |  2  |  3   |  4   |  5   |                                          |   6  |   7   |   8   |  9   |   0   |
@@ -219,6 +226,7 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 
+    // TW
 		rome_total_war_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  1  |  2  |  3   |  4   |  G   |                                          |      |       |       |      |       |
@@ -241,6 +249,7 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 
+    // GIMP
 		gimp_layer {
 //  S(E), CS(J), CS(A), CS(D), C(Z), C(Y)) ==> Erasure, window, Select None, doc layer, Undo, Redo
 //  Z, H, C ==> Zoom, Heal, Clone
@@ -265,6 +274,7 @@
 			sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp PG_UP PG_DN>;
 		};
 
+    // GUTIL
 		gimp_utils_layer {
 //  S(E), CS(J), CS(A), CS(D), C(Z), C(Y)) ==> Erasure, window, Select None, doc layer, Undo, Redo
 //  Z, H, C ==> Zoom, Heal, Clone
